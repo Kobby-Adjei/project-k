@@ -15,9 +15,8 @@ timing ladder, one tone placed at 2, 6, and 10 seconds.
 - The three *-equal-diagnostics-summary.md files: the
   reads of the Series One equal battery, run in the same
   sessions.
-- The CSVs: the raw result files for the Qwen runs of both
-  batteries and the MiniCPM equal run. The MiniCPM and OLA
-  Series Two CSVs join this folder shortly.
+- The CSVs: the raw result files for every run in this
+  folder, both batteries, all four open models.
 - feed-audit-minicpm.md: the audit that proved the earlier
   silent-padding fault and set the per-ask feed proof rule.
 - pegasus-yesno/: the Pegasus text version of the yes or no
