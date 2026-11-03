@@ -1,0 +1,15 @@
+# Media is never committed: licensed dataset clips and
+# private recordings stay out of this repo by design.
+*.mp4
+*.wav
+*.mp3
+*.mkv
+*.mov
+
+# Credentials
+.env
+*.key
+*secret*
+
+__pycache__/
+scratch*/
