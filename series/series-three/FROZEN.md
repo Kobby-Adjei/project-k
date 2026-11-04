@@ -3,8 +3,11 @@
 Frozen: Nov 4, 2026, at the close of the validation gate
 agreed with the project's review council.
 
-Frozen commit: recorded in the follow-up commit that
-updates this file, and in SERIES-THREE-JOURNEY.md.
+Frozen commit: 685f3edf23ee4d0325142a78fc2a34e2f58ff9be
+("Series Three: the inside tests, frozen
+(Qwen2.5-Omni-3B)"), recorded here by the follow-up
+commit that updates this file, and in
+SERIES-THREE-JOURNEY.md.
 
 What is frozen: EVIDENCE-LEDGER.md, PROTOCOL.md,
 SERIES-THREE-JOURNEY.md, README.md, reads/, results/,
