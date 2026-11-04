@@ -1,0 +1,156 @@
+======================================================================
+TOKEN CHECK: settle the audio positions from the histogram, before any extraction
+plausibility floor: the derived audio-position count must be at least 10
+tokenizer tokens whose text mentions audio:
+  '(audio' -> id 55065
+  '.audio' -> id 36747
+  '/audio' -> id 71247
+  '<|audio_bos|>' -> id 151647
+  '<|audio_eos|>' -> id 151648
+  '_audio' -> id 29688
+  'audio' -> id 16736
+  'ĉaudio' -> id 83290
+  'Ġaudio' -> id 7699
+  thinker_config.audio_token_id = 151646
+  thinker_config.audio_token_index = 151646
+----------------------------------------------------------------------
+TOKEN HISTOGRAM: tone clip
+  file: /content/clips/codec_tone_ref_raw.wav
+  decoded waveform: 160000 samples at 16 kHz (10.00 s)
+  sequence length: 287 positions
+  distinct token ids: 29
+  full histogram, most common first (every id with count > 0):
+    id 151646: count 250, token name '<|AUDIO|>', decodes to '<|AUDIO|>' [special token]
+    id 198: count 5, token name 'Ċ', decodes to '\n'
+    id 151644: count 3, token name '<|im_start|>', decodes to '<|im_start|>' [special token]
+    id 264: count 2, token name 'Ġa', decodes to ' a'
+    id 13: count 2, token name '.', decodes to '.'
+    id 151645: count 2, token name '<|im_end|>', decodes to '<|im_end|>' [special token]
+    id 8948: count 1, token name 'system', decodes to 'system'
+    id 2610: count 1, token name 'You', decodes to 'You'
+    id 525: count 1, token name 'Ġare', decodes to ' are'
+    id 10950: count 1, token name 'Ġhelpful', decodes to ' helpful'
+    id 17847: count 1, token name 'Ġassistant', decodes to ' assistant'
+    id 872: count 1, token name 'user', decodes to 'user'
+    id 151647: count 1, token name '<|audio_bos|>', decodes to '<|audio_bos|>' [special token]
+    id 151648: count 1, token name '<|audio_eos|>', decodes to '<|audio_eos|>' [special token]
+    id 3872: count 1, token name 'Is', decodes to 'Is'
+    id 1052: count 1, token name 'Ġthere', decodes to ' there'
+    id 279: count 1, token name 'Ġthe', decodes to ' the'
+    id 5112: count 1, token name 'Ġsound', decodes to ' sound'
+    id 315: count 1, token name 'Ġof', decodes to ' of'
+    id 16232: count 1, token name 'Ġtone', decodes to ' tone'
+    id 304: count 1, token name 'Ġin', decodes to ' in'
+    id 419: count 1, token name 'Ġthis', decodes to ' this'
+    id 12327: count 1, token name 'Ġclip', decodes to ' clip'
+    id 30: count 1, token name '?', decodes to '?'
+    id 21806: count 1, token name 'ĠAnswer', decodes to ' Answer'
+    id 9834: count 1, token name 'Ġyes', decodes to ' yes'
+    id 476: count 1, token name 'Ġor', decodes to ' or'
+    id 902: count 1, token name 'Ġno', decodes to ' no'
+    id 77091: count 1, token name 'assistant', decodes to 'assistant'
+  processor input_features shape: (1, 128, 30000) (batch, mel bins, audio frames)
+  processor feature_attention_mask shape: (1, 30000), true frames per row: [1000]
+  candidate audio ids, counted in this row:
+    candidate id 7699 (tokenizer token 'Ġaudio'): count 0, decodes to ' audio'
+    candidate id 16736 (tokenizer token 'audio'): count 0, decodes to 'audio'
+    candidate id 29688 (tokenizer token '_audio'): count 0, decodes to '_audio'
+    candidate id 36747 (tokenizer token '.audio'): count 0, decodes to '.audio'
+    candidate id 55065 (tokenizer token '(audio'): count 0, decodes to '(audio'
+    candidate id 71247 (tokenizer token '/audio'): count 0, decodes to '/audio'
+    candidate id 83290 (tokenizer token 'ĉaudio'): count 0, decodes to '\taudio'
+    candidate id 151646 (config thinker_config.audio_token_id): count 250, decodes to '<|AUDIO|>'
+    candidate id 151647 (tokenizer token '<|audio_bos|>'): count 1, decodes to '<|audio_bos|>'
+    candidate id 151648 (tokenizer token '<|audio_eos|>'): count 1, decodes to '<|audio_eos|>'
+  DERIVED audio token id for the tone clip: 151646 (config thinker_config.audio_token_id), decodes to '<|AUDIO|>'
+  audio positions: 250 of 287; first [15, 16, 17, 18, 19], last [260, 261, 262, 263, 264]
+----------------------------------------------------------------------
+TOKEN HISTOGRAM: speech clip
+  file: /content/clips/codec_speech_raw.wav
+  decoded waveform: 160000 samples at 16 kHz (10.00 s)
+  sequence length: 286 positions
+  distinct token ids: 29
+  full histogram, most common first (every id with count > 0):
+    id 151646: count 250, token name '<|AUDIO|>', decodes to '<|AUDIO|>' [special token]
+    id 198: count 5, token name 'Ċ', decodes to '\n'
+    id 151644: count 3, token name '<|im_start|>', decodes to '<|im_start|>' [special token]
+    id 13: count 2, token name '.', decodes to '.'
+    id 151645: count 2, token name '<|im_end|>', decodes to '<|im_end|>' [special token]
+    id 8948: count 1, token name 'system', decodes to 'system'
+    id 2610: count 1, token name 'You', decodes to 'You'
+    id 525: count 1, token name 'Ġare', decodes to ' are'
+    id 264: count 1, token name 'Ġa', decodes to ' a'
+    id 10950: count 1, token name 'Ġhelpful', decodes to ' helpful'
+    id 17847: count 1, token name 'Ġassistant', decodes to ' assistant'
+    id 872: count 1, token name 'user', decodes to 'user'
+    id 151647: count 1, token name '<|audio_bos|>', decodes to '<|audio_bos|>' [special token]
+    id 151648: count 1, token name '<|audio_eos|>', decodes to '<|audio_eos|>' [special token]
+    id 3872: count 1, token name 'Is', decodes to 'Is'
+    id 1052: count 1, token name 'Ġthere', decodes to ' there'
+    id 279: count 1, token name 'Ġthe', decodes to ' the'
+    id 5112: count 1, token name 'Ġsound', decodes to ' sound'
+    id 315: count 1, token name 'Ġof', decodes to ' of'
+    id 8806: count 1, token name 'Ġspeech', decodes to ' speech'
+    id 304: count 1, token name 'Ġin', decodes to ' in'
+    id 419: count 1, token name 'Ġthis', decodes to ' this'
+    id 12327: count 1, token name 'Ġclip', decodes to ' clip'
+    id 30: count 1, token name '?', decodes to '?'
+    id 21806: count 1, token name 'ĠAnswer', decodes to ' Answer'
+    id 9834: count 1, token name 'Ġyes', decodes to ' yes'
+    id 476: count 1, token name 'Ġor', decodes to ' or'
+    id 902: count 1, token name 'Ġno', decodes to ' no'
+    id 77091: count 1, token name 'assistant', decodes to 'assistant'
+  processor input_features shape: (1, 128, 30000) (batch, mel bins, audio frames)
+  processor feature_attention_mask shape: (1, 30000), true frames per row: [1000]
+  candidate audio ids, counted in this row:
+    candidate id 7699 (tokenizer token 'Ġaudio'): count 0, decodes to ' audio'
+    candidate id 16736 (tokenizer token 'audio'): count 0, decodes to 'audio'
+    candidate id 29688 (tokenizer token '_audio'): count 0, decodes to '_audio'
+    candidate id 36747 (tokenizer token '.audio'): count 0, decodes to '.audio'
+    candidate id 55065 (tokenizer token '(audio'): count 0, decodes to '(audio'
+    candidate id 71247 (tokenizer token '/audio'): count 0, decodes to '/audio'
+    candidate id 83290 (tokenizer token 'ĉaudio'): count 0, decodes to '\taudio'
+    candidate id 151646 (config thinker_config.audio_token_id): count 250, decodes to '<|AUDIO|>'
+    candidate id 151647 (tokenizer token '<|audio_bos|>'): count 1, decodes to '<|audio_bos|>'
+    candidate id 151648 (tokenizer token '<|audio_eos|>'): count 1, decodes to '<|audio_eos|>'
+  DERIVED audio token id for the speech clip: 151646 (config thinker_config.audio_token_id), decodes to '<|AUDIO|>'
+  audio positions: 250 of 286; first [15, 16, 17, 18, 19], last [260, 261, 262, 263, 264]
+----------------------------------------------------------------------
+AUDIO TOKEN ID SETTLED: 151646, from the histogram (tone count 250, speech count 250)
+hidden states returned: 37 tensors (layer 0 is the embedding output, then one per thinker layer)
+thinker layers: 36
+hidden size: 2048
+tone sequence length: 287
+TOKEN CHECK PASSED: the audio positions are derived from the histogram, counted, and the same for both clips. Every later number in this run pools over these positions.
+saved: /content/drive/MyDrive/tracing-qwen3b/proppatch_token_check.txt
+saved: /content/tracing-qwen3b/proppatch_token_check.txt
+scorer tokens: yes [7414, 9454] no [2308, 2753]
+======================================================================
+THE PROPERTY PATCH
+======================================================================
+preflight: manifest present, 420 property clips in place
+cells: {('low', 'early'): 90, ('low', 'late'): 90, ('high', 'early'): 90, ('high', 'late'): 90}
+pair plan: 48 pairs
+open-form-only variant: the patch cells are already saved in proppatch_results.csv; this run does the open-form cells only.
+  open form prop_tone_0_00 <- prop_tone_2_01 @ 14: 'ERROR (see log)'
+  open form prop_tone_0_00 <- prop_tone_2_01 @ 19: 'ERROR (see log)'
+  open form prop_tone_0_00 <- prop_tone_2_01 @ 24: 'ERROR (see log)'
+  open form prop_tone_0_01 <- prop_tone_2_02 @ 14: 'ERROR (see log)'
+  open form prop_tone_0_01 <- prop_tone_2_02 @ 19: 'ERROR (see log)'
+  open form prop_tone_0_01 <- prop_tone_2_02 @ 24: 'ERROR (see log)'
+  open form prop_tone_0_02 <- prop_tone_2_03 @ 14: 'ERROR (see log)'
+  open form prop_tone_0_02 <- prop_tone_2_03 @ 19: 'ERROR (see log)'
+  open form prop_tone_0_02 <- prop_tone_2_03 @ 24: 'ERROR (see log)'
+  open form prop_tone_1_00 <- prop_tone_3_01 @ 14: 'ERROR (see log)'
+  open form prop_tone_1_00 <- prop_tone_3_01 @ 19: 'ERROR (see log)'
+  open form prop_tone_1_00 <- prop_tone_3_01 @ 24: 'ERROR (see log)'
+  open form prop_tone_1_01 <- prop_tone_3_02 @ 14: 'ERROR (see log)'
+  open form prop_tone_1_01 <- prop_tone_3_02 @ 19: 'ERROR (see log)'
+  open form prop_tone_1_01 <- prop_tone_3_02 @ 24: 'ERROR (see log)'
+  open form prop_tone_1_02 <- prop_tone_3_03 @ 14: 'ERROR (see log)'
+  open form prop_tone_1_02 <- prop_tone_3_03 @ 19: 'ERROR (see log)'
+  open form prop_tone_1_02 <- prop_tone_3_03 @ 24: 'ERROR (see log)'
+saved: /content/drive/MyDrive/tracing-qwen3b/proppatch_openform.csv
+saved: /content/tracing-qwen3b/proppatch_openform.csv
+battery done: the open-form cells ran (pitch low-to-high at layers 14, 19, 24).
+Outputs: proppatch_openform.csv, proppatch_openform_log.txt.

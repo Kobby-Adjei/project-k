@@ -1,0 +1,13 @@
+direction,donor,recipient,score,donor_baseline,abs_diff_vs_donor
+self,tone_00,tone_00,0.8811,0.8811,0.0000
+self,tone_01,tone_01,0.8870,0.8870,0.0000
+self,tone_02,tone_02,0.7986,0.7986,0.0000
+self,tone_03,tone_03,0.8781,0.8781,0.0000
+tone_into_silence,tone_00,silence_00,0.8811,0.8811,0.0000
+tone_into_silence,tone_01,silence_01,0.8870,0.8870,0.0000
+tone_into_silence,tone_02,silence_02,0.7986,0.7986,0.0000
+tone_into_silence,tone_03,silence_03,0.8781,0.8781,0.0000
+silence_into_tone,silence_00,tone_00,0.3257,0.3257,0.0000
+silence_into_tone,silence_01,tone_01,0.3257,0.3257,0.0000
+silence_into_tone,silence_02,tone_02,0.3257,0.3257,0.0000
+silence_into_tone,silence_03,tone_03,0.3257,0.3257,0.0000

@@ -48,9 +48,21 @@ four renamed a vacuum cleaner a door. The reads are in
 series/series-two.
 
 These are measurements, stated at the scope they were
-measured at. Where inside any of these systems the sound
-is lost, I cannot see from outside, and this repo does not
-guess.
+measured at.
+
+For one of the open models, the inside is now measured
+too. Series Three opens Qwen2.5-Omni-3B and traces the
+sound through its layers. The sound is present in the
+model's inner states at every layer; what fails is the
+reading of it. The spoken yes or no is a fixed cut on an
+inner lean that ranks the truth almost perfectly, and
+the cut is misplaced. Pasting one clip's inner states
+into another clip's run moves the answer in a window of
+layers, and in the deep end of that window the effect
+reaches the answer only through the words that follow
+the sound. Every claim is scoped to that one model. The
+ledger, the protocol, and the frozen results are in
+series/series-three.
 
 ## How this repo is organized
 
@@ -83,7 +95,10 @@ Series One battery: complete for three open models; the
 fourth (OLA-7B) is built and waiting to run. Series Two:
 complete for the four open models; the Pegasus text version
 is 14 of 60 answers in, paused on the provider's workload
-allowance. Next new model in the queue: Baichuan-Omni 1.5.
+allowance. Series Three: complete and frozen for
+Qwen2.5-Omni-3B; the same inside tests on MiniCPM-o 2.6
+are the written leftover, to be run under the frozen
+protocol. Next new model in the queue: Baichuan-Omni 1.5.
 
 Kwabena Adu Adjei. Computer Science, Eastern Michigan
 University. Thesis topic: Failure Attribution in

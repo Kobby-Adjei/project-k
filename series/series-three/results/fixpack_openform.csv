@@ -1,0 +1,55 @@
+kind,recipient,donor,layer,answer
+unpatched_recipient,prop_tone_0_00,,,silent
+unpatched_donor,prop_tone_0_00,prop_tone_2_01,,beep
+real,prop_tone_0_00,prop_tone_2_01,28,beep
+real,prop_tone_0_00,prop_tone_2_01,34,silent
+sham,prop_tone_0_00,prop_tone_1_01,14,A beep.
+sham,prop_tone_0_00,prop_tone_1_01,19,silent
+sham,prop_tone_0_00,prop_tone_1_01,24,silent
+sham,prop_tone_0_00,prop_tone_1_01,28,silent
+sham,prop_tone_0_00,prop_tone_1_01,34,silent
+unpatched_recipient,prop_tone_0_01,,,silent
+unpatched_donor,prop_tone_0_01,prop_tone_2_02,,beep
+real,prop_tone_0_01,prop_tone_2_02,28,beep
+real,prop_tone_0_01,prop_tone_2_02,34,silent
+sham,prop_tone_0_01,prop_tone_1_02,14,A beep.
+sham,prop_tone_0_01,prop_tone_1_02,19,silent
+sham,prop_tone_0_01,prop_tone_1_02,24,silent
+sham,prop_tone_0_01,prop_tone_1_02,28,silent
+sham,prop_tone_0_01,prop_tone_1_02,34,silent
+unpatched_recipient,prop_tone_0_02,,,silent
+unpatched_donor,prop_tone_0_02,prop_tone_2_03,,beep
+real,prop_tone_0_02,prop_tone_2_03,28,beep
+real,prop_tone_0_02,prop_tone_2_03,34,silent
+sham,prop_tone_0_02,prop_tone_1_03,14,A beep.
+sham,prop_tone_0_02,prop_tone_1_03,19,silent
+sham,prop_tone_0_02,prop_tone_1_03,24,silent
+sham,prop_tone_0_02,prop_tone_1_03,28,silent
+sham,prop_tone_0_02,prop_tone_1_03,34,silent
+unpatched_recipient,prop_tone_1_00,,,The audio contains a brief beep followed by silence.
+unpatched_donor,prop_tone_1_00,prop_tone_3_01,,beep
+real,prop_tone_1_00,prop_tone_3_01,28,beep
+real,prop_tone_1_00,prop_tone_3_01,34,The audio contains a beep sound.
+sham,prop_tone_1_00,prop_tone_0_01,14,silent
+sham,prop_tone_1_00,prop_tone_0_01,19,The audio contains a busy signal.
+sham,prop_tone_1_00,prop_tone_0_01,24,The audio contains a busy signal.
+sham,prop_tone_1_00,prop_tone_0_01,28,The audio contains a busy signal.
+sham,prop_tone_1_00,prop_tone_0_01,34,The audio contains a brief beep followed by silence.
+unpatched_recipient,prop_tone_1_01,,,The audio contains a busy signal.
+unpatched_donor,prop_tone_1_01,prop_tone_3_02,,beep
+real,prop_tone_1_01,prop_tone_3_02,28,beep
+real,prop_tone_1_01,prop_tone_3_02,34,The audio contains a busy signal.
+sham,prop_tone_1_01,prop_tone_0_02,14,silent
+sham,prop_tone_1_01,prop_tone_0_02,19,silent
+sham,prop_tone_1_01,prop_tone_0_02,24,The audio contains a busy signal.
+sham,prop_tone_1_01,prop_tone_0_02,28,The audio contains a busy signal.
+sham,prop_tone_1_01,prop_tone_0_02,34,The audio contains a busy signal.
+unpatched_recipient,prop_tone_1_02,,,The audio contains a telephone dial tone.
+unpatched_donor,prop_tone_1_02,prop_tone_3_03,,beep
+real,prop_tone_1_02,prop_tone_3_03,28,beep
+real,prop_tone_1_02,prop_tone_3_03,34,The audio contains a telephone dial tone.
+sham,prop_tone_1_02,prop_tone_0_03,14,silent
+sham,prop_tone_1_02,prop_tone_0_03,19,silent
+sham,prop_tone_1_02,prop_tone_0_03,24,silent
+sham,prop_tone_1_02,prop_tone_0_03,28,silent
+sham,prop_tone_1_02,prop_tone_0_03,34,The audio contains a busy signal.

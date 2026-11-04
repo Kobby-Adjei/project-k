@@ -1,0 +1,895 @@
+======================================================================
+TOKEN CHECK: settle the audio positions from the histogram, before any extraction
+plausibility floor: the derived audio-position count must be at least 10
+tokenizer tokens whose text mentions audio:
+  '(audio' -> id 55065
+  '.audio' -> id 36747
+  '/audio' -> id 71247
+  '<|audio_bos|>' -> id 151647
+  '<|audio_eos|>' -> id 151648
+  '_audio' -> id 29688
+  'audio' -> id 16736
+  'ĉaudio' -> id 83290
+  'Ġaudio' -> id 7699
+  thinker_config.audio_token_id = 151646
+  thinker_config.audio_token_index = 151646
+----------------------------------------------------------------------
+TOKEN HISTOGRAM: tone clip
+  file: /content/clips/codec_tone_ref_raw.wav
+  decoded waveform: 160000 samples at 16 kHz (10.00 s)
+  sequence length: 287 positions
+  distinct token ids: 29
+  full histogram, most common first (every id with count > 0):
+    id 151646: count 250, token name '<|AUDIO|>', decodes to '<|AUDIO|>' [special token]
+    id 198: count 5, token name 'Ċ', decodes to '\n'
+    id 151644: count 3, token name '<|im_start|>', decodes to '<|im_start|>' [special token]
+    id 264: count 2, token name 'Ġa', decodes to ' a'
+    id 13: count 2, token name '.', decodes to '.'
+    id 151645: count 2, token name '<|im_end|>', decodes to '<|im_end|>' [special token]
+    id 8948: count 1, token name 'system', decodes to 'system'
+    id 2610: count 1, token name 'You', decodes to 'You'
+    id 525: count 1, token name 'Ġare', decodes to ' are'
+    id 10950: count 1, token name 'Ġhelpful', decodes to ' helpful'
+    id 17847: count 1, token name 'Ġassistant', decodes to ' assistant'
+    id 872: count 1, token name 'user', decodes to 'user'
+    id 151647: count 1, token name '<|audio_bos|>', decodes to '<|audio_bos|>' [special token]
+    id 151648: count 1, token name '<|audio_eos|>', decodes to '<|audio_eos|>' [special token]
+    id 3872: count 1, token name 'Is', decodes to 'Is'
+    id 1052: count 1, token name 'Ġthere', decodes to ' there'
+    id 279: count 1, token name 'Ġthe', decodes to ' the'
+    id 5112: count 1, token name 'Ġsound', decodes to ' sound'
+    id 315: count 1, token name 'Ġof', decodes to ' of'
+    id 16232: count 1, token name 'Ġtone', decodes to ' tone'
+    id 304: count 1, token name 'Ġin', decodes to ' in'
+    id 419: count 1, token name 'Ġthis', decodes to ' this'
+    id 12327: count 1, token name 'Ġclip', decodes to ' clip'
+    id 30: count 1, token name '?', decodes to '?'
+    id 21806: count 1, token name 'ĠAnswer', decodes to ' Answer'
+    id 9834: count 1, token name 'Ġyes', decodes to ' yes'
+    id 476: count 1, token name 'Ġor', decodes to ' or'
+    id 902: count 1, token name 'Ġno', decodes to ' no'
+    id 77091: count 1, token name 'assistant', decodes to 'assistant'
+  processor input_features shape: (1, 128, 30000) (batch, mel bins, audio frames)
+  processor feature_attention_mask shape: (1, 30000), true frames per row: [1000]
+  candidate audio ids, counted in this row:
+    candidate id 7699 (tokenizer token 'Ġaudio'): count 0, decodes to ' audio'
+    candidate id 16736 (tokenizer token 'audio'): count 0, decodes to 'audio'
+    candidate id 29688 (tokenizer token '_audio'): count 0, decodes to '_audio'
+    candidate id 36747 (tokenizer token '.audio'): count 0, decodes to '.audio'
+    candidate id 55065 (tokenizer token '(audio'): count 0, decodes to '(audio'
+    candidate id 71247 (tokenizer token '/audio'): count 0, decodes to '/audio'
+    candidate id 83290 (tokenizer token 'ĉaudio'): count 0, decodes to '\taudio'
+    candidate id 151646 (config thinker_config.audio_token_id): count 250, decodes to '<|AUDIO|>'
+    candidate id 151647 (tokenizer token '<|audio_bos|>'): count 1, decodes to '<|audio_bos|>'
+    candidate id 151648 (tokenizer token '<|audio_eos|>'): count 1, decodes to '<|audio_eos|>'
+  DERIVED audio token id for the tone clip: 151646 (config thinker_config.audio_token_id), decodes to '<|AUDIO|>'
+  audio positions: 250 of 287; first [15, 16, 17, 18, 19], last [260, 261, 262, 263, 264]
+----------------------------------------------------------------------
+TOKEN HISTOGRAM: speech clip
+  file: /content/clips/codec_speech_raw.wav
+  decoded waveform: 160000 samples at 16 kHz (10.00 s)
+  sequence length: 286 positions
+  distinct token ids: 29
+  full histogram, most common first (every id with count > 0):
+    id 151646: count 250, token name '<|AUDIO|>', decodes to '<|AUDIO|>' [special token]
+    id 198: count 5, token name 'Ċ', decodes to '\n'
+    id 151644: count 3, token name '<|im_start|>', decodes to '<|im_start|>' [special token]
+    id 13: count 2, token name '.', decodes to '.'
+    id 151645: count 2, token name '<|im_end|>', decodes to '<|im_end|>' [special token]
+    id 8948: count 1, token name 'system', decodes to 'system'
+    id 2610: count 1, token name 'You', decodes to 'You'
+    id 525: count 1, token name 'Ġare', decodes to ' are'
+    id 264: count 1, token name 'Ġa', decodes to ' a'
+    id 10950: count 1, token name 'Ġhelpful', decodes to ' helpful'
+    id 17847: count 1, token name 'Ġassistant', decodes to ' assistant'
+    id 872: count 1, token name 'user', decodes to 'user'
+    id 151647: count 1, token name '<|audio_bos|>', decodes to '<|audio_bos|>' [special token]
+    id 151648: count 1, token name '<|audio_eos|>', decodes to '<|audio_eos|>' [special token]
+    id 3872: count 1, token name 'Is', decodes to 'Is'
+    id 1052: count 1, token name 'Ġthere', decodes to ' there'
+    id 279: count 1, token name 'Ġthe', decodes to ' the'
+    id 5112: count 1, token name 'Ġsound', decodes to ' sound'
+    id 315: count 1, token name 'Ġof', decodes to ' of'
+    id 8806: count 1, token name 'Ġspeech', decodes to ' speech'
+    id 304: count 1, token name 'Ġin', decodes to ' in'
+    id 419: count 1, token name 'Ġthis', decodes to ' this'
+    id 12327: count 1, token name 'Ġclip', decodes to ' clip'
+    id 30: count 1, token name '?', decodes to '?'
+    id 21806: count 1, token name 'ĠAnswer', decodes to ' Answer'
+    id 9834: count 1, token name 'Ġyes', decodes to ' yes'
+    id 476: count 1, token name 'Ġor', decodes to ' or'
+    id 902: count 1, token name 'Ġno', decodes to ' no'
+    id 77091: count 1, token name 'assistant', decodes to 'assistant'
+  processor input_features shape: (1, 128, 30000) (batch, mel bins, audio frames)
+  processor feature_attention_mask shape: (1, 30000), true frames per row: [1000]
+  candidate audio ids, counted in this row:
+    candidate id 7699 (tokenizer token 'Ġaudio'): count 0, decodes to ' audio'
+    candidate id 16736 (tokenizer token 'audio'): count 0, decodes to 'audio'
+    candidate id 29688 (tokenizer token '_audio'): count 0, decodes to '_audio'
+    candidate id 36747 (tokenizer token '.audio'): count 0, decodes to '.audio'
+    candidate id 55065 (tokenizer token '(audio'): count 0, decodes to '(audio'
+    candidate id 71247 (tokenizer token '/audio'): count 0, decodes to '/audio'
+    candidate id 83290 (tokenizer token 'ĉaudio'): count 0, decodes to '\taudio'
+    candidate id 151646 (config thinker_config.audio_token_id): count 250, decodes to '<|AUDIO|>'
+    candidate id 151647 (tokenizer token '<|audio_bos|>'): count 1, decodes to '<|audio_bos|>'
+    candidate id 151648 (tokenizer token '<|audio_eos|>'): count 1, decodes to '<|audio_eos|>'
+  DERIVED audio token id for the speech clip: 151646 (config thinker_config.audio_token_id), decodes to '<|AUDIO|>'
+  audio positions: 250 of 286; first [15, 16, 17, 18, 19], last [260, 261, 262, 263, 264]
+----------------------------------------------------------------------
+AUDIO TOKEN ID SETTLED: 151646, from the histogram (tone count 250, speech count 250)
+hidden states returned: 37 tensors (layer 0 is the embedding output, then one per thinker layer)
+thinker layers: 36
+hidden size: 2048
+tone sequence length: 287
+TOKEN CHECK PASSED: the audio positions are derived from the histogram, counted, and the same for both clips. Every later number in this run pools over these positions.
+saved: /content/drive/MyDrive/tracing-qwen3b/property_token_check.txt
+saved: /content/tracing-qwen3b/property_token_check.txt
+  grad_tone_000  group=tone    split=test  samples=64000 rms=-32.26 dB per-second [-26.2, -120.0, -120.0, -120.0] dB sha256=777ae5f9fcb9192a
+  grad_tone_001  group=tone    split=train samples=64000 rms=-32.07 dB per-second [-26.0, -120.0, -120.0, -120.0] dB sha256=dea398c2357357c3
+  grad_tone_002  group=tone    split=test  samples=64000 rms=-32.44 dB per-second [-31.1, -28.2, -120.0, -120.0] dB sha256=2bf0c9af5c294d18
+  grad_tone_003  group=tone    split=train samples=64000 rms=-31.77 dB per-second [-120.0, -25.8, -120.0, -120.0] dB sha256=46f893873fbe1e0c
+  grad_tone_004  group=tone    split=train samples=64000 rms=-32.15 dB per-second [-75.0, -26.1, -75.0, -75.0] dB sha256=bc4a8ae7ea5e9ccf
+  grad_tone_005  group=tone    split=train samples=64000 rms=-33.05 dB per-second [-70.6, -27.8, -35.1, -70.5] dB sha256=f90ec22578195a10
+  grad_tone_006  group=tone    split=train samples=64000 rms=-32.77 dB per-second [-73.5, -32.3, -28.2, -73.5] dB sha256=6c5b751a3ca916d9
+  grad_tone_007  group=tone    split=test  samples=64000 rms=-32.96 dB per-second [-120.0, -120.0, -26.9, -120.0] dB sha256=c92718eb3d6cbe45
+  grad_tone_008  group=tone    split=train samples=64000 rms=-31.31 dB per-second [-120.0, -120.0, -25.3, -120.0] dB sha256=42d0e907e0d23ccf
+  grad_tone_009  group=tone    split=test  samples=64000 rms=-32.92 dB per-second [-120.0, -120.0, -29.3, -30.6] dB sha256=1a3eb626174d54a4
+  grad_tone_010  group=tone    split=test  samples=64000 rms=-32.56 dB per-second [-120.0, -120.0, -36.3, -27.0] dB sha256=e527ec3fc7909f6e
+  grad_tone_011  group=tone    split=train samples=64000 rms=-32.25 dB per-second [-120.0, -120.0, -120.0, -26.2] dB sha256=d8853e06fca75bf4
+  grad_tone_012  group=tone    split=train samples=64000 rms=-31.46 dB per-second [-25.4, -120.0, -120.0, -120.0] dB sha256=f45c530e11f2e5b8
+  grad_tone_013  group=tone    split=train samples=64000 rms=-32.17 dB per-second [-26.3, -39.7, -120.0, -120.0] dB sha256=2b5232ab58687fac
+  grad_tone_014  group=tone    split=train samples=64000 rms=-32.98 dB per-second [-31.4, -28.9, -120.0, -120.0] dB sha256=94607a69c47ef8d5
+  grad_tone_015  group=tone    split=train samples=64000 rms=-32.13 dB per-second [-120.0, -26.1, -120.0, -120.0] dB sha256=14eb67d511ed49f5
+  grad_tone_016  group=tone    split=test  samples=64000 rms=-31.39 dB per-second [-69.4, -25.4, -69.4, -69.3] dB sha256=22e3f9bb5ac73a2e
+  grad_tone_017  group=tone    split=train samples=64000 rms=-33.00 dB per-second [-71.5, -27.9, -34.4, -71.5] dB sha256=774df679f84ad68c
+  grad_tone_018  group=tone    split=train samples=64000 rms=-32.86 dB per-second [-120.0, -32.6, -28.2, -120.0] dB sha256=aaaab80391faf5fc
+  grad_tone_019  group=tone    split=train samples=64000 rms=-32.51 dB per-second [-68.6, -68.6, -26.5, -68.7] dB sha256=2182ce942e3c63dc
+  grad_tone_020  group=tone    split=test  samples=64000 rms=-31.77 dB per-second [-120.0, -120.0, -25.7, -120.0] dB sha256=232671e33a9a9932
+  grad_tone_021  group=tone    split=train samples=64000 rms=-32.24 dB per-second [-120.0, -120.0, -29.1, -29.4] dB sha256=14181cd0e0af380d
+  grad_tone_022  group=tone    split=train samples=64000 rms=-32.64 dB per-second [-120.0, -120.0, -39.7, -26.8] dB sha256=870f9c17fd2c4306
+  grad_tone_023  group=tone    split=train samples=64000 rms=-31.94 dB per-second [-120.0, -120.0, -120.0, -25.9] dB sha256=44294c2abc1b3d93
+  grad_tone_024  group=tone    split=train samples=64000 rms=-32.75 dB per-second [-26.7, -120.0, -120.0, -120.0] dB sha256=800b3b5ec15e837a
+  grad_tone_025  group=tone    split=train samples=64000 rms=-31.90 dB per-second [-26.3, -36.2, -120.0, -120.0] dB sha256=534e7006b5ae429b
+  grad_tone_026  group=tone    split=train samples=64000 rms=-32.92 dB per-second [-30.4, -29.5, -120.0, -120.0] dB sha256=931f31e2b8faf547
+  grad_tone_027  group=tone    split=test  samples=64000 rms=-31.90 dB per-second [-120.0, -25.9, -120.0, -120.0] dB sha256=5c3af9fa3b824e42
+  grad_tone_028  group=tone    split=train samples=64000 rms=-31.15 dB per-second [-120.0, -25.1, -120.0, -120.0] dB sha256=06652fda2a47fe26
+  grad_tone_029  group=tone    split=train samples=64000 rms=-31.32 dB per-second [-69.2, -26.4, -31.8, -69.1] dB sha256=0b7d84bca48867e4
+  grad_tone_030  group=tone    split=test  samples=64000 rms=-32.06 dB per-second [-68.6, -34.6, -26.7, -68.5] dB sha256=cf656f581e5bc893
+  grad_tone_031  group=tone    split=train samples=64000 rms=-31.50 dB per-second [-120.0, -120.0, -25.5, -120.0] dB sha256=f2a559b5be7f330b
+  grad_tone_032  group=tone    split=test  samples=64000 rms=-31.65 dB per-second [-120.0, -120.0, -25.6, -120.0] dB sha256=c776dc8aab22d838
+  grad_tone_033  group=tone    split=train samples=64000 rms=-31.70 dB per-second [-68.9, -68.9, -27.4, -30.6] dB sha256=d4104360805a9632
+  grad_tone_034  group=tone    split=train samples=64000 rms=-32.22 dB per-second [-120.0, -120.0, -120.0, -26.2] dB sha256=eda6b074db8dae5b
+  grad_tone_035  group=tone    split=test  samples=64000 rms=-32.81 dB per-second [-120.0, -120.0, -120.0, -26.8] dB sha256=eadf7d1af2bcda80
+  grad_tone_036  group=tone    split=test  samples=64000 rms=-31.58 dB per-second [-25.6, -68.4, -68.5, -68.4] dB sha256=2d75b3495313f0f2
+  grad_tone_037  group=tone    split=train samples=64000 rms=-31.58 dB per-second [-25.6, -120.0, -120.0, -120.0] dB sha256=3e613d9e2fe33e35
+  grad_tone_038  group=tone    split=train samples=64000 rms=-31.70 dB per-second [-28.9, -28.5, -120.0, -120.0] dB sha256=b8656aeffb228d4b
+  grad_tone_039  group=tone    split=train samples=64000 rms=-31.21 dB per-second [-120.0, -25.2, -120.0, -120.0] dB sha256=2b7d3142955f7642
+  grad_tone_040  group=tone    split=train samples=64000 rms=-32.83 dB per-second [-120.0, -26.8, -120.0, -120.0] dB sha256=1f0833c2eccafda3
+  grad_tone_041  group=tone    split=train samples=64000 rms=-32.73 dB per-second [-120.0, -27.3, -35.7, -120.0] dB sha256=2dd6fd9fc862e1d2
+  grad_tone_042  group=tone    split=train samples=64000 rms=-31.52 dB per-second [-120.0, -31.1, -26.9, -120.0] dB sha256=71321438d13c4160
+  grad_tone_043  group=tone    split=test  samples=64000 rms=-32.00 dB per-second [-67.0, -67.1, -26.0, -67.1] dB sha256=64ce3870819a6148
+  grad_tone_044  group=tone    split=train samples=64000 rms=-32.05 dB per-second [-120.0, -120.0, -26.0, -120.0] dB sha256=d98caeb575f8df7a
+  grad_tone_045  group=tone    split=train samples=64000 rms=-32.58 dB per-second [-120.0, -120.0, -28.3, -31.3] dB sha256=97ba3cdb42d7d122
+  grad_tone_046  group=tone    split=train samples=64000 rms=-32.78 dB per-second [-120.0, -120.0, -49.1, -26.8] dB sha256=f2c6e83d90b5406d
+  grad_tone_047  group=tone    split=train samples=64000 rms=-32.46 dB per-second [-120.0, -120.0, -120.0, -26.4] dB sha256=425f93dce52f40a3
+  grad_tone_048  group=tone    split=train samples=64000 rms=-32.92 dB per-second [-26.9, -120.0, -120.0, -120.0] dB sha256=f3a0bb3d403c934a
+  grad_tone_049  group=tone    split=train samples=64000 rms=-31.83 dB per-second [-26.4, -35.0, -120.0, -120.0] dB sha256=21c410d614b80236
+  grad_tone_050  group=tone    split=test  samples=64000 rms=-32.44 dB per-second [-29.4, -29.4, -120.0, -120.0] dB sha256=d17ae94bedb734e5
+  grad_tone_051  group=tone    split=test  samples=64000 rms=-31.57 dB per-second [-66.9, -25.5, -66.9, -66.9] dB sha256=eeecbd745e3b40e2
+  grad_tone_052  group=tone    split=train samples=64000 rms=-33.07 dB per-second [-120.0, -27.0, -120.0, -120.0] dB sha256=af34510afb2643ee
+  grad_tone_053  group=tone    split=train samples=64000 rms=-32.55 dB per-second [-120.0, -27.1, -35.3, -120.0] dB sha256=d4c8526429a967cf
+  grad_tone_054  group=tone    split=train samples=64000 rms=-31.55 dB per-second [-120.0, -33.8, -26.2, -120.0] dB sha256=fdbf72fd4076c7a7
+  grad_tone_055  group=tone    split=train samples=64000 rms=-31.99 dB per-second [-120.0, -120.0, -26.0, -120.0] dB sha256=a169c043b1563c5c
+  grad_tone_056  group=tone    split=test  samples=64000 rms=-31.57 dB per-second [-120.0, -120.0, -25.6, -120.0] dB sha256=d8fb4c824e9497e5
+  grad_tone_057  group=tone    split=test  samples=64000 rms=-32.72 dB per-second [-74.0, -74.0, -29.1, -30.4] dB sha256=5627fbe13607195a
+  grad_tone_058  group=tone    split=train samples=64000 rms=-32.71 dB per-second [-66.3, -66.3, -66.3, -26.7] dB sha256=37dcec88b1924d2f
+  grad_tone_059  group=tone    split=train samples=64000 rms=-31.79 dB per-second [-120.0, -120.0, -120.0, -25.8] dB sha256=78bd856552144006
+  grad_tone_060  group=tone    split=train samples=64000 rms=-31.43 dB per-second [-25.4, -120.0, -120.0, -120.0] dB sha256=92593f3947a9dc6f
+  grad_tone_061  group=tone    split=test  samples=64000 rms=-31.59 dB per-second [-25.6, -52.5, -120.0, -120.0] dB sha256=6a9cc1b8173cf7d3
+  grad_tone_062  group=tone    split=train samples=64000 rms=-31.90 dB per-second [-29.7, -28.2, -120.0, -120.0] dB sha256=d53299d38fa36dd1
+  grad_tone_063  group=tone    split=test  samples=64000 rms=-32.01 dB per-second [-120.0, -26.0, -120.0, -120.0] dB sha256=7fefe7538c85e022
+  grad_tone_064  group=tone    split=train samples=64000 rms=-31.71 dB per-second [-120.0, -25.7, -120.0, -120.0] dB sha256=3cbd46db5dd988b5
+  grad_tone_065  group=tone    split=train samples=64000 rms=-32.72 dB per-second [-120.0, -27.7, -33.4, -120.0] dB sha256=4ac406e21f262c6f
+  grad_tone_066  group=tone    split=train samples=64000 rms=-31.94 dB per-second [-69.3, -33.5, -26.8, -69.3] dB sha256=68e683316e34d223
+  grad_tone_067  group=tone    split=test  samples=64000 rms=-32.88 dB per-second [-120.0, -120.0, -26.9, -120.0] dB sha256=45a797b22a8c155f
+  grad_tone_068  group=tone    split=test  samples=64000 rms=-32.62 dB per-second [-120.0, -120.0, -26.6, -120.0] dB sha256=a1147dbd6aa1e2f6
+  grad_tone_069  group=tone    split=train samples=64000 rms=-31.30 dB per-second [-120.0, -120.0, -27.7, -28.9] dB sha256=bb2d22c7868a2b31
+  grad_tone_070  group=tone    split=train samples=64000 rms=-31.68 dB per-second [-120.0, -120.0, -120.0, -25.7] dB sha256=01cd65db375b782e
+  grad_tone_071  group=tone    split=test  samples=64000 rms=-32.88 dB per-second [-120.0, -120.0, -120.0, -26.9] dB sha256=55097737a6ccdb39
+  grad_tone_072  group=tone    split=test  samples=64000 rms=-31.31 dB per-second [-25.3, -120.0, -120.0, -120.0] dB sha256=56cc7db5d6acc460
+  grad_tone_073  group=tone    split=train samples=64000 rms=-32.36 dB per-second [-26.8, -36.0, -120.0, -120.0] dB sha256=c97372d0d06241cd
+  grad_tone_074  group=tone    split=train samples=64000 rms=-33.04 dB per-second [-30.8, -29.4, -120.0, -120.0] dB sha256=66b63ade648daacc
+  grad_tone_075  group=tone    split=train samples=64000 rms=-31.10 dB per-second [-120.0, -25.1, -120.0, -120.0] dB sha256=735b6514cbea00b0
+  grad_tone_076  group=tone    split=test  samples=64000 rms=-31.57 dB per-second [-120.0, -25.5, -120.0, -120.0] dB sha256=6e981389807efc53
+  grad_tone_077  group=tone    split=train samples=64000 rms=-31.56 dB per-second [-120.0, -26.4, -33.0, -120.0] dB sha256=438148c869290418
+  grad_tone_078  group=tone    split=test  samples=64000 rms=-31.63 dB per-second [-120.0, -32.3, -26.6, -120.0] dB sha256=e2c07ea4bc21c8a8
+  grad_tone_079  group=tone    split=train samples=64000 rms=-32.00 dB per-second [-120.0, -120.0, -26.0, -120.0] dB sha256=c1599ba02b654d9a
+  grad_tone_080  group=tone    split=train samples=64000 rms=-31.78 dB per-second [-120.0, -120.0, -25.8, -120.0] dB sha256=b2183e6762368733
+  grad_tone_081  group=tone    split=test  samples=64000 rms=-31.63 dB per-second [-120.0, -120.0, -27.4, -30.3] dB sha256=034e54bcb9a7a732
+  grad_tone_082  group=tone    split=test  samples=64000 rms=-31.31 dB per-second [-120.0, -120.0, -120.0, -25.3] dB sha256=4fd20b0d6d1bcc21
+  grad_tone_083  group=tone    split=train samples=64000 rms=-32.37 dB per-second [-120.0, -120.0, -120.0, -26.3] dB sha256=c9a2505cf73d57e8
+  grad_tone_084  group=tone    split=test  samples=64000 rms=-31.68 dB per-second [-25.7, -70.5, -70.6, -70.6] dB sha256=1ce31014d9780dd1
+  grad_tone_085  group=tone    split=train samples=64000 rms=-31.80 dB per-second [-26.1, -37.7, -120.0, -120.0] dB sha256=ed276eb707b3a621
+  grad_tone_086  group=tone    split=train samples=64000 rms=-32.87 dB per-second [-31.0, -29.0, -70.9, -71.0] dB sha256=045c6ba07e05b665
+  grad_tone_087  group=tone    split=train samples=64000 rms=-31.48 dB per-second [-120.0, -25.5, -120.0, -120.0] dB sha256=d4e5519443e2d12d
+  grad_tone_088  group=tone    split=train samples=64000 rms=-33.04 dB per-second [-120.0, -27.0, -120.0, -120.0] dB sha256=45b8307205e43436
+  grad_tone_089  group=tone    split=train samples=64000 rms=-32.15 dB per-second [-120.0, -27.4, -32.1, -120.0] dB sha256=4903fb94d7e7235d
+  grad_tone_090  group=tone    split=train samples=64000 rms=-32.60 dB per-second [-120.0, -34.2, -27.4, -120.0] dB sha256=d6c0289c38116d6e
+  grad_tone_091  group=tone    split=train samples=64000 rms=-32.53 dB per-second [-120.0, -120.0, -26.5, -120.0] dB sha256=7e57234470116c49
+  grad_tone_092  group=tone    split=train samples=64000 rms=-33.01 dB per-second [-120.0, -120.0, -27.0, -120.0] dB sha256=00cc94d60e4aad2e
+  grad_tone_093  group=tone    split=test  samples=64000 rms=-31.14 dB per-second [-120.0, -120.0, -28.2, -28.1] dB sha256=424015e2798e59f4
+  grad_tone_094  group=tone    split=test  samples=64000 rms=-32.13 dB per-second [-120.0, -120.0, -46.7, -26.1] dB sha256=c1dc0a247e2d4185
+  grad_tone_095  group=tone    split=train samples=64000 rms=-31.88 dB per-second [-120.0, -120.0, -120.0, -25.9] dB sha256=65b0d1e99423c83f
+  grad_tone_096  group=tone    split=train samples=64000 rms=-31.79 dB per-second [-25.8, -66.8, -66.7, -66.8] dB sha256=230fab388f83aa54
+  grad_tone_097  group=tone    split=train samples=64000 rms=-31.69 dB per-second [-26.0, -37.2, -120.0, -120.0] dB sha256=61346cedf188e027
+  grad_tone_098  group=tone    split=test  samples=64000 rms=-32.36 dB per-second [-30.3, -28.6, -73.9, -73.9] dB sha256=978a46ea5fd610b1
+  grad_tone_099  group=tone    split=train samples=64000 rms=-32.11 dB per-second [-120.0, -26.1, -120.0, -120.0] dB sha256=787c1bf6836d6a68
+  grad_tone_100  group=tone    split=train samples=64000 rms=-32.64 dB per-second [-120.0, -26.6, -120.0, -120.0] dB sha256=5e2ce3476f001a61
+  grad_tone_101  group=tone    split=test  samples=64000 rms=-32.89 dB per-second [-120.0, -27.9, -33.5, -120.0] dB sha256=3feda6bad196ac12
+  grad_tone_102  group=tone    split=train samples=64000 rms=-31.30 dB per-second [-120.0, -31.2, -26.6, -120.0] dB sha256=e7f1e6637a9c674c
+  grad_tone_103  group=tone    split=test  samples=64000 rms=-31.12 dB per-second [-120.0, -120.0, -25.1, -120.0] dB sha256=72b9fef32a69c780
+  grad_tone_104  group=tone    split=train samples=64000 rms=-32.53 dB per-second [-120.0, -120.0, -26.5, -120.0] dB sha256=00c6ab356459ea12
+  grad_tone_105  group=tone    split=test  samples=64000 rms=-31.82 dB per-second [-120.0, -120.0, -27.8, -30.1] dB sha256=7541a0517b8b0f32
+  grad_tone_106  group=tone    split=train samples=64000 rms=-32.09 dB per-second [-120.0, -120.0, -34.7, -26.7] dB sha256=6f464910ffc07a61
+  grad_tone_107  group=tone    split=test  samples=64000 rms=-33.08 dB per-second [-120.0, -120.0, -120.0, -27.1] dB sha256=4865fcf7d3bb56c5
+  grad_tone_108  group=tone    split=train samples=64000 rms=-32.97 dB per-second [-27.0, -120.0, -120.0, -120.0] dB sha256=9229f4da6b4eac07
+  grad_tone_109  group=tone    split=test  samples=64000 rms=-32.36 dB per-second [-26.8, -36.7, -120.0, -120.0] dB sha256=7daf7512895a735c
+  grad_tone_110  group=tone    split=test  samples=64000 rms=-32.97 dB per-second [-30.2, -29.7, -120.0, -120.0] dB sha256=e4b37203d6b22ae2
+  grad_tone_111  group=tone    split=test  samples=64000 rms=-31.91 dB per-second [-120.0, -25.9, -120.0, -120.0] dB sha256=8d480654afc3eec8
+  grad_tone_112  group=tone    split=test  samples=64000 rms=-32.98 dB per-second [-120.0, -27.0, -120.0, -120.0] dB sha256=59b10fb6112f1933
+  grad_tone_113  group=tone    split=test  samples=64000 rms=-31.69 dB per-second [-67.1, -27.1, -31.1, -67.1] dB sha256=8611f0f336ac0721
+  grad_tone_114  group=tone    split=train samples=64000 rms=-32.80 dB per-second [-120.0, -34.5, -27.6, -120.0] dB sha256=28ea86e6996cbfc1
+  grad_tone_115  group=tone    split=test  samples=64000 rms=-32.21 dB per-second [-120.0, -120.0, -26.2, -120.0] dB sha256=95f7173a27b77b65
+  grad_tone_116  group=tone    split=test  samples=64000 rms=-31.43 dB per-second [-120.0, -120.0, -25.4, -120.0] dB sha256=2d8cf0bcb3224876
+  grad_tone_117  group=tone    split=train samples=64000 rms=-32.92 dB per-second [-120.0, -120.0, -29.0, -31.1] dB sha256=94d3538cdfc427eb
+  grad_tone_118  group=tone    split=test  samples=64000 rms=-32.18 dB per-second [-70.2, -70.1, -35.2, -26.7] dB sha256=0b8e4546743c84e4
+  grad_tone_119  group=tone    split=test  samples=64000 rms=-31.80 dB per-second [-120.0, -120.0, -120.0, -25.8] dB sha256=3f54856a71d6a79f
+  grad_tone_120  group=tone    split=test  samples=64000 rms=-32.04 dB per-second [-26.0, -120.0, -120.0, -120.0] dB sha256=8d536cdf2c63b584
+  grad_tone_121  group=tone    split=train samples=64000 rms=-32.38 dB per-second [-26.4, -120.0, -120.0, -120.0] dB sha256=18cc597f720727dc
+  grad_tone_122  group=tone    split=test  samples=64000 rms=-33.09 dB per-second [-31.2, -29.2, -120.0, -120.0] dB sha256=b7d2d37e3fa1f5af
+  grad_tone_123  group=tone    split=train samples=64000 rms=-32.73 dB per-second [-120.0, -26.7, -120.0, -120.0] dB sha256=fcaca9bf50a1ea91
+  grad_tone_124  group=tone    split=train samples=64000 rms=-31.20 dB per-second [-120.0, -25.2, -120.0, -120.0] dB sha256=927979af22ed6374
+  grad_tone_125  group=tone    split=train samples=64000 rms=-31.70 dB per-second [-120.0, -26.3, -34.4, -120.0] dB sha256=6ce5eb07a37bb917
+  grad_tone_126  group=tone    split=train samples=64000 rms=-31.24 dB per-second [-120.0, -31.7, -26.3, -120.0] dB sha256=3e5be0526cd27112
+  grad_tone_127  group=tone    split=train samples=64000 rms=-32.74 dB per-second [-120.0, -120.0, -26.7, -120.0] dB sha256=0210f3d0b41d21f5
+  grad_tone_128  group=tone    split=test  samples=64000 rms=-32.45 dB per-second [-120.0, -120.0, -26.4, -120.0] dB sha256=52686aad827d97bf
+  grad_tone_129  group=tone    split=train samples=64000 rms=-31.23 dB per-second [-120.0, -120.0, -27.1, -29.7] dB sha256=b2382bf702db1a36
+  grad_tone_130  group=tone    split=train samples=64000 rms=-32.63 dB per-second [-120.0, -120.0, -36.9, -27.0] dB sha256=49af2a15108dcc27
+  grad_tone_131  group=tone    split=train samples=64000 rms=-32.42 dB per-second [-120.0, -120.0, -120.0, -26.4] dB sha256=27ffc029768da939
+  grad_tone_132  group=tone    split=train samples=64000 rms=-31.24 dB per-second [-25.2, -120.0, -120.0, -120.0] dB sha256=68e72fdc7af11848
+  grad_tone_133  group=tone    split=train samples=64000 rms=-31.76 dB per-second [-25.7, -120.0, -120.0, -120.0] dB sha256=c401ff4d94778ec5
+  grad_tone_134  group=tone    split=test  samples=64000 rms=-31.14 dB per-second [-28.2, -28.1, -120.0, -120.0] dB sha256=4c7c475ac47b0d24
+  grad_tone_135  group=tone    split=train samples=64000 rms=-32.20 dB per-second [-120.0, -26.2, -120.0, -120.0] dB sha256=6a4663b03add068e
+  grad_tone_136  group=tone    split=train samples=64000 rms=-32.46 dB per-second [-73.0, -26.4, -73.0, -73.0] dB sha256=184f6acc346410df
+  grad_tone_137  group=tone    split=train samples=64000 rms=-31.24 dB per-second [-120.0, -26.2, -32.0, -120.0] dB sha256=dffad27c17aa26db
+  grad_tone_138  group=tone    split=train samples=64000 rms=-31.74 dB per-second [-120.0, -32.9, -26.6, -120.0] dB sha256=2006d0ebd9534750
+  grad_tone_139  group=tone    split=train samples=64000 rms=-32.52 dB per-second [-120.0, -120.0, -26.5, -120.0] dB sha256=13695417875174af
+  grad_tone_140  group=tone    split=test  samples=64000 rms=-33.09 dB per-second [-120.0, -120.0, -27.1, -120.0] dB sha256=0e216cf7c45beb31
+  grad_tone_141  group=tone    split=train samples=64000 rms=-32.21 dB per-second [-120.0, -120.0, -28.6, -29.9] dB sha256=5eaefa67e44ff76b
+  grad_tone_142  group=tone    split=test  samples=64000 rms=-32.99 dB per-second [-120.0, -120.0, -120.0, -27.0] dB sha256=cef0e3a4641c4ace
+  grad_tone_143  group=tone    split=train samples=64000 rms=-31.82 dB per-second [-120.0, -120.0, -120.0, -25.8] dB sha256=15680fd2e2a86d81
+  grad_tone_144  group=tone    split=train samples=64000 rms=-31.44 dB per-second [-25.4, -120.0, -120.0, -120.0] dB sha256=bed671d5a5e12692
+  grad_tone_145  group=tone    split=train samples=64000 rms=-32.63 dB per-second [-26.6, -120.0, -120.0, -120.0] dB sha256=3a42782ef923603e
+  grad_tone_146  group=tone    split=test  samples=64000 rms=-32.84 dB per-second [-30.5, -29.3, -120.0, -120.0] dB sha256=81d6eec8829ec696
+  grad_tone_147  group=tone    split=train samples=64000 rms=-32.96 dB per-second [-120.0, -26.9, -120.0, -120.0] dB sha256=ee96771ab8c54254
+  grad_tone_148  group=tone    split=test  samples=64000 rms=-32.54 dB per-second [-120.0, -26.5, -120.0, -120.0] dB sha256=2b7b9f3d9b85beaa
+  grad_tone_149  group=tone    split=train samples=64000 rms=-32.25 dB per-second [-120.0, -27.5, -32.2, -120.0] dB sha256=f6c7911fc8a33df5
+  grad_tone_150  group=tone    split=train samples=64000 rms=-32.36 dB per-second [-68.0, -34.2, -27.1, -68.0] dB sha256=92b9d05d3caefd9e
+  grad_tone_151  group=tone    split=test  samples=64000 rms=-32.88 dB per-second [-120.0, -120.0, -26.9, -120.0] dB sha256=eec5f456da08e796
+  grad_tone_152  group=tone    split=test  samples=64000 rms=-32.85 dB per-second [-120.0, -120.0, -26.8, -120.0] dB sha256=fd53ec4576ec6aaf
+  grad_tone_153  group=tone    split=test  samples=64000 rms=-32.15 dB per-second [-120.0, -120.0, -27.8, -31.2] dB sha256=6df68e613b3eea87
+  grad_tone_154  group=tone    split=train samples=64000 rms=-32.77 dB per-second [-69.3, -69.3, -35.4, -27.4] dB sha256=9c6ef9eac85244ad
+  grad_tone_155  group=tone    split=train samples=64000 rms=-32.72 dB per-second [-68.9, -68.9, -69.0, -26.7] dB sha256=0dc76bb171a4a199
+  grad_tone_156  group=tone    split=train samples=64000 rms=-31.56 dB per-second [-25.5, -120.0, -120.0, -120.0] dB sha256=fe65e00e1661746d
+  grad_tone_157  group=tone    split=train samples=64000 rms=-32.14 dB per-second [-26.1, -67.7, -67.7, -67.7] dB sha256=51f19677cf41f9a8
+  grad_tone_158  group=tone    split=train samples=64000 rms=-32.76 dB per-second [-29.9, -29.7, -70.3, -70.2] dB sha256=37f76a803c909ee9
+  grad_tone_159  group=tone    split=train samples=64000 rms=-32.95 dB per-second [-67.3, -26.9, -67.4, -67.4] dB sha256=35ad7d65bfd4825f
+  grad_tone_160  group=tone    split=train samples=64000 rms=-32.54 dB per-second [-120.0, -26.5, -120.0, -120.0] dB sha256=13b1d0e42a824bb0
+  grad_tone_161  group=tone    split=train samples=64000 rms=-32.70 dB per-second [-120.0, -27.3, -35.5, -120.0] dB sha256=4463a6b4b4c2952d
+  grad_tone_162  group=tone    split=train samples=64000 rms=-32.05 dB per-second [-65.9, -33.0, -27.0, -65.9] dB sha256=26ab2cfeda57f067
+  grad_tone_163  group=tone    split=train samples=64000 rms=-31.78 dB per-second [-120.0, -120.0, -25.8, -120.0] dB sha256=318cbf013a53c439
+  grad_tone_164  group=tone    split=train samples=64000 rms=-33.00 dB per-second [-120.0, -120.0, -27.0, -120.0] dB sha256=0e1d0e10b580c9f7
+  grad_tone_165  group=tone    split=train samples=64000 rms=-32.99 dB per-second [-120.0, -120.0, -30.0, -29.9] dB sha256=77d97e1fff2b1cf4
+  grad_tone_166  group=tone    split=test  samples=64000 rms=-31.35 dB per-second [-120.0, -120.0, -39.9, -25.5] dB sha256=254801306226993f
+  grad_tone_167  group=tone    split=train samples=64000 rms=-31.47 dB per-second [-120.0, -120.0, -120.0, -25.5] dB sha256=6cabca4c42c4d7b5
+  grad_tone_168  group=tone    split=train samples=64000 rms=-31.25 dB per-second [-25.2, -120.0, -120.0, -120.0] dB sha256=5a28d1d1acb5d9ba
+  grad_tone_169  group=tone    split=train samples=64000 rms=-32.25 dB per-second [-26.2, -120.0, -120.0, -120.0] dB sha256=6c0df4c7d079d1f9
+  grad_tone_170  group=tone    split=train samples=64000 rms=-32.64 dB per-second [-31.0, -28.6, -120.0, -120.0] dB sha256=a2d33eb04908cb3c
+  grad_tone_171  group=tone    split=test  samples=64000 rms=-31.49 dB per-second [-120.0, -25.5, -120.0, -120.0] dB sha256=f3be976a3875b5b8
+  grad_tone_172  group=tone    split=train samples=64000 rms=-32.20 dB per-second [-120.0, -26.2, -120.0, -120.0] dB sha256=86824a15e3434b1f
+  grad_tone_173  group=tone    split=train samples=64000 rms=-32.16 dB per-second [-120.0, -27.0, -33.6, -120.0] dB sha256=a9bccb9fe2ef0efe
+  grad_tone_174  group=tone    split=test  samples=64000 rms=-31.42 dB per-second [-120.0, -32.3, -26.4, -120.0] dB sha256=b90e77f545559aa2
+  grad_tone_175  group=tone    split=test  samples=64000 rms=-32.20 dB per-second [-120.0, -120.0, -26.2, -120.0] dB sha256=cac6b59ce38e1f1a
+  grad_tone_176  group=tone    split=train samples=64000 rms=-31.63 dB per-second [-120.0, -120.0, -25.6, -120.0] dB sha256=9415677ec74dbdb1
+  grad_tone_177  group=tone    split=train samples=64000 rms=-31.54 dB per-second [-120.0, -120.0, -27.4, -30.1] dB sha256=1af46d59ac809e4b
+  grad_tone_178  group=tone    split=test  samples=64000 rms=-31.37 dB per-second [-120.0, -120.0, -34.1, -26.0] dB sha256=08014512764f25c2
+  grad_tone_179  group=tone    split=train samples=64000 rms=-31.41 dB per-second [-120.0, -120.0, -120.0, -25.4] dB sha256=20b733c1253025d2
+  grad_tone_180  group=tone    split=train samples=64000 rms=-32.03 dB per-second [-26.0, -120.0, -120.0, -120.0] dB sha256=908c97c9fa203a1a
+  grad_tone_181  group=tone    split=train samples=64000 rms=-32.82 dB per-second [-26.8, -114.9, -120.0, -120.0] dB sha256=4be96351f55679e3
+  grad_tone_182  group=tone    split=train samples=64000 rms=-33.02 dB per-second [-30.3, -29.7, -120.0, -120.0] dB sha256=f31341cf26f69939
+  grad_tone_183  group=tone    split=train samples=64000 rms=-32.79 dB per-second [-120.0, -26.8, -120.0, -120.0] dB sha256=a57896504921e314
+  grad_tone_184  group=tone    split=test  samples=64000 rms=-31.96 dB per-second [-120.0, -25.9, -120.0, -120.0] dB sha256=2690a4dd8b2536b0
+  grad_tone_185  group=tone    split=train samples=64000 rms=-31.18 dB per-second [-120.0, -26.4, -31.3, -120.0] dB sha256=cc898eb7d064b366
+  grad_tone_186  group=tone    split=test  samples=64000 rms=-31.28 dB per-second [-120.0, -32.9, -26.1, -120.0] dB sha256=b9bf650f284e8380
+  grad_tone_187  group=tone    split=train samples=64000 rms=-31.96 dB per-second [-120.0, -120.0, -25.9, -120.0] dB sha256=b89e3dda35a487a7
+  grad_tone_188  group=tone    split=train samples=64000 rms=-31.39 dB per-second [-120.0, -120.0, -25.4, -120.0] dB sha256=64dbc845d9510b97
+  grad_tone_189  group=tone    split=test  samples=64000 rms=-32.07 dB per-second [-120.0, -120.0, -28.7, -29.4] dB sha256=fca2bcd56c663dc0
+  grad_tone_190  group=tone    split=test  samples=64000 rms=-32.27 dB per-second [-120.0, -120.0, -54.6, -26.3] dB sha256=d7e5ba175f3d54e4
+  grad_tone_191  group=tone    split=test  samples=64000 rms=-31.63 dB per-second [-120.0, -120.0, -120.0, -25.6] dB sha256=415b8cb66910c980
+  grad_tone_192  group=tone    split=train samples=64000 rms=-31.95 dB per-second [-25.9, -120.0, -120.0, -120.0] dB sha256=a5c00b2d6ce1a5af
+  grad_tone_193  group=tone    split=train samples=64000 rms=-32.52 dB per-second [-26.5, -120.0, -120.0, -120.0] dB sha256=06177689ea8aae60
+  grad_tone_194  group=tone    split=train samples=64000 rms=-32.43 dB per-second [-29.9, -29.0, -120.0, -120.0] dB sha256=608ffeb7fc697240
+  grad_tone_195  group=tone    split=train samples=64000 rms=-32.70 dB per-second [-120.0, -26.7, -120.0, -120.0] dB sha256=7d8ec9e06e9949e6
+  grad_tone_196  group=tone    split=test  samples=64000 rms=-31.59 dB per-second [-120.0, -25.6, -120.0, -120.0] dB sha256=d6f9b47b5d820531
+  grad_tone_197  group=tone    split=train samples=64000 rms=-32.22 dB per-second [-120.0, -27.5, -32.2, -120.0] dB sha256=346098e963f37bed
+  grad_tone_198  group=tone    split=test  samples=64000 rms=-32.89 dB per-second [-120.0, -32.3, -28.3, -120.0] dB sha256=3161024d645a84a6
+  grad_tone_199  group=tone    split=train samples=64000 rms=-33.03 dB per-second [-120.0, -120.0, -27.0, -120.0] dB sha256=81ae42d6b17fa493
+  grad_tone_200  group=tone    split=train samples=64000 rms=-32.91 dB per-second [-120.0, -120.0, -26.9, -120.0] dB sha256=1200d269a6174d29
+  grad_tone_201  group=tone    split=train samples=64000 rms=-31.84 dB per-second [-68.6, -68.6, -28.1, -29.7] dB sha256=09aa7803f854d131
+  grad_tone_202  group=tone    split=train samples=64000 rms=-32.76 dB per-second [-74.9, -75.0, -35.7, -27.3] dB sha256=4a55d8238d063520
+  grad_tone_203  group=tone    split=train samples=64000 rms=-32.63 dB per-second [-73.4, -73.4, -73.3, -26.6] dB sha256=141c282df28bbc9e
+  grad_tone_204  group=tone    split=train samples=64000 rms=-32.19 dB per-second [-26.2, -120.0, -120.0, -120.0] dB sha256=68e840652f22873c
+  grad_tone_205  group=tone    split=test  samples=64000 rms=-31.21 dB per-second [-25.6, -36.1, -120.0, -120.0] dB sha256=dbbc39d67c743940
+  grad_tone_206  group=tone    split=train samples=64000 rms=-32.39 dB per-second [-31.2, -28.1, -120.0, -120.0] dB sha256=b414dd1b18f34d23
+  grad_tone_207  group=tone    split=train samples=64000 rms=-31.72 dB per-second [-120.0, -25.7, -120.0, -120.0] dB sha256=e2640a65325ae75f
+  grad_tone_208  group=tone    split=train samples=64000 rms=-31.87 dB per-second [-120.0, -25.9, -120.0, -120.0] dB sha256=635f32a114ddc9f0
+  grad_tone_209  group=tone    split=train samples=64000 rms=-32.97 dB per-second [-120.0, -28.3, -32.7, -120.0] dB sha256=f3cfaefac95adf58
+  grad_tone_210  group=tone    split=train samples=64000 rms=-32.71 dB per-second [-120.0, -33.6, -27.7, -120.0] dB sha256=cac018763f578481
+  grad_tone_211  group=tone    split=test  samples=64000 rms=-31.76 dB per-second [-120.0, -120.0, -25.7, -120.0] dB sha256=f2c2deff55e63262
+  grad_tone_212  group=tone    split=train samples=64000 rms=-31.59 dB per-second [-120.0, -120.0, -25.6, -120.0] dB sha256=40594ee5abdca385
+  grad_tone_213  group=tone    split=test  samples=64000 rms=-31.66 dB per-second [-120.0, -120.0, -28.4, -28.9] dB sha256=0b2ea66a4a3cce1f
+  grad_tone_214  group=tone    split=test  samples=64000 rms=-32.24 dB per-second [-65.8, -65.8, -35.3, -26.8] dB sha256=5b3e24fcef44618e
+  grad_tone_215  group=tone    split=train samples=64000 rms=-32.77 dB per-second [-120.0, -120.0, -120.0, -26.8] dB sha256=93af5f3cda6abd33
+  grad_tone_216  group=tone    split=test  samples=64000 rms=-32.27 dB per-second [-26.3, -120.0, -120.0, -120.0] dB sha256=cd30b780c3647554
+  grad_tone_217  group=tone    split=train samples=64000 rms=-31.87 dB per-second [-26.2, -36.7, -120.0, -120.0] dB sha256=17b3363c9238f87b
+  grad_tone_218  group=tone    split=train samples=64000 rms=-31.68 dB per-second [-30.3, -27.5, -120.0, -120.0] dB sha256=7d390a68a5fbd37b
+  grad_tone_219  group=tone    split=test  samples=64000 rms=-32.23 dB per-second [-66.9, -26.2, -66.9, -67.0] dB sha256=054b7b5574db493f
+  grad_tone_220  group=tone    split=train samples=64000 rms=-32.30 dB per-second [-120.0, -26.3, -120.0, -120.0] dB sha256=043de44de2791c27
+  grad_tone_221  group=tone    split=test  samples=64000 rms=-32.30 dB per-second [-120.0, -27.3, -33.2, -120.0] dB sha256=268bd48c1ea8191d
+  grad_tone_222  group=tone    split=test  samples=64000 rms=-33.02 dB per-second [-120.0, -35.7, -27.6, -120.0] dB sha256=ad28e083d31c09b3
+  grad_tone_223  group=tone    split=train samples=64000 rms=-31.72 dB per-second [-120.0, -120.0, -25.7, -120.0] dB sha256=34cc1a0f187f17b6
+  grad_tone_224  group=tone    split=train samples=64000 rms=-32.08 dB per-second [-73.3, -73.3, -26.1, -73.3] dB sha256=b4f8bb4d324b66cd
+  grad_tone_225  group=tone    split=train samples=64000 rms=-31.21 dB per-second [-120.0, -120.0, -27.6, -28.9] dB sha256=37f0431711aaa7fc
+  grad_tone_226  group=tone    split=train samples=64000 rms=-32.48 dB per-second [-120.0, -120.0, -41.4, -26.6] dB sha256=701abbdd08d05b8d
+  grad_tone_227  group=tone    split=train samples=64000 rms=-31.65 dB per-second [-120.0, -120.0, -120.0, -25.6] dB sha256=6012837e30199410
+  grad_tone_228  group=tone    split=train samples=64000 rms=-32.78 dB per-second [-26.8, -120.0, -120.0, -120.0] dB sha256=3bec95b36bd7b7d9
+  grad_tone_229  group=tone    split=train samples=64000 rms=-32.38 dB per-second [-26.4, -120.0, -120.0, -120.0] dB sha256=b39f67e4fa9c59d7
+  grad_tone_230  group=tone    split=train samples=64000 rms=-31.22 dB per-second [-29.7, -27.1, -120.0, -120.0] dB sha256=e6216fa866e67602
+  grad_tone_231  group=tone    split=test  samples=64000 rms=-32.69 dB per-second [-120.0, -26.7, -120.0, -120.0] dB sha256=440b9e64636db441
+  grad_tone_232  group=tone    split=test  samples=64000 rms=-32.74 dB per-second [-120.0, -26.7, -120.0, -120.0] dB sha256=ccde38456b80f178
+  grad_tone_233  group=tone    split=test  samples=64000 rms=-32.35 dB per-second [-120.0, -27.5, -32.5, -120.0] dB sha256=c87ea9c7146e0e0d
+  grad_tone_234  group=tone    split=test  samples=64000 rms=-32.66 dB per-second [-120.0, -35.6, -27.2, -120.0] dB sha256=fecc5c4237c57520
+  grad_tone_235  group=tone    split=train samples=64000 rms=-32.76 dB per-second [-120.0, -120.0, -26.7, -120.0] dB sha256=fbac9aba477b8e70
+  grad_tone_236  group=tone    split=train samples=64000 rms=-31.62 dB per-second [-69.9, -69.9, -25.6, -69.9] dB sha256=4668ed9f70e23db6
+  grad_tone_237  group=tone    split=train samples=64000 rms=-32.74 dB per-second [-120.0, -120.0, -28.9, -30.8] dB sha256=66ec7781edb29a44
+  grad_tone_238  group=tone    split=train samples=64000 rms=-31.83 dB per-second [-120.0, -120.0, -120.0, -25.8] dB sha256=3c7c9c9c957a8a15
+  grad_tone_239  group=tone    split=test  samples=64000 rms=-32.04 dB per-second [-74.9, -74.8, -74.8, -26.0] dB sha256=9246ae3d3d58ef01
+  grad_tone_240  group=tone    split=train samples=64000 rms=-32.46 dB per-second [-26.4, -120.0, -120.0, -120.0] dB sha256=56b6b4a7872da9e8
+  grad_tone_241  group=tone    split=test  samples=64000 rms=-31.24 dB per-second [-25.5, -36.8, -120.0, -120.0] dB sha256=da31ae3480635b15
+  grad_tone_242  group=tone    split=train samples=64000 rms=-31.79 dB per-second [-28.8, -28.8, -68.8, -68.6] dB sha256=07fafed7f434b379
+  grad_tone_243  group=tone    split=test  samples=64000 rms=-32.87 dB per-second [-120.0, -26.8, -120.0, -120.0] dB sha256=7945363d1def2540
+  grad_tone_244  group=tone    split=test  samples=64000 rms=-31.95 dB per-second [-120.0, -25.9, -120.0, -120.0] dB sha256=94a4c7f359f5a9a1
+  grad_tone_245  group=tone    split=train samples=64000 rms=-31.34 dB per-second [-120.0, -26.8, -30.7, -120.0] dB sha256=9aa0125ce813912a
+  grad_tone_246  group=tone    split=train samples=64000 rms=-31.83 dB per-second [-120.0, -31.2, -27.3, -120.0] dB sha256=1991f3244e988aa5
+  grad_tone_247  group=tone    split=train samples=64000 rms=-33.04 dB per-second [-67.7, -67.7, -27.0, -67.7] dB sha256=1b09befb8304f406
+  grad_tone_248  group=tone    split=test  samples=64000 rms=-31.34 dB per-second [-120.0, -120.0, -25.3, -120.0] dB sha256=23d82b9e62237b02
+  grad_tone_249  group=tone    split=train samples=64000 rms=-32.93 dB per-second [-66.4, -66.3, -29.3, -30.6] dB sha256=846af0854b09166c
+  grad_tone_250  group=tone    split=train samples=64000 rms=-33.04 dB per-second [-120.0, -120.0, -35.7, -27.6] dB sha256=bb744aa700d8ccdf
+  grad_tone_251  group=tone    split=test  samples=64000 rms=-31.88 dB per-second [-120.0, -120.0, -120.0, -25.9] dB sha256=aff9b627bbb6850b
+  grad_tone_252  group=tone    split=train samples=64000 rms=-32.43 dB per-second [-26.4, -120.0, -120.0, -120.0] dB sha256=ce3956c79c6ea971
+  grad_tone_253  group=tone    split=train samples=64000 rms=-31.43 dB per-second [-25.9, -34.9, -120.0, -120.0] dB sha256=df7f229b70d2de43
+  grad_tone_254  group=tone    split=test  samples=64000 rms=-31.62 dB per-second [-30.4, -27.3, -120.0, -120.0] dB sha256=735dd25efc9a87ee
+  grad_tone_255  group=tone    split=test  samples=64000 rms=-31.61 dB per-second [-120.0, -25.6, -120.0, -120.0] dB sha256=339c3b97a57e59c0
+  grad_tone_256  group=tone    split=train samples=64000 rms=-31.24 dB per-second [-120.0, -25.2, -120.0, -120.0] dB sha256=1b1a2990a323b480
+  grad_tone_257  group=tone    split=train samples=64000 rms=-32.56 dB per-second [-120.0, -27.1, -35.5, -120.0] dB sha256=9ded9eeb687c242a
+  grad_tone_258  group=tone    split=test  samples=64000 rms=-32.75 dB per-second [-120.0, -31.8, -28.3, -120.0] dB sha256=97d736bbe9fcc89b
+  grad_tone_259  group=tone    split=train samples=64000 rms=-31.59 dB per-second [-120.0, -120.0, -25.6, -120.0] dB sha256=1e2deb1e6356039a
+  grad_tone_260  group=tone    split=train samples=64000 rms=-33.08 dB per-second [-70.7, -70.7, -27.1, -70.7] dB sha256=6031c66f9c2245e2
+  grad_tone_261  group=tone    split=test  samples=64000 rms=-31.22 dB per-second [-120.0, -120.0, -27.4, -29.2] dB sha256=9d1672c0acc84074
+  grad_tone_262  group=tone    split=train samples=64000 rms=-31.41 dB per-second [-120.0, -120.0, -41.6, -25.5] dB sha256=7c5ed0bcd2bc3136
+  grad_tone_263  group=tone    split=train samples=64000 rms=-33.09 dB per-second [-120.0, -120.0, -120.0, -27.1] dB sha256=efe09a94b555bd54
+  grad_tone_264  group=tone    split=train samples=64000 rms=-32.40 dB per-second [-26.4, -66.3, -66.4, -66.3] dB sha256=b94fdf06f9d87b48
+  grad_tone_265  group=tone    split=train samples=64000 rms=-32.72 dB per-second [-26.7, -120.0, -120.0, -120.0] dB sha256=e25304a31f71d64a
+  grad_tone_266  group=tone    split=train samples=64000 rms=-32.65 dB per-second [-31.7, -28.3, -120.0, -120.0] dB sha256=6d7fa19e7044bb4c
+  grad_tone_267  group=tone    split=train samples=64000 rms=-31.89 dB per-second [-120.0, -25.9, -120.0, -120.0] dB sha256=239c041fa33dfef2
+  grad_tone_268  group=tone    split=train samples=64000 rms=-32.17 dB per-second [-120.0, -26.1, -120.0, -120.0] dB sha256=4b70976a5fa3c0b7
+  grad_tone_269  group=tone    split=train samples=64000 rms=-33.04 dB per-second [-120.0, -28.2, -33.2, -120.0] dB sha256=a4c61d679ada85ff
+  grad_tone_270  group=tone    split=test  samples=64000 rms=-32.64 dB per-second [-120.0, -34.4, -27.4, -120.0] dB sha256=ebbb6e62aa29afd4
+  grad_tone_271  group=tone    split=train samples=64000 rms=-31.14 dB per-second [-120.0, -120.0, -25.1, -120.0] dB sha256=d22a11d9b521ea00
+  grad_tone_272  group=tone    split=train samples=64000 rms=-32.85 dB per-second [-120.0, -120.0, -26.8, -120.0] dB sha256=a1714683695fd881
+  grad_tone_273  group=tone    split=train samples=64000 rms=-32.65 dB per-second [-120.0, -120.0, -29.7, -29.6] dB sha256=1f140be7b12c053b
+  grad_tone_274  group=tone    split=train samples=64000 rms=-32.86 dB per-second [-67.6, -67.7, -36.9, -27.3] dB sha256=44b0433d7ca49828
+  grad_tone_275  group=tone    split=test  samples=64000 rms=-32.85 dB per-second [-120.0, -120.0, -120.0, -26.8] dB sha256=5444e74849fda100
+  grad_tone_276  group=tone    split=train samples=64000 rms=-31.98 dB per-second [-26.0, -120.0, -120.0, -120.0] dB sha256=52090449e945ba51
+  grad_tone_277  group=tone    split=train samples=64000 rms=-32.05 dB per-second [-26.0, -73.8, -73.6, -73.7] dB sha256=a2174cded6887bcb
+  grad_tone_278  group=tone    split=test  samples=64000 rms=-32.48 dB per-second [-31.2, -28.2, -73.9, -73.9] dB sha256=a58b6ed0da725d1e
+  grad_tone_279  group=tone    split=test  samples=64000 rms=-31.18 dB per-second [-120.0, -25.2, -120.0, -120.0] dB sha256=76592b04abc43d04
+  grad_tone_280  group=tone    split=test  samples=64000 rms=-31.70 dB per-second [-69.2, -25.7, -69.3, -69.3] dB sha256=ff0903a2307ec2b6
+  grad_tone_281  group=tone    split=train samples=64000 rms=-31.76 dB per-second [-120.0, -26.9, -32.1, -120.0] dB sha256=60d49ea0a39531e3
+  grad_tone_282  group=tone    split=test  samples=64000 rms=-32.39 dB per-second [-120.0, -32.0, -27.8, -120.0] dB sha256=d731c7474eb1b000
+  grad_tone_283  group=tone    split=train samples=64000 rms=-31.38 dB per-second [-120.0, -120.0, -25.4, -120.0] dB sha256=bf31481acaf163cb
+  grad_tone_284  group=tone    split=train samples=64000 rms=-31.86 dB per-second [-120.0, -120.0, -25.8, -120.0] dB sha256=6f03077972e517a4
+  grad_tone_285  group=tone    split=train samples=64000 rms=-31.10 dB per-second [-73.0, -73.1, -27.1, -29.4] dB sha256=65f224bd724af77c
+  grad_tone_286  group=tone    split=test  samples=64000 rms=-32.37 dB per-second [-120.0, -120.0, -37.8, -26.7] dB sha256=1c047bcb9d0fbcec
+  grad_tone_287  group=tone    split=train samples=64000 rms=-32.72 dB per-second [-120.0, -120.0, -120.0, -26.7] dB sha256=2474d2857c56d597
+  grad_tone_288  group=tone    split=test  samples=64000 rms=-31.82 dB per-second [-25.8, -120.0, -120.0, -120.0] dB sha256=6b853c4b5713b88c
+  grad_tone_289  group=tone    split=test  samples=64000 rms=-33.01 dB per-second [-27.5, -36.8, -120.0, -120.0] dB sha256=a71719e0937bb12b
+  grad_tone_290  group=tone    split=test  samples=64000 rms=-31.99 dB per-second [-30.3, -28.0, -120.0, -120.0] dB sha256=bf1f40763770881d
+  grad_tone_291  group=tone    split=test  samples=64000 rms=-31.64 dB per-second [-66.5, -25.6, -66.6, -66.5] dB sha256=acceb5fb5ade2601
+  grad_tone_292  group=tone    split=train samples=64000 rms=-31.25 dB per-second [-120.0, -25.2, -120.0, -120.0] dB sha256=1d0b15361ec661bb
+  grad_tone_293  group=tone    split=train samples=64000 rms=-32.62 dB per-second [-120.0, -27.6, -33.4, -120.0] dB sha256=2ff963e9706ab350
+  grad_tone_294  group=tone    split=train samples=64000 rms=-31.76 dB per-second [-120.0, -33.0, -26.6, -120.0] dB sha256=77592a8a185ba7de
+  grad_tone_295  group=tone    split=test  samples=64000 rms=-31.17 dB per-second [-120.0, -120.0, -25.1, -120.0] dB sha256=591e8b547c788c56
+  grad_tone_296  group=tone    split=test  samples=64000 rms=-32.51 dB per-second [-69.0, -68.9, -26.5, -69.0] dB sha256=d935479808343979
+  grad_tone_297  group=tone    split=test  samples=64000 rms=-32.49 dB per-second [-120.0, -120.0, -28.5, -30.8] dB sha256=22ee2bba91e73989
+  grad_tone_298  group=tone    split=train samples=64000 rms=-31.36 dB per-second [-120.0, -120.0, -38.2, -25.6] dB sha256=d2ba2aa71e9e3ce1
+  grad_tone_299  group=tone    split=test  samples=64000 rms=-32.50 dB per-second [-72.6, -72.7, -72.6, -26.5] dB sha256=cf55161fe6c9d4df
+  grad_tone_300  group=tone    split=train samples=64000 rms=-32.31 dB per-second [-26.3, -120.0, -120.0, -120.0] dB sha256=f15a4db43ddcf446
+  grad_tone_301  group=tone    split=test  samples=64000 rms=-32.52 dB per-second [-26.7, -39.9, -120.0, -120.0] dB sha256=8ec923cbdd984a12
+  grad_tone_302  group=tone    split=train samples=64000 rms=-31.39 dB per-second [-29.8, -27.3, -120.0, -120.0] dB sha256=1c95bd1751cd2d8e
+  grad_tone_303  group=tone    split=train samples=64000 rms=-33.03 dB per-second [-120.0, -27.0, -120.0, -120.0] dB sha256=4a6d35f06eedf58b
+  grad_tone_304  group=tone    split=test  samples=64000 rms=-31.13 dB per-second [-120.0, -25.1, -120.0, -120.0] dB sha256=61e5d076ad66dc81
+  grad_tone_305  group=tone    split=test  samples=64000 rms=-32.27 dB per-second [-120.0, -27.8, -31.5, -120.0] dB sha256=1b4fa0ac182dbb0b
+  grad_tone_306  group=tone    split=train samples=64000 rms=-32.63 dB per-second [-68.9, -32.0, -28.1, -69.0] dB sha256=64c4f0039cb23558
+  grad_tone_307  group=tone    split=test  samples=64000 rms=-32.68 dB per-second [-72.7, -72.8, -26.7, -72.8] dB sha256=13c7ae508e5c1b45
+  grad_tone_308  group=tone    split=train samples=64000 rms=-31.38 dB per-second [-71.7, -71.7, -25.4, -71.5] dB sha256=0a5a6ec174353c72
+  grad_tone_309  group=tone    split=train samples=64000 rms=-32.26 dB per-second [-120.0, -120.0, -28.2, -30.6] dB sha256=fd2c24a2818a70e6
+  grad_tone_310  group=tone    split=test  samples=64000 rms=-32.20 dB per-second [-120.0, -120.0, -36.4, -26.6] dB sha256=aa1a0fa8feedcfc1
+  grad_tone_311  group=tone    split=train samples=64000 rms=-32.00 dB per-second [-120.0, -120.0, -120.0, -26.0] dB sha256=6c9b8b88e6052d1f
+  grad_tone_312  group=tone    split=train samples=64000 rms=-32.95 dB per-second [-26.9, -120.0, -120.0, -120.0] dB sha256=c4996c1a8a866866
+  grad_tone_313  group=tone    split=train samples=64000 rms=-31.16 dB per-second [-25.1, -120.0, -120.0, -120.0] dB sha256=28caea5161031bda
+  grad_tone_314  group=tone    split=test  samples=64000 rms=-32.47 dB per-second [-30.3, -28.7, -120.0, -120.0] dB sha256=cdf32e51230b3d44
+  grad_tone_315  group=tone    split=train samples=64000 rms=-32.24 dB per-second [-120.0, -26.2, -120.0, -120.0] dB sha256=868488773eb99139
+  grad_tone_316  group=tone    split=test  samples=64000 rms=-32.49 dB per-second [-120.0, -26.5, -120.0, -120.0] dB sha256=709edc2ef107ac51
+  grad_tone_317  group=tone    split=train samples=64000 rms=-31.51 dB per-second [-120.0, -26.7, -31.5, -120.0] dB sha256=5128f6d7f78d2ac3
+  grad_tone_318  group=tone    split=train samples=64000 rms=-32.80 dB per-second [-120.0, -32.0, -28.3, -120.0] dB sha256=475d3e5852babff4
+  grad_tone_319  group=tone    split=train samples=64000 rms=-31.74 dB per-second [-120.0, -120.0, -25.7, -120.0] dB sha256=ba5f92b19560d13b
+  grad_tone_320  group=tone    split=train samples=64000 rms=-32.32 dB per-second [-120.0, -120.0, -26.3, -120.0] dB sha256=2cdc90038b5be6c8
+  grad_tone_321  group=tone    split=train samples=64000 rms=-32.69 dB per-second [-120.0, -120.0, -29.5, -29.8] dB sha256=77f040b4d8859fc5
+  grad_tone_322  group=tone    split=train samples=64000 rms=-32.89 dB per-second [-74.4, -74.4, -74.4, -26.9] dB sha256=8fc3434d05c1e419
+  grad_tone_323  group=tone    split=train samples=64000 rms=-32.20 dB per-second [-120.0, -120.0, -120.0, -26.2] dB sha256=b3d75ed2db32fc9d
+  grad_tone_324  group=tone    split=train samples=64000 rms=-32.65 dB per-second [-26.6, -120.0, -120.0, -120.0] dB sha256=03677b6672b8240a
+  grad_tone_325  group=tone    split=train samples=64000 rms=-32.34 dB per-second [-26.9, -35.1, -120.0, -120.0] dB sha256=97ef0ee593948d2c
+  grad_tone_326  group=tone    split=train samples=64000 rms=-31.76 dB per-second [-29.4, -28.2, -120.0, -120.0] dB sha256=621febe9d19878ca
+  grad_tone_327  group=tone    split=train samples=64000 rms=-31.58 dB per-second [-120.0, -25.6, -120.0, -120.0] dB sha256=5a6e0537ad218f52
+  grad_tone_328  group=tone    split=train samples=64000 rms=-31.45 dB per-second [-120.0, -25.4, -120.0, -120.0] dB sha256=fc21fefba43fddde
+  grad_tone_329  group=tone    split=train samples=64000 rms=-32.97 dB per-second [-120.0, -27.6, -35.4, -120.0] dB sha256=c84482b19321f808
+  grad_tone_330  group=tone    split=train samples=64000 rms=-32.10 dB per-second [-120.0, -33.0, -27.1, -120.0] dB sha256=e15aa65a0d5dab6c
+  grad_tone_331  group=tone    split=train samples=64000 rms=-31.43 dB per-second [-120.0, -120.0, -25.4, -120.0] dB sha256=d433937a082807af
+  grad_tone_332  group=tone    split=train samples=64000 rms=-32.22 dB per-second [-120.0, -120.0, -26.2, -120.0] dB sha256=b85c1e7aae607b08
+  grad_tone_333  group=tone    split=test  samples=64000 rms=-32.71 dB per-second [-120.0, -120.0, -29.0, -30.6] dB sha256=3f5c8817af4966b0
+  grad_tone_334  group=tone    split=test  samples=64000 rms=-33.09 dB per-second [-120.0, -120.0, -36.5, -27.6] dB sha256=e25c6dcbf8f97d2a
+  grad_tone_335  group=tone    split=test  samples=64000 rms=-31.54 dB per-second [-74.5, -74.6, -74.6, -25.5] dB sha256=2c89214657f55b9f
+  grad_tone_336  group=tone    split=train samples=64000 rms=-31.86 dB per-second [-25.8, -68.3, -68.3, -68.3] dB sha256=4c919c3426acdbc1
+  grad_tone_337  group=tone    split=test  samples=64000 rms=-31.46 dB per-second [-25.8, -36.2, -120.0, -120.0] dB sha256=0fc562f0cdb4a100
+  grad_tone_338  group=tone    split=train samples=64000 rms=-32.99 dB per-second [-30.6, -29.4, -120.0, -120.0] dB sha256=f9e0e3e7203d608b
+  grad_tone_339  group=tone    split=train samples=64000 rms=-32.47 dB per-second [-120.0, -26.5, -120.0, -120.0] dB sha256=31ecfd07144cfc64
+  grad_tone_340  group=tone    split=train samples=64000 rms=-32.74 dB per-second [-120.0, -26.7, -120.0, -120.0] dB sha256=486d014ef70ec317
+  grad_tone_341  group=tone    split=train samples=64000 rms=-32.91 dB per-second [-120.0, -28.0, -33.3, -120.0] dB sha256=e97bcff71e95bfad
+  grad_tone_342  group=tone    split=test  samples=64000 rms=-31.96 dB per-second [-120.0, -33.6, -26.7, -120.0] dB sha256=1f4b9f9ca37b6937
+  grad_tone_343  group=tone    split=train samples=64000 rms=-32.34 dB per-second [-120.0, -120.0, -26.3, -120.0] dB sha256=a2322765003c4fc4
+  grad_tone_344  group=tone    split=test  samples=64000 rms=-32.23 dB per-second [-120.0, -120.0, -26.2, -120.0] dB sha256=17e36d342ebaa616
+  grad_tone_345  group=tone    split=test  samples=64000 rms=-31.59 dB per-second [-120.0, -120.0, -27.5, -30.0] dB sha256=2d15fc94417e2e5b
+  grad_tone_346  group=tone    split=train samples=64000 rms=-31.20 dB per-second [-120.0, -120.0, -36.7, -25.5] dB sha256=4973e407687fa8b6
+  grad_tone_347  group=tone    split=train samples=64000 rms=-32.89 dB per-second [-120.0, -120.0, -120.0, -26.9] dB sha256=cee7baf6b6538733
+  grad_tone_348  group=tone    split=train samples=64000 rms=-32.90 dB per-second [-26.9, -120.0, -120.0, -120.0] dB sha256=76ee70e6edbd3318
+  grad_tone_349  group=tone    split=train samples=64000 rms=-32.66 dB per-second [-26.8, -40.2, -120.0, -120.0] dB sha256=e75b739794e6451a
+  grad_tone_350  group=tone    split=train samples=64000 rms=-31.28 dB per-second [-29.9, -27.1, -120.0, -120.0] dB sha256=8730e87187c4d3f6
+  grad_tone_351  group=tone    split=train samples=64000 rms=-32.20 dB per-second [-66.0, -26.2, -66.0, -66.0] dB sha256=756478564792e729
+  grad_tone_352  group=tone    split=train samples=64000 rms=-32.35 dB per-second [-120.0, -26.3, -120.0, -120.0] dB sha256=790a750d6726db9b
+  grad_tone_353  group=tone    split=train samples=64000 rms=-32.85 dB per-second [-120.0, -27.5, -35.3, -120.0] dB sha256=0c654c76a0a06e1b
+  grad_tone_354  group=tone    split=train samples=64000 rms=-31.55 dB per-second [-120.0, -30.4, -27.2, -120.0] dB sha256=a322738ceeceba8a
+  grad_tone_355  group=tone    split=train samples=64000 rms=-31.32 dB per-second [-120.0, -120.0, -25.3, -120.0] dB sha256=8db0b2b70e19e93f
+  grad_tone_356  group=tone    split=test  samples=64000 rms=-32.73 dB per-second [-120.0, -120.0, -26.7, -120.0] dB sha256=5a9fedccc5d69819
+  grad_tone_357  group=tone    split=train samples=64000 rms=-32.10 dB per-second [-120.0, -120.0, -28.4, -29.9] dB sha256=da1de7ac231a01aa
+  grad_tone_358  group=tone    split=test  samples=64000 rms=-32.29 dB per-second [-70.1, -70.2, -43.1, -26.4] dB sha256=7cf4c2b6b3f43b9c
+  grad_tone_359  group=tone    split=train samples=64000 rms=-31.48 dB per-second [-120.0, -120.0, -120.0, -25.5] dB sha256=d70beccacd136a79
+----------------------------------------------------------------------
+generated 360 clips; 360 tone waveforms, all unique
+  tone: 240 train, 120 test
+saved: /content/drive/MyDrive/tracing-qwen3b/graded_manifest.csv
+saved: /content/tracing-qwen3b/graded_manifest.csv
+extracted 1/360: grad_tone_000 (group=tone, audio tokens=100, seq len=137)
+attention read: grad_tone_000 (all 36 layers)
+extracted 2/360: grad_tone_001 (group=tone, audio tokens=100, seq len=137)
+attention read: grad_tone_001 (all 36 layers)
+extracted 3/360: grad_tone_002 (group=tone, audio tokens=100, seq len=137)
+attention read: grad_tone_002 (all 36 layers)
+extracted 4/360: grad_tone_003 (group=tone, audio tokens=100, seq len=137)
+attention read: grad_tone_003 (all 36 layers)
+extracted 5/360: grad_tone_004 (group=tone, audio tokens=100, seq len=137)
+attention read: grad_tone_004 (all 36 layers)
+extracted 6/360: grad_tone_005 (group=tone, audio tokens=100, seq len=137)
+attention read: grad_tone_005 (all 36 layers)
+extracted 7/360: grad_tone_006 (group=tone, audio tokens=100, seq len=137)
+extracted 8/360: grad_tone_007 (group=tone, audio tokens=100, seq len=137)
+extracted 9/360: grad_tone_008 (group=tone, audio tokens=100, seq len=137)
+extracted 10/360: grad_tone_009 (group=tone, audio tokens=100, seq len=137)
+extracted 11/360: grad_tone_010 (group=tone, audio tokens=100, seq len=137)
+extracted 12/360: grad_tone_011 (group=tone, audio tokens=100, seq len=137)
+extracted 13/360: grad_tone_012 (group=tone, audio tokens=100, seq len=137)
+extracted 14/360: grad_tone_013 (group=tone, audio tokens=100, seq len=137)
+extracted 15/360: grad_tone_014 (group=tone, audio tokens=100, seq len=137)
+extracted 16/360: grad_tone_015 (group=tone, audio tokens=100, seq len=137)
+extracted 17/360: grad_tone_016 (group=tone, audio tokens=100, seq len=137)
+extracted 18/360: grad_tone_017 (group=tone, audio tokens=100, seq len=137)
+extracted 19/360: grad_tone_018 (group=tone, audio tokens=100, seq len=137)
+extracted 20/360: grad_tone_019 (group=tone, audio tokens=100, seq len=137)
+extracted 21/360: grad_tone_020 (group=tone, audio tokens=100, seq len=137)
+extracted 22/360: grad_tone_021 (group=tone, audio tokens=100, seq len=137)
+extracted 23/360: grad_tone_022 (group=tone, audio tokens=100, seq len=137)
+extracted 24/360: grad_tone_023 (group=tone, audio tokens=100, seq len=137)
+extracted 25/360: grad_tone_024 (group=tone, audio tokens=100, seq len=137)
+extracted 26/360: grad_tone_025 (group=tone, audio tokens=100, seq len=137)
+extracted 27/360: grad_tone_026 (group=tone, audio tokens=100, seq len=137)
+extracted 28/360: grad_tone_027 (group=tone, audio tokens=100, seq len=137)
+extracted 29/360: grad_tone_028 (group=tone, audio tokens=100, seq len=137)
+extracted 30/360: grad_tone_029 (group=tone, audio tokens=100, seq len=137)
+extracted 31/360: grad_tone_030 (group=tone, audio tokens=100, seq len=137)
+extracted 32/360: grad_tone_031 (group=tone, audio tokens=100, seq len=137)
+extracted 33/360: grad_tone_032 (group=tone, audio tokens=100, seq len=137)
+extracted 34/360: grad_tone_033 (group=tone, audio tokens=100, seq len=137)
+extracted 35/360: grad_tone_034 (group=tone, audio tokens=100, seq len=137)
+extracted 36/360: grad_tone_035 (group=tone, audio tokens=100, seq len=137)
+extracted 37/360: grad_tone_036 (group=tone, audio tokens=100, seq len=137)
+extracted 38/360: grad_tone_037 (group=tone, audio tokens=100, seq len=137)
+extracted 39/360: grad_tone_038 (group=tone, audio tokens=100, seq len=137)
+extracted 40/360: grad_tone_039 (group=tone, audio tokens=100, seq len=137)
+extracted 41/360: grad_tone_040 (group=tone, audio tokens=100, seq len=137)
+extracted 42/360: grad_tone_041 (group=tone, audio tokens=100, seq len=137)
+extracted 43/360: grad_tone_042 (group=tone, audio tokens=100, seq len=137)
+extracted 44/360: grad_tone_043 (group=tone, audio tokens=100, seq len=137)
+extracted 45/360: grad_tone_044 (group=tone, audio tokens=100, seq len=137)
+extracted 46/360: grad_tone_045 (group=tone, audio tokens=100, seq len=137)
+extracted 47/360: grad_tone_046 (group=tone, audio tokens=100, seq len=137)
+extracted 48/360: grad_tone_047 (group=tone, audio tokens=100, seq len=137)
+extracted 49/360: grad_tone_048 (group=tone, audio tokens=100, seq len=137)
+extracted 50/360: grad_tone_049 (group=tone, audio tokens=100, seq len=137)
+extracted 51/360: grad_tone_050 (group=tone, audio tokens=100, seq len=137)
+extracted 52/360: grad_tone_051 (group=tone, audio tokens=100, seq len=137)
+extracted 53/360: grad_tone_052 (group=tone, audio tokens=100, seq len=137)
+extracted 54/360: grad_tone_053 (group=tone, audio tokens=100, seq len=137)
+extracted 55/360: grad_tone_054 (group=tone, audio tokens=100, seq len=137)
+extracted 56/360: grad_tone_055 (group=tone, audio tokens=100, seq len=137)
+extracted 57/360: grad_tone_056 (group=tone, audio tokens=100, seq len=137)
+extracted 58/360: grad_tone_057 (group=tone, audio tokens=100, seq len=137)
+extracted 59/360: grad_tone_058 (group=tone, audio tokens=100, seq len=137)
+extracted 60/360: grad_tone_059 (group=tone, audio tokens=100, seq len=137)
+extracted 61/360: grad_tone_060 (group=tone, audio tokens=100, seq len=137)
+extracted 62/360: grad_tone_061 (group=tone, audio tokens=100, seq len=137)
+extracted 63/360: grad_tone_062 (group=tone, audio tokens=100, seq len=137)
+extracted 64/360: grad_tone_063 (group=tone, audio tokens=100, seq len=137)
+extracted 65/360: grad_tone_064 (group=tone, audio tokens=100, seq len=137)
+extracted 66/360: grad_tone_065 (group=tone, audio tokens=100, seq len=137)
+extracted 67/360: grad_tone_066 (group=tone, audio tokens=100, seq len=137)
+extracted 68/360: grad_tone_067 (group=tone, audio tokens=100, seq len=137)
+extracted 69/360: grad_tone_068 (group=tone, audio tokens=100, seq len=137)
+extracted 70/360: grad_tone_069 (group=tone, audio tokens=100, seq len=137)
+extracted 71/360: grad_tone_070 (group=tone, audio tokens=100, seq len=137)
+extracted 72/360: grad_tone_071 (group=tone, audio tokens=100, seq len=137)
+extracted 73/360: grad_tone_072 (group=tone, audio tokens=100, seq len=137)
+extracted 74/360: grad_tone_073 (group=tone, audio tokens=100, seq len=137)
+extracted 75/360: grad_tone_074 (group=tone, audio tokens=100, seq len=137)
+extracted 76/360: grad_tone_075 (group=tone, audio tokens=100, seq len=137)
+extracted 77/360: grad_tone_076 (group=tone, audio tokens=100, seq len=137)
+extracted 78/360: grad_tone_077 (group=tone, audio tokens=100, seq len=137)
+extracted 79/360: grad_tone_078 (group=tone, audio tokens=100, seq len=137)
+extracted 80/360: grad_tone_079 (group=tone, audio tokens=100, seq len=137)
+extracted 81/360: grad_tone_080 (group=tone, audio tokens=100, seq len=137)
+extracted 82/360: grad_tone_081 (group=tone, audio tokens=100, seq len=137)
+extracted 83/360: grad_tone_082 (group=tone, audio tokens=100, seq len=137)
+extracted 84/360: grad_tone_083 (group=tone, audio tokens=100, seq len=137)
+extracted 85/360: grad_tone_084 (group=tone, audio tokens=100, seq len=137)
+extracted 86/360: grad_tone_085 (group=tone, audio tokens=100, seq len=137)
+extracted 87/360: grad_tone_086 (group=tone, audio tokens=100, seq len=137)
+extracted 88/360: grad_tone_087 (group=tone, audio tokens=100, seq len=137)
+extracted 89/360: grad_tone_088 (group=tone, audio tokens=100, seq len=137)
+extracted 90/360: grad_tone_089 (group=tone, audio tokens=100, seq len=137)
+extracted 91/360: grad_tone_090 (group=tone, audio tokens=100, seq len=137)
+extracted 92/360: grad_tone_091 (group=tone, audio tokens=100, seq len=137)
+extracted 93/360: grad_tone_092 (group=tone, audio tokens=100, seq len=137)
+extracted 94/360: grad_tone_093 (group=tone, audio tokens=100, seq len=137)
+extracted 95/360: grad_tone_094 (group=tone, audio tokens=100, seq len=137)
+extracted 96/360: grad_tone_095 (group=tone, audio tokens=100, seq len=137)
+extracted 97/360: grad_tone_096 (group=tone, audio tokens=100, seq len=137)
+extracted 98/360: grad_tone_097 (group=tone, audio tokens=100, seq len=137)
+extracted 99/360: grad_tone_098 (group=tone, audio tokens=100, seq len=137)
+extracted 100/360: grad_tone_099 (group=tone, audio tokens=100, seq len=137)
+extracted 101/360: grad_tone_100 (group=tone, audio tokens=100, seq len=137)
+extracted 102/360: grad_tone_101 (group=tone, audio tokens=100, seq len=137)
+extracted 103/360: grad_tone_102 (group=tone, audio tokens=100, seq len=137)
+extracted 104/360: grad_tone_103 (group=tone, audio tokens=100, seq len=137)
+extracted 105/360: grad_tone_104 (group=tone, audio tokens=100, seq len=137)
+extracted 106/360: grad_tone_105 (group=tone, audio tokens=100, seq len=137)
+extracted 107/360: grad_tone_106 (group=tone, audio tokens=100, seq len=137)
+extracted 108/360: grad_tone_107 (group=tone, audio tokens=100, seq len=137)
+extracted 109/360: grad_tone_108 (group=tone, audio tokens=100, seq len=137)
+extracted 110/360: grad_tone_109 (group=tone, audio tokens=100, seq len=137)
+extracted 111/360: grad_tone_110 (group=tone, audio tokens=100, seq len=137)
+extracted 112/360: grad_tone_111 (group=tone, audio tokens=100, seq len=137)
+extracted 113/360: grad_tone_112 (group=tone, audio tokens=100, seq len=137)
+extracted 114/360: grad_tone_113 (group=tone, audio tokens=100, seq len=137)
+extracted 115/360: grad_tone_114 (group=tone, audio tokens=100, seq len=137)
+extracted 116/360: grad_tone_115 (group=tone, audio tokens=100, seq len=137)
+extracted 117/360: grad_tone_116 (group=tone, audio tokens=100, seq len=137)
+extracted 118/360: grad_tone_117 (group=tone, audio tokens=100, seq len=137)
+extracted 119/360: grad_tone_118 (group=tone, audio tokens=100, seq len=137)
+extracted 120/360: grad_tone_119 (group=tone, audio tokens=100, seq len=137)
+extracted 121/360: grad_tone_120 (group=tone, audio tokens=100, seq len=137)
+extracted 122/360: grad_tone_121 (group=tone, audio tokens=100, seq len=137)
+extracted 123/360: grad_tone_122 (group=tone, audio tokens=100, seq len=137)
+extracted 124/360: grad_tone_123 (group=tone, audio tokens=100, seq len=137)
+extracted 125/360: grad_tone_124 (group=tone, audio tokens=100, seq len=137)
+extracted 126/360: grad_tone_125 (group=tone, audio tokens=100, seq len=137)
+extracted 127/360: grad_tone_126 (group=tone, audio tokens=100, seq len=137)
+extracted 128/360: grad_tone_127 (group=tone, audio tokens=100, seq len=137)
+extracted 129/360: grad_tone_128 (group=tone, audio tokens=100, seq len=137)
+extracted 130/360: grad_tone_129 (group=tone, audio tokens=100, seq len=137)
+extracted 131/360: grad_tone_130 (group=tone, audio tokens=100, seq len=137)
+extracted 132/360: grad_tone_131 (group=tone, audio tokens=100, seq len=137)
+extracted 133/360: grad_tone_132 (group=tone, audio tokens=100, seq len=137)
+extracted 134/360: grad_tone_133 (group=tone, audio tokens=100, seq len=137)
+extracted 135/360: grad_tone_134 (group=tone, audio tokens=100, seq len=137)
+extracted 136/360: grad_tone_135 (group=tone, audio tokens=100, seq len=137)
+extracted 137/360: grad_tone_136 (group=tone, audio tokens=100, seq len=137)
+extracted 138/360: grad_tone_137 (group=tone, audio tokens=100, seq len=137)
+extracted 139/360: grad_tone_138 (group=tone, audio tokens=100, seq len=137)
+extracted 140/360: grad_tone_139 (group=tone, audio tokens=100, seq len=137)
+extracted 141/360: grad_tone_140 (group=tone, audio tokens=100, seq len=137)
+extracted 142/360: grad_tone_141 (group=tone, audio tokens=100, seq len=137)
+extracted 143/360: grad_tone_142 (group=tone, audio tokens=100, seq len=137)
+extracted 144/360: grad_tone_143 (group=tone, audio tokens=100, seq len=137)
+extracted 145/360: grad_tone_144 (group=tone, audio tokens=100, seq len=137)
+extracted 146/360: grad_tone_145 (group=tone, audio tokens=100, seq len=137)
+extracted 147/360: grad_tone_146 (group=tone, audio tokens=100, seq len=137)
+extracted 148/360: grad_tone_147 (group=tone, audio tokens=100, seq len=137)
+extracted 149/360: grad_tone_148 (group=tone, audio tokens=100, seq len=137)
+extracted 150/360: grad_tone_149 (group=tone, audio tokens=100, seq len=137)
+extracted 151/360: grad_tone_150 (group=tone, audio tokens=100, seq len=137)
+extracted 152/360: grad_tone_151 (group=tone, audio tokens=100, seq len=137)
+extracted 153/360: grad_tone_152 (group=tone, audio tokens=100, seq len=137)
+extracted 154/360: grad_tone_153 (group=tone, audio tokens=100, seq len=137)
+extracted 155/360: grad_tone_154 (group=tone, audio tokens=100, seq len=137)
+extracted 156/360: grad_tone_155 (group=tone, audio tokens=100, seq len=137)
+extracted 157/360: grad_tone_156 (group=tone, audio tokens=100, seq len=137)
+extracted 158/360: grad_tone_157 (group=tone, audio tokens=100, seq len=137)
+extracted 159/360: grad_tone_158 (group=tone, audio tokens=100, seq len=137)
+extracted 160/360: grad_tone_159 (group=tone, audio tokens=100, seq len=137)
+extracted 161/360: grad_tone_160 (group=tone, audio tokens=100, seq len=137)
+extracted 162/360: grad_tone_161 (group=tone, audio tokens=100, seq len=137)
+extracted 163/360: grad_tone_162 (group=tone, audio tokens=100, seq len=137)
+extracted 164/360: grad_tone_163 (group=tone, audio tokens=100, seq len=137)
+extracted 165/360: grad_tone_164 (group=tone, audio tokens=100, seq len=137)
+extracted 166/360: grad_tone_165 (group=tone, audio tokens=100, seq len=137)
+extracted 167/360: grad_tone_166 (group=tone, audio tokens=100, seq len=137)
+extracted 168/360: grad_tone_167 (group=tone, audio tokens=100, seq len=137)
+extracted 169/360: grad_tone_168 (group=tone, audio tokens=100, seq len=137)
+extracted 170/360: grad_tone_169 (group=tone, audio tokens=100, seq len=137)
+extracted 171/360: grad_tone_170 (group=tone, audio tokens=100, seq len=137)
+extracted 172/360: grad_tone_171 (group=tone, audio tokens=100, seq len=137)
+extracted 173/360: grad_tone_172 (group=tone, audio tokens=100, seq len=137)
+extracted 174/360: grad_tone_173 (group=tone, audio tokens=100, seq len=137)
+extracted 175/360: grad_tone_174 (group=tone, audio tokens=100, seq len=137)
+extracted 176/360: grad_tone_175 (group=tone, audio tokens=100, seq len=137)
+extracted 177/360: grad_tone_176 (group=tone, audio tokens=100, seq len=137)
+extracted 178/360: grad_tone_177 (group=tone, audio tokens=100, seq len=137)
+extracted 179/360: grad_tone_178 (group=tone, audio tokens=100, seq len=137)
+extracted 180/360: grad_tone_179 (group=tone, audio tokens=100, seq len=137)
+extracted 181/360: grad_tone_180 (group=tone, audio tokens=100, seq len=137)
+extracted 182/360: grad_tone_181 (group=tone, audio tokens=100, seq len=137)
+extracted 183/360: grad_tone_182 (group=tone, audio tokens=100, seq len=137)
+extracted 184/360: grad_tone_183 (group=tone, audio tokens=100, seq len=137)
+extracted 185/360: grad_tone_184 (group=tone, audio tokens=100, seq len=137)
+extracted 186/360: grad_tone_185 (group=tone, audio tokens=100, seq len=137)
+extracted 187/360: grad_tone_186 (group=tone, audio tokens=100, seq len=137)
+extracted 188/360: grad_tone_187 (group=tone, audio tokens=100, seq len=137)
+extracted 189/360: grad_tone_188 (group=tone, audio tokens=100, seq len=137)
+extracted 190/360: grad_tone_189 (group=tone, audio tokens=100, seq len=137)
+extracted 191/360: grad_tone_190 (group=tone, audio tokens=100, seq len=137)
+extracted 192/360: grad_tone_191 (group=tone, audio tokens=100, seq len=137)
+extracted 193/360: grad_tone_192 (group=tone, audio tokens=100, seq len=137)
+extracted 194/360: grad_tone_193 (group=tone, audio tokens=100, seq len=137)
+extracted 195/360: grad_tone_194 (group=tone, audio tokens=100, seq len=137)
+extracted 196/360: grad_tone_195 (group=tone, audio tokens=100, seq len=137)
+extracted 197/360: grad_tone_196 (group=tone, audio tokens=100, seq len=137)
+extracted 198/360: grad_tone_197 (group=tone, audio tokens=100, seq len=137)
+extracted 199/360: grad_tone_198 (group=tone, audio tokens=100, seq len=137)
+extracted 200/360: grad_tone_199 (group=tone, audio tokens=100, seq len=137)
+extracted 201/360: grad_tone_200 (group=tone, audio tokens=100, seq len=137)
+extracted 202/360: grad_tone_201 (group=tone, audio tokens=100, seq len=137)
+extracted 203/360: grad_tone_202 (group=tone, audio tokens=100, seq len=137)
+extracted 204/360: grad_tone_203 (group=tone, audio tokens=100, seq len=137)
+extracted 205/360: grad_tone_204 (group=tone, audio tokens=100, seq len=137)
+extracted 206/360: grad_tone_205 (group=tone, audio tokens=100, seq len=137)
+extracted 207/360: grad_tone_206 (group=tone, audio tokens=100, seq len=137)
+extracted 208/360: grad_tone_207 (group=tone, audio tokens=100, seq len=137)
+extracted 209/360: grad_tone_208 (group=tone, audio tokens=100, seq len=137)
+extracted 210/360: grad_tone_209 (group=tone, audio tokens=100, seq len=137)
+extracted 211/360: grad_tone_210 (group=tone, audio tokens=100, seq len=137)
+extracted 212/360: grad_tone_211 (group=tone, audio tokens=100, seq len=137)
+extracted 213/360: grad_tone_212 (group=tone, audio tokens=100, seq len=137)
+extracted 214/360: grad_tone_213 (group=tone, audio tokens=100, seq len=137)
+extracted 215/360: grad_tone_214 (group=tone, audio tokens=100, seq len=137)
+extracted 216/360: grad_tone_215 (group=tone, audio tokens=100, seq len=137)
+extracted 217/360: grad_tone_216 (group=tone, audio tokens=100, seq len=137)
+extracted 218/360: grad_tone_217 (group=tone, audio tokens=100, seq len=137)
+extracted 219/360: grad_tone_218 (group=tone, audio tokens=100, seq len=137)
+extracted 220/360: grad_tone_219 (group=tone, audio tokens=100, seq len=137)
+extracted 221/360: grad_tone_220 (group=tone, audio tokens=100, seq len=137)
+extracted 222/360: grad_tone_221 (group=tone, audio tokens=100, seq len=137)
+extracted 223/360: grad_tone_222 (group=tone, audio tokens=100, seq len=137)
+extracted 224/360: grad_tone_223 (group=tone, audio tokens=100, seq len=137)
+extracted 225/360: grad_tone_224 (group=tone, audio tokens=100, seq len=137)
+extracted 226/360: grad_tone_225 (group=tone, audio tokens=100, seq len=137)
+extracted 227/360: grad_tone_226 (group=tone, audio tokens=100, seq len=137)
+extracted 228/360: grad_tone_227 (group=tone, audio tokens=100, seq len=137)
+extracted 229/360: grad_tone_228 (group=tone, audio tokens=100, seq len=137)
+extracted 230/360: grad_tone_229 (group=tone, audio tokens=100, seq len=137)
+extracted 231/360: grad_tone_230 (group=tone, audio tokens=100, seq len=137)
+extracted 232/360: grad_tone_231 (group=tone, audio tokens=100, seq len=137)
+extracted 233/360: grad_tone_232 (group=tone, audio tokens=100, seq len=137)
+extracted 234/360: grad_tone_233 (group=tone, audio tokens=100, seq len=137)
+extracted 235/360: grad_tone_234 (group=tone, audio tokens=100, seq len=137)
+extracted 236/360: grad_tone_235 (group=tone, audio tokens=100, seq len=137)
+extracted 237/360: grad_tone_236 (group=tone, audio tokens=100, seq len=137)
+extracted 238/360: grad_tone_237 (group=tone, audio tokens=100, seq len=137)
+extracted 239/360: grad_tone_238 (group=tone, audio tokens=100, seq len=137)
+extracted 240/360: grad_tone_239 (group=tone, audio tokens=100, seq len=137)
+extracted 241/360: grad_tone_240 (group=tone, audio tokens=100, seq len=137)
+extracted 242/360: grad_tone_241 (group=tone, audio tokens=100, seq len=137)
+extracted 243/360: grad_tone_242 (group=tone, audio tokens=100, seq len=137)
+extracted 244/360: grad_tone_243 (group=tone, audio tokens=100, seq len=137)
+extracted 245/360: grad_tone_244 (group=tone, audio tokens=100, seq len=137)
+extracted 246/360: grad_tone_245 (group=tone, audio tokens=100, seq len=137)
+extracted 247/360: grad_tone_246 (group=tone, audio tokens=100, seq len=137)
+extracted 248/360: grad_tone_247 (group=tone, audio tokens=100, seq len=137)
+extracted 249/360: grad_tone_248 (group=tone, audio tokens=100, seq len=137)
+extracted 250/360: grad_tone_249 (group=tone, audio tokens=100, seq len=137)
+extracted 251/360: grad_tone_250 (group=tone, audio tokens=100, seq len=137)
+extracted 252/360: grad_tone_251 (group=tone, audio tokens=100, seq len=137)
+extracted 253/360: grad_tone_252 (group=tone, audio tokens=100, seq len=137)
+extracted 254/360: grad_tone_253 (group=tone, audio tokens=100, seq len=137)
+extracted 255/360: grad_tone_254 (group=tone, audio tokens=100, seq len=137)
+extracted 256/360: grad_tone_255 (group=tone, audio tokens=100, seq len=137)
+extracted 257/360: grad_tone_256 (group=tone, audio tokens=100, seq len=137)
+extracted 258/360: grad_tone_257 (group=tone, audio tokens=100, seq len=137)
+extracted 259/360: grad_tone_258 (group=tone, audio tokens=100, seq len=137)
+extracted 260/360: grad_tone_259 (group=tone, audio tokens=100, seq len=137)
+extracted 261/360: grad_tone_260 (group=tone, audio tokens=100, seq len=137)
+extracted 262/360: grad_tone_261 (group=tone, audio tokens=100, seq len=137)
+extracted 263/360: grad_tone_262 (group=tone, audio tokens=100, seq len=137)
+extracted 264/360: grad_tone_263 (group=tone, audio tokens=100, seq len=137)
+extracted 265/360: grad_tone_264 (group=tone, audio tokens=100, seq len=137)
+extracted 266/360: grad_tone_265 (group=tone, audio tokens=100, seq len=137)
+extracted 267/360: grad_tone_266 (group=tone, audio tokens=100, seq len=137)
+extracted 268/360: grad_tone_267 (group=tone, audio tokens=100, seq len=137)
+extracted 269/360: grad_tone_268 (group=tone, audio tokens=100, seq len=137)
+extracted 270/360: grad_tone_269 (group=tone, audio tokens=100, seq len=137)
+extracted 271/360: grad_tone_270 (group=tone, audio tokens=100, seq len=137)
+extracted 272/360: grad_tone_271 (group=tone, audio tokens=100, seq len=137)
+extracted 273/360: grad_tone_272 (group=tone, audio tokens=100, seq len=137)
+extracted 274/360: grad_tone_273 (group=tone, audio tokens=100, seq len=137)
+extracted 275/360: grad_tone_274 (group=tone, audio tokens=100, seq len=137)
+extracted 276/360: grad_tone_275 (group=tone, audio tokens=100, seq len=137)
+extracted 277/360: grad_tone_276 (group=tone, audio tokens=100, seq len=137)
+extracted 278/360: grad_tone_277 (group=tone, audio tokens=100, seq len=137)
+extracted 279/360: grad_tone_278 (group=tone, audio tokens=100, seq len=137)
+extracted 280/360: grad_tone_279 (group=tone, audio tokens=100, seq len=137)
+extracted 281/360: grad_tone_280 (group=tone, audio tokens=100, seq len=137)
+extracted 282/360: grad_tone_281 (group=tone, audio tokens=100, seq len=137)
+extracted 283/360: grad_tone_282 (group=tone, audio tokens=100, seq len=137)
+extracted 284/360: grad_tone_283 (group=tone, audio tokens=100, seq len=137)
+extracted 285/360: grad_tone_284 (group=tone, audio tokens=100, seq len=137)
+extracted 286/360: grad_tone_285 (group=tone, audio tokens=100, seq len=137)
+extracted 287/360: grad_tone_286 (group=tone, audio tokens=100, seq len=137)
+extracted 288/360: grad_tone_287 (group=tone, audio tokens=100, seq len=137)
+extracted 289/360: grad_tone_288 (group=tone, audio tokens=100, seq len=137)
+extracted 290/360: grad_tone_289 (group=tone, audio tokens=100, seq len=137)
+extracted 291/360: grad_tone_290 (group=tone, audio tokens=100, seq len=137)
+extracted 292/360: grad_tone_291 (group=tone, audio tokens=100, seq len=137)
+extracted 293/360: grad_tone_292 (group=tone, audio tokens=100, seq len=137)
+extracted 294/360: grad_tone_293 (group=tone, audio tokens=100, seq len=137)
+extracted 295/360: grad_tone_294 (group=tone, audio tokens=100, seq len=137)
+extracted 296/360: grad_tone_295 (group=tone, audio tokens=100, seq len=137)
+extracted 297/360: grad_tone_296 (group=tone, audio tokens=100, seq len=137)
+extracted 298/360: grad_tone_297 (group=tone, audio tokens=100, seq len=137)
+extracted 299/360: grad_tone_298 (group=tone, audio tokens=100, seq len=137)
+extracted 300/360: grad_tone_299 (group=tone, audio tokens=100, seq len=137)
+extracted 301/360: grad_tone_300 (group=tone, audio tokens=100, seq len=137)
+extracted 302/360: grad_tone_301 (group=tone, audio tokens=100, seq len=137)
+extracted 303/360: grad_tone_302 (group=tone, audio tokens=100, seq len=137)
+extracted 304/360: grad_tone_303 (group=tone, audio tokens=100, seq len=137)
+extracted 305/360: grad_tone_304 (group=tone, audio tokens=100, seq len=137)
+extracted 306/360: grad_tone_305 (group=tone, audio tokens=100, seq len=137)
+extracted 307/360: grad_tone_306 (group=tone, audio tokens=100, seq len=137)
+extracted 308/360: grad_tone_307 (group=tone, audio tokens=100, seq len=137)
+extracted 309/360: grad_tone_308 (group=tone, audio tokens=100, seq len=137)
+extracted 310/360: grad_tone_309 (group=tone, audio tokens=100, seq len=137)
+extracted 311/360: grad_tone_310 (group=tone, audio tokens=100, seq len=137)
+extracted 312/360: grad_tone_311 (group=tone, audio tokens=100, seq len=137)
+extracted 313/360: grad_tone_312 (group=tone, audio tokens=100, seq len=137)
+extracted 314/360: grad_tone_313 (group=tone, audio tokens=100, seq len=137)
+extracted 315/360: grad_tone_314 (group=tone, audio tokens=100, seq len=137)
+extracted 316/360: grad_tone_315 (group=tone, audio tokens=100, seq len=137)
+extracted 317/360: grad_tone_316 (group=tone, audio tokens=100, seq len=137)
+extracted 318/360: grad_tone_317 (group=tone, audio tokens=100, seq len=137)
+extracted 319/360: grad_tone_318 (group=tone, audio tokens=100, seq len=137)
+extracted 320/360: grad_tone_319 (group=tone, audio tokens=100, seq len=137)
+extracted 321/360: grad_tone_320 (group=tone, audio tokens=100, seq len=137)
+extracted 322/360: grad_tone_321 (group=tone, audio tokens=100, seq len=137)
+extracted 323/360: grad_tone_322 (group=tone, audio tokens=100, seq len=137)
+extracted 324/360: grad_tone_323 (group=tone, audio tokens=100, seq len=137)
+extracted 325/360: grad_tone_324 (group=tone, audio tokens=100, seq len=137)
+extracted 326/360: grad_tone_325 (group=tone, audio tokens=100, seq len=137)
+extracted 327/360: grad_tone_326 (group=tone, audio tokens=100, seq len=137)
+extracted 328/360: grad_tone_327 (group=tone, audio tokens=100, seq len=137)
+extracted 329/360: grad_tone_328 (group=tone, audio tokens=100, seq len=137)
+extracted 330/360: grad_tone_329 (group=tone, audio tokens=100, seq len=137)
+extracted 331/360: grad_tone_330 (group=tone, audio tokens=100, seq len=137)
+extracted 332/360: grad_tone_331 (group=tone, audio tokens=100, seq len=137)
+extracted 333/360: grad_tone_332 (group=tone, audio tokens=100, seq len=137)
+extracted 334/360: grad_tone_333 (group=tone, audio tokens=100, seq len=137)
+extracted 335/360: grad_tone_334 (group=tone, audio tokens=100, seq len=137)
+extracted 336/360: grad_tone_335 (group=tone, audio tokens=100, seq len=137)
+extracted 337/360: grad_tone_336 (group=tone, audio tokens=100, seq len=137)
+extracted 338/360: grad_tone_337 (group=tone, audio tokens=100, seq len=137)
+extracted 339/360: grad_tone_338 (group=tone, audio tokens=100, seq len=137)
+extracted 340/360: grad_tone_339 (group=tone, audio tokens=100, seq len=137)
+extracted 341/360: grad_tone_340 (group=tone, audio tokens=100, seq len=137)
+extracted 342/360: grad_tone_341 (group=tone, audio tokens=100, seq len=137)
+extracted 343/360: grad_tone_342 (group=tone, audio tokens=100, seq len=137)
+extracted 344/360: grad_tone_343 (group=tone, audio tokens=100, seq len=137)
+extracted 345/360: grad_tone_344 (group=tone, audio tokens=100, seq len=137)
+extracted 346/360: grad_tone_345 (group=tone, audio tokens=100, seq len=137)
+extracted 347/360: grad_tone_346 (group=tone, audio tokens=100, seq len=137)
+extracted 348/360: grad_tone_347 (group=tone, audio tokens=100, seq len=137)
+extracted 349/360: grad_tone_348 (group=tone, audio tokens=100, seq len=137)
+extracted 350/360: grad_tone_349 (group=tone, audio tokens=100, seq len=137)
+extracted 351/360: grad_tone_350 (group=tone, audio tokens=100, seq len=137)
+extracted 352/360: grad_tone_351 (group=tone, audio tokens=100, seq len=137)
+extracted 353/360: grad_tone_352 (group=tone, audio tokens=100, seq len=137)
+extracted 354/360: grad_tone_353 (group=tone, audio tokens=100, seq len=137)
+extracted 355/360: grad_tone_354 (group=tone, audio tokens=100, seq len=137)
+extracted 356/360: grad_tone_355 (group=tone, audio tokens=100, seq len=137)
+extracted 357/360: grad_tone_356 (group=tone, audio tokens=100, seq len=137)
+extracted 358/360: grad_tone_357 (group=tone, audio tokens=100, seq len=137)
+extracted 359/360: grad_tone_358 (group=tone, audio tokens=100, seq len=137)
+extracted 360/360: grad_tone_359 (group=tone, audio tokens=100, seq len=137)
+extraction count: 360 of 360 clips
+saved: /content/drive/MyDrive/tracing-qwen3b/graded_features.npz
+saved: /content/tracing-qwen3b/graded_features.npz
+features file (float16): /content/drive/MyDrive/tracing-qwen3b/graded_features.npz, 109.1 MB
+features file (float16): /content/tracing-qwen3b/graded_features.npz, 109.1 MB
+saved: /content/drive/MyDrive/tracing-qwen3b/graded_attention.csv
+saved: /content/tracing-qwen3b/graded_attention.csv
+======================================================================
+GRADED PROBES: ridge readouts of pitch and onset
+======================================================================
+by-clip split: 240 train, 120 test
+held-out-pitch split: 180 train, 180 test
+  nulls done for state 16
+  nulls done for state 17
+  nulls done for state 18
+  nulls done for state 19
+  nulls done for state 20
+  nulls done for state 21
+  nulls done for state 22
+  nulls done for state 23
+  nulls done for state 24
+  nulls done for state 25
+  graded readouts done through state 0
+  graded readouts done through state 12
+  graded readouts done through state 24
+  graded readouts done through state 36
+saved: /content/drive/MyDrive/tracing-qwen3b/graded_probe_results.csv
+saved: /content/tracing-qwen3b/graded_probe_results.csv
+graded rows: 592
+GRADED READOUT (mechanical, by-clip split, pca64 readout):
+  pitch_log2 at audio: MAE state 0 = 0.0556, state 19 = 0.0657, state 36 = 0.0942; worst state 36 at 0.0942
+  pitch_log2 at final: MAE state 0 = 0.7608, state 19 = 0.1016, state 36 = 0.0860; worst state 0 at 0.7608
+    (final position at state 0, before any layer runs: R2 = -0.0004; this is the built-in sanity line, it should sit at chance)
+  onset_s at audio: MAE state 0 = 0.6754, state 19 = 0.0519, state 36 = 0.0530; worst state 0 at 0.6754
+  onset_s at final: MAE state 0 = 0.8269, state 19 = 0.0596, state 36 = 0.0742; worst state 0 at 0.8269
+    (final position at state 0, before any layer runs: R2 = -0.0369; this is the built-in sanity line, it should sit at chance)
+battery done: graded stimuli generated, features extracted, ridge readouts and permutation nulls run.
+Outputs: graded_probe_results.csv, graded_manifest.csv, graded_features.npz, graded_run_log.txt.

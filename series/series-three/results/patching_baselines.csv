@@ -1,0 +1,24 @@
+clip,question_target,prompt,form,yes_score,answer
+tone_00,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.8811,Yes.
+tone_01,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.8870,Yes.
+tone_02,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.7986,Yes.
+tone_03,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.8781,Yes.
+tone_04,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.8606,Yes.
+tone_05,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.8484,Yes.
+tone_06,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.8775,Yes.
+tone_07,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.8196,Yes.
+silence_00,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.3257,No
+silence_01,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.3257,No
+silence_02,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.3257,No
+silence_03,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.3257,No
+silence_04,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.3257,No
+silence_05,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.3257,No
+silence_06,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.3257,No
+silence_07,beeping,Is there the sound of beeping in this clip? Answer yes or no.,presence,0.3257,No
+speech_00,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,presence,0.9107,Yes.
+speech_01,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,presence,0.9107,Yes.
+speech_02,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,presence,0.9107,Yes.
+speech_03,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,presence,0.9107,Yes.
+tone_00,,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",open_p3,,silent
+silence_00,,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",open_p3,,silent
+speech_00,,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",open_p3,,speech synthesizer

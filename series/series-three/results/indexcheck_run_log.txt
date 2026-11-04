@@ -1,0 +1,279 @@
+======================================================================
+TOKEN CHECK: settle the audio positions from the histogram, before any baseline or patch
+expected audio-position count for these 4.0 s clips: 100
+tokenizer tokens whose text mentions audio:
+  '(audio' -> id 55065
+  '.audio' -> id 36747
+  '/audio' -> id 71247
+  '<|audio_bos|>' -> id 151647
+  '<|audio_eos|>' -> id 151648
+  '_audio' -> id 29688
+  'audio' -> id 16736
+  'ĉaudio' -> id 83290
+  'Ġaudio' -> id 7699
+  thinker_config.audio_token_id = 151646
+  thinker_config.audio_token_index = 151646
+----------------------------------------------------------------------
+TOKEN HISTOGRAM: tone clip
+  file: /content/patching_clips/tone_00.wav
+  decoded waveform: 64000 samples at 16 kHz (4.00 s)
+  sequence length: 137 positions
+  distinct token ids: 30
+  full histogram, most common first (every id with count > 0):
+    id 151646: count 100, token name '<|AUDIO|>', decodes to '<|AUDIO|>' [special token]
+    id 198: count 5, token name 'Ċ', decodes to '\n'
+    id 151644: count 3, token name '<|im_start|>', decodes to '<|im_start|>' [special token]
+    id 13: count 2, token name '.', decodes to '.'
+    id 151645: count 2, token name '<|im_end|>', decodes to '<|im_end|>' [special token]
+    id 8948: count 1, token name 'system', decodes to 'system'
+    id 2610: count 1, token name 'You', decodes to 'You'
+    id 525: count 1, token name 'Ġare', decodes to ' are'
+    id 264: count 1, token name 'Ġa', decodes to ' a'
+    id 10950: count 1, token name 'Ġhelpful', decodes to ' helpful'
+    id 17847: count 1, token name 'Ġassistant', decodes to ' assistant'
+    id 872: count 1, token name 'user', decodes to 'user'
+    id 151647: count 1, token name '<|audio_bos|>', decodes to '<|audio_bos|>' [special token]
+    id 151648: count 1, token name '<|audio_eos|>', decodes to '<|audio_eos|>' [special token]
+    id 3872: count 1, token name 'Is', decodes to 'Is'
+    id 1052: count 1, token name 'Ġthere', decodes to ' there'
+    id 279: count 1, token name 'Ġthe', decodes to ' the'
+    id 5112: count 1, token name 'Ġsound', decodes to ' sound'
+    id 315: count 1, token name 'Ġof', decodes to ' of'
+    id 387: count 1, token name 'Ġbe', decodes to ' be'
+    id 54223: count 1, token name 'eping', decodes to 'eping'
+    id 304: count 1, token name 'Ġin', decodes to ' in'
+    id 419: count 1, token name 'Ġthis', decodes to ' this'
+    id 12327: count 1, token name 'Ġclip', decodes to ' clip'
+    id 30: count 1, token name '?', decodes to '?'
+    id 21806: count 1, token name 'ĠAnswer', decodes to ' Answer'
+    id 9834: count 1, token name 'Ġyes', decodes to ' yes'
+    id 476: count 1, token name 'Ġor', decodes to ' or'
+    id 902: count 1, token name 'Ġno', decodes to ' no'
+    id 77091: count 1, token name 'assistant', decodes to 'assistant'
+  processor input_features shape: (1, 128, 30000) (batch, mel bins, audio frames)
+  processor feature_attention_mask shape: (1, 30000), true frames per row: [400]
+  candidate audio ids, counted in this row:
+    candidate id 7699 (tokenizer token 'Ġaudio'): count 0, decodes to ' audio'
+    candidate id 16736 (tokenizer token 'audio'): count 0, decodes to 'audio'
+    candidate id 29688 (tokenizer token '_audio'): count 0, decodes to '_audio'
+    candidate id 36747 (tokenizer token '.audio'): count 0, decodes to '.audio'
+    candidate id 55065 (tokenizer token '(audio'): count 0, decodes to '(audio'
+    candidate id 71247 (tokenizer token '/audio'): count 0, decodes to '/audio'
+    candidate id 83290 (tokenizer token 'ĉaudio'): count 0, decodes to '\taudio'
+    candidate id 151646 (config thinker_config.audio_token_id): count 100, decodes to '<|AUDIO|>'
+    candidate id 151647 (tokenizer token '<|audio_bos|>'): count 1, decodes to '<|audio_bos|>'
+    candidate id 151648 (tokenizer token '<|audio_eos|>'): count 1, decodes to '<|audio_eos|>'
+  DERIVED audio token id for the tone clip: 151646 (config thinker_config.audio_token_id), decodes to '<|AUDIO|>'
+  audio positions: 100 of 137; first [15, 16, 17, 18, 19], last [110, 111, 112, 113, 114]
+----------------------------------------------------------------------
+TOKEN HISTOGRAM: speech clip
+  file: /content/patching_clips/speech_00.wav
+  decoded waveform: 64000 samples at 16 kHz (4.00 s)
+  sequence length: 138 positions
+  distinct token ids: 30
+  full histogram, most common first (every id with count > 0):
+    id 151646: count 100, token name '<|AUDIO|>', decodes to '<|AUDIO|>' [special token]
+    id 198: count 5, token name 'Ċ', decodes to '\n'
+    id 151644: count 3, token name '<|im_start|>', decodes to '<|im_start|>' [special token]
+    id 264: count 2, token name 'Ġa', decodes to ' a'
+    id 13: count 2, token name '.', decodes to '.'
+    id 151645: count 2, token name '<|im_end|>', decodes to '<|im_end|>' [special token]
+    id 8948: count 1, token name 'system', decodes to 'system'
+    id 2610: count 1, token name 'You', decodes to 'You'
+    id 525: count 1, token name 'Ġare', decodes to ' are'
+    id 10950: count 1, token name 'Ġhelpful', decodes to ' helpful'
+    id 17847: count 1, token name 'Ġassistant', decodes to ' assistant'
+    id 872: count 1, token name 'user', decodes to 'user'
+    id 151647: count 1, token name '<|audio_bos|>', decodes to '<|audio_bos|>' [special token]
+    id 151648: count 1, token name '<|audio_eos|>', decodes to '<|audio_eos|>' [special token]
+    id 3872: count 1, token name 'Is', decodes to 'Is'
+    id 1052: count 1, token name 'Ġthere', decodes to ' there'
+    id 279: count 1, token name 'Ġthe', decodes to ' the'
+    id 5112: count 1, token name 'Ġsound', decodes to ' sound'
+    id 315: count 1, token name 'Ġof', decodes to ' of'
+    id 1697: count 1, token name 'Ġperson', decodes to ' person'
+    id 12094: count 1, token name 'Ġspeaking', decodes to ' speaking'
+    id 304: count 1, token name 'Ġin', decodes to ' in'
+    id 419: count 1, token name 'Ġthis', decodes to ' this'
+    id 12327: count 1, token name 'Ġclip', decodes to ' clip'
+    id 30: count 1, token name '?', decodes to '?'
+    id 21806: count 1, token name 'ĠAnswer', decodes to ' Answer'
+    id 9834: count 1, token name 'Ġyes', decodes to ' yes'
+    id 476: count 1, token name 'Ġor', decodes to ' or'
+    id 902: count 1, token name 'Ġno', decodes to ' no'
+    id 77091: count 1, token name 'assistant', decodes to 'assistant'
+  processor input_features shape: (1, 128, 30000) (batch, mel bins, audio frames)
+  processor feature_attention_mask shape: (1, 30000), true frames per row: [400]
+  candidate audio ids, counted in this row:
+    candidate id 7699 (tokenizer token 'Ġaudio'): count 0, decodes to ' audio'
+    candidate id 16736 (tokenizer token 'audio'): count 0, decodes to 'audio'
+    candidate id 29688 (tokenizer token '_audio'): count 0, decodes to '_audio'
+    candidate id 36747 (tokenizer token '.audio'): count 0, decodes to '.audio'
+    candidate id 55065 (tokenizer token '(audio'): count 0, decodes to '(audio'
+    candidate id 71247 (tokenizer token '/audio'): count 0, decodes to '/audio'
+    candidate id 83290 (tokenizer token 'ĉaudio'): count 0, decodes to '\taudio'
+    candidate id 151646 (config thinker_config.audio_token_id): count 100, decodes to '<|AUDIO|>'
+    candidate id 151647 (tokenizer token '<|audio_bos|>'): count 1, decodes to '<|audio_bos|>'
+    candidate id 151648 (tokenizer token '<|audio_eos|>'): count 1, decodes to '<|audio_eos|>'
+  DERIVED audio token id for the speech clip: 151646 (config thinker_config.audio_token_id), decodes to '<|AUDIO|>'
+  audio positions: 100 of 138; first [15, 16, 17, 18, 19], last [110, 111, 112, 113, 114]
+----------------------------------------------------------------------
+AUDIO TOKEN ID SETTLED: 151646, decodes to '<|AUDIO|>'
+audio positions: tone 100 of 137 row positions; speech 100 of 138
+hidden states returned: 37 tensors (index 0 is the embedding output, then one per decoder layer)
+hidden size: 2048
+TOKEN CHECK PASSED: the audio positions are derived from the histogram, counted, and the same for both clips. Every capture and patch in this run works on these positions.
+saved: /content/drive/MyDrive/tracing-qwen3b/handover_token_check.txt
+saved: /content/tracing-qwen3b/handover_token_check.txt
+======================================================================
+FEED PROOF: 20 clips against the manifest
+  feed proof tone_00.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -31.86 dB, sha256 prefix 4387a0652fa42227 matches the manifest
+  feed proof tone_01.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -31.41 dB, sha256 prefix 54b8c524e548f64d matches the manifest
+  feed proof tone_02.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -31.61 dB, sha256 prefix 9c4e2870e0fd4d7b matches the manifest
+  feed proof tone_03.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -32.57 dB, sha256 prefix 50d059851a962611 matches the manifest
+  feed proof tone_04.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -32.43 dB, sha256 prefix 5d5886e7881d1719 matches the manifest
+  feed proof tone_05.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -31.45 dB, sha256 prefix 2a82e7d2a2b7dac6 matches the manifest
+  feed proof tone_06.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -32.99 dB, sha256 prefix 4922f03279393d45 matches the manifest
+  feed proof tone_07.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -31.54 dB, sha256 prefix cdbe3fc551eecf9a matches the manifest
+  feed proof silence_00.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -120.00 dB, sha256 prefix f751fd7094be088d matches the manifest
+  feed proof silence_01.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -120.00 dB, sha256 prefix f751fd7094be088d matches the manifest
+  feed proof silence_02.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -120.00 dB, sha256 prefix f751fd7094be088d matches the manifest
+  feed proof silence_03.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -120.00 dB, sha256 prefix f751fd7094be088d matches the manifest
+  feed proof silence_04.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -120.00 dB, sha256 prefix f751fd7094be088d matches the manifest
+  feed proof silence_05.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -120.00 dB, sha256 prefix f751fd7094be088d matches the manifest
+  feed proof silence_06.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -120.00 dB, sha256 prefix f751fd7094be088d matches the manifest
+  feed proof silence_07.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -120.00 dB, sha256 prefix f751fd7094be088d matches the manifest
+  feed proof speech_00.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -14.76 dB, sha256 prefix ce020d1ecc420b80 matches the manifest
+  feed proof speech_01.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -14.76 dB, sha256 prefix ce020d1ecc420b80 matches the manifest
+  feed proof speech_02.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -14.76 dB, sha256 prefix ce020d1ecc420b80 matches the manifest
+  feed proof speech_03.wav: 4.000 s, 64000 samples at 16000 Hz, RMS -14.76 dB, sha256 prefix ce020d1ecc420b80 matches the manifest
+feed proof passed: 20 clips proven against the manifest
+======================================================================
+BASELINES: unpatched, every clip
+  baseline tone_00: yes 0.8811, answer 'Yes.'
+  baseline tone_01: yes 0.8870, answer 'Yes.'
+  baseline tone_02: yes 0.7986, answer 'Yes.'
+  baseline tone_03: yes 0.8781, answer 'Yes.'
+  baseline tone_04: yes 0.8606, answer 'Yes.'
+  baseline tone_05: yes 0.8484, answer 'Yes.'
+  baseline tone_06: yes 0.8775, answer 'Yes.'
+  baseline tone_07: yes 0.8196, answer 'Yes.'
+  baseline silence_00: yes 0.3257, answer 'No'
+  baseline silence_01: yes 0.3257, answer 'No'
+  baseline silence_02: yes 0.3257, answer 'No'
+  baseline silence_03: yes 0.3257, answer 'No'
+  baseline silence_04: yes 0.3257, answer 'No'
+  baseline silence_05: yes 0.3257, answer 'No'
+  baseline silence_06: yes 0.3257, answer 'No'
+  baseline silence_07: yes 0.3257, answer 'No'
+  baseline speech_00: yes 0.9107, answer 'Yes.'
+  baseline speech_01: yes 0.9107, answer 'Yes.'
+  baseline speech_02: yes 0.9107, answer 'Yes.'
+  baseline speech_03: yes 0.9107, answer 'Yes.'
+  baseline open tone_00: 'silent'
+  baseline open silence_00: 'silent'
+  baseline open speech_00: 'speech synthesizer'
+saved: /content/drive/MyDrive/tracing-qwen3b/indexcheck_baselines.csv
+saved: /content/tracing-qwen3b/indexcheck_baselines.csv
+======================================================================
+CAPTURES: donor runs, one per donor per question
+  captured tone_00 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured tone_01 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured tone_02 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured tone_03 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured tone_04 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured tone_05 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured tone_06 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured tone_07 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured silence_00 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured silence_01 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured silence_02 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured silence_03 under the beeping question: row 137 positions, 100 audio, 37 state tensors
+  captured speech_00 under the a person speaking question: row 138 positions, 100 audio, 37 state tensors
+  captured speech_01 under the a person speaking question: row 138 positions, 100 audio, 37 state tensors
+  captured speech_02 under the a person speaking question: row 138 positions, 100 audio, 37 state tensors
+  captured speech_03 under the a person speaking question: row 138 positions, 100 audio, 37 state tensors
+captures held: 16 donor runs
+======================================================================
+PART A: THE INDEX CHECK
+======================================================================
+NORM DIAGNOSTIC FAILED TO RUN: expected mat1 and mat2 to have the same dtype, but got: float != c10::Half
+(the patch cells below still discriminate the main question; this print is the record that the diagnostic did not run)
+  all_positions: tone_00>silence_00 layer 0 mode all state_index 1: yes 0.8811 (donor baseline 0.8811, diff 0.0000), answer 'Yes.'
+  all_positions: tone_01>silence_01 layer 0 mode all state_index 1: yes 0.8870 (donor baseline 0.8870, diff 0.0000), answer 'Yes.'
+  all_positions: tone_02>silence_02 layer 0 mode all state_index 1: yes 0.7986 (donor baseline 0.7986, diff 0.0000), answer 'Yes.'
+  all_positions: tone_03>silence_03 layer 0 mode all state_index 1: yes 0.8781 (donor baseline 0.8781, diff 0.0000), answer 'Yes.'
+  all_positions: tone_00>silence_00 layer 18 mode all state_index 19: yes 0.8811 (donor baseline 0.8811, diff 0.0000), answer 'Yes.'
+  all_positions: tone_01>silence_01 layer 18 mode all state_index 19: yes 0.8870 (donor baseline 0.8870, diff 0.0000), answer 'Yes.'
+  all_positions: tone_02>silence_02 layer 18 mode all state_index 19: yes 0.7986 (donor baseline 0.7986, diff 0.0000), answer 'Yes.'
+  all_positions: tone_03>silence_03 layer 18 mode all state_index 19: yes 0.8781 (donor baseline 0.8781, diff 0.0000), answer 'Yes.'
+  all_positions: tone_00>silence_00 layer 28 mode all state_index 29: yes 0.8811 (donor baseline 0.8811, diff 0.0000), answer 'Yes.'
+  all_positions: tone_01>silence_01 layer 28 mode all state_index 29: yes 0.8870 (donor baseline 0.8870, diff 0.0000), answer 'Yes.'
+  all_positions: tone_02>silence_02 layer 28 mode all state_index 29: yes 0.7986 (donor baseline 0.7986, diff 0.0000), answer 'Yes.'
+  all_positions: tone_03>silence_03 layer 28 mode all state_index 29: yes 0.8781 (donor baseline 0.8781, diff 0.0000), answer 'Yes.'
+  all_positions: tone_00>silence_00 layer 35 mode all state_index 36: yes 0.5217 (donor baseline 0.8811, diff 0.3594), answer 'Yes.'
+  all_positions: tone_01>silence_01 layer 35 mode all state_index 36: yes 0.5211 (donor baseline 0.8870, diff 0.3660), answer 'Yes.'
+  all_positions: tone_02>silence_02 layer 35 mode all state_index 36: yes 0.4067 (donor baseline 0.7986, diff 0.3919), answer 'No'
+  all_positions: tone_03>silence_03 layer 35 mode all state_index 36: yes 0.5457 (donor baseline 0.8781, diff 0.3324), answer 'Yes.'
+  final_as_built_35: tone_00>silence_00 layer 35 mode final state_index 36: yes 0.5217 (donor baseline 0.8811, diff 0.3594), answer 'Yes.'
+  final_as_built_35: tone_01>silence_01 layer 35 mode final state_index 36: yes 0.5211 (donor baseline 0.8870, diff 0.3660), answer 'Yes.'
+  final_as_built_35: tone_02>silence_02 layer 35 mode final state_index 36: yes 0.4067 (donor baseline 0.7986, diff 0.3919), answer 'No'
+  final_as_built_35: tone_03>silence_03 layer 35 mode final state_index 36: yes 0.5457 (donor baseline 0.8781, diff 0.3324), answer 'Yes.'
+  final_shifted_35: tone_00>silence_00 layer 35 mode final state_index 35: yes 0.6035 (donor baseline 0.8811, diff 0.2776), answer 'Yes.'
+  final_shifted_35: tone_01>silence_01 layer 35 mode final state_index 35: yes 0.5998 (donor baseline 0.8870, diff 0.2872), answer 'Yes.'
+  final_shifted_35: tone_02>silence_02 layer 35 mode final state_index 35: yes 0.5331 (donor baseline 0.7986, diff 0.2655), answer 'Yes.'
+  final_shifted_35: tone_03>silence_03 layer 35 mode final state_index 35: yes 0.5797 (donor baseline 0.8781, diff 0.2984), answer 'Yes.'
+  final_as_built_34: tone_00>silence_00 layer 34 mode final state_index 35: yes 0.8765 (donor baseline 0.8811, diff 0.0046), answer 'Yes.'
+  final_as_built_34: tone_01>silence_01 layer 34 mode final state_index 35: yes 0.8841 (donor baseline 0.8870, diff 0.0029), answer 'Yes.'
+  final_as_built_34: tone_02>silence_02 layer 34 mode final state_index 35: yes 0.7947 (donor baseline 0.7986, diff 0.0039), answer 'Yes.'
+  final_as_built_34: tone_03>silence_03 layer 34 mode final state_index 35: yes 0.8739 (donor baseline 0.8781, diff 0.0042), answer 'Yes.'
+  final_as_built_28: tone_00>silence_00 layer 28 mode final state_index 29: yes 0.8625 (donor baseline 0.8811, diff 0.0186), answer 'Yes.'
+  final_as_built_28: tone_01>silence_01 layer 28 mode final state_index 29: yes 0.8687 (donor baseline 0.8870, diff 0.0183), answer 'Yes.'
+  final_as_built_28: tone_02>silence_02 layer 28 mode final state_index 29: yes 0.7571 (donor baseline 0.7986, diff 0.0416), answer 'Yes.'
+  final_as_built_28: tone_03>silence_03 layer 28 mode final state_index 29: yes 0.8603 (donor baseline 0.8781, diff 0.0178), answer 'Yes.'
+saved: /content/drive/MyDrive/tracing-qwen3b/indexcheck_results.csv
+saved: /content/tracing-qwen3b/indexcheck_results.csv
+PART A READOUT (mechanical):
+  all-positions layer 0: max diff vs donor 0.0000 over 4 pairs (exact = 0.0000 up to float noise)
+  all-positions layer 18: max diff vs donor 0.0000 over 4 pairs (exact = 0.0000 up to float noise)
+  all-positions layer 28: max diff vs donor 0.0000 over 4 pairs (exact = 0.0000 up to float noise)
+  all-positions layer 35: max diff vs donor 0.3919 over 4 pairs (exact = 0.0000 up to float noise)
+  final_as_built_35: max diff vs donor 0.3919, mean 0.3624
+  final_shifted_35: max diff vs donor 0.2984, mean 0.2822
+  final_as_built_34: max diff vs donor 0.0046, mean 0.0039
+  final_as_built_28: max diff vs donor 0.0416, mean 0.0241
+======================================================================
+PART B: BEHAVIORAL PROPERTY QUESTIONS
+======================================================================
+no token ids for scoring: [2308, 2753] [' No', 'No']
+property tones to ask: 360
+  asked 60/360 tones (both questions each)
+  asked 120/360 tones (both questions each)
+  asked 180/360 tones (both questions each)
+  asked 240/360 tones (both questions each)
+  asked 300/360 tones (both questions each)
+  asked 360/360 tones (both questions each)
+saved: /content/drive/MyDrive/tracing-qwen3b/behavior_property_results.csv
+saved: /content/tracing-qwen3b/behavior_property_results.csv
+PART B READOUT (mechanical):
+  pitch [correct_by_score]: 0.569 over 360 asks
+  pitch [correct_by_share]: 0.544 over 360 asks
+  pitch [correct_by_word]: 0.547 over 360 asks
+  onset [correct_by_score]: 0.617 over 360 asks
+  onset [correct_by_share]: 0.500 over 360 asks
+  onset [correct_by_word]: 0.500 over 360 asks
+OPEN FORM, ALL 8 UNPATCHED PATCHING TONES:
+  tone_00: 'silent'
+  tone_01: 'silent'
+  tone_02: 'silent'
+  tone_03: 'silent'
+  tone_04: 'silent'
+  tone_05: 'beep'
+  tone_06: 'silent'
+  tone_07: 'beep'
+saved: /content/drive/MyDrive/tracing-qwen3b/openform_tones_unpatched.csv
+saved: /content/tracing-qwen3b/openform_tones_unpatched.csv
+======================================================================
+battery done: index check cells run, property questions
+asked on all 360 tones, open form taken on all 8 tones.
+Outputs: indexcheck_results.csv, behavior_property_results.csv, openform_tones_unpatched.csv, indexcheck_run_log.txt, plus the head's baselines and token check files.
