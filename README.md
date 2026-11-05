@@ -93,9 +93,10 @@ environment.
 
 Series One battery: complete for three open models; the
 fourth (OLA-7B) is built and waiting to run. Series Two:
-complete for the four open models; the Pegasus text version
-is 14 of 60 answers in, paused on the provider's workload
-allowance. Series Three: complete and frozen for
+complete for all five models; the Pegasus text version of
+the yes/no battery finished Nov 5, 2026 (60 of 60 answers),
+and a temperature addendum (the same asks re-run at
+temperature 0.7) sits beside it. Series Three: complete and frozen for
 Qwen2.5-Omni-3B; the same inside tests on MiniCPM-o 2.6
 are the written leftover, to be run under the frozen
 protocol. Next new model in the queue: Baichuan-Omni 1.5.

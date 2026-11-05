@@ -1,0 +1,61 @@
+sound,version,file,target,prompt,repeat,http_status,answer
+beeps,muted_still,swap_silence.mp4,beeping,Is there the sound of beeping in this clip? Answer yes or no.,1,200,"No, there is no sound of beeping in this clip. The video consists entirely of a static gray circle on a black background with no audio cues or visual indicators of sound."
+beeps,muted_still,swap_silence.mp4,beeping,Is there the sound of beeping in this clip? Answer yes or no.,2,200,"No, there is no sound of beeping in this clip. The video consists entirely of a static gray circle on a black background with no audio cues or visual indicators of sound."
+beeps,sound_on_gray,series2_gray_beeps.mp4,beeping,Is there the sound of beeping in this clip? Answer yes or no.,1,200,No.
+beeps,sound_on_gray,series2_gray_beeps.mp4,beeping,Is there the sound of beeping in this clip? Answer yes or no.,2,200,No.
+beeps,sound_on_still,swap_beeps.mp4,beeping,Is there the sound of beeping in this clip? Answer yes or no.,1,200,"No, there is no sound of beeping in this clip. The video consists entirely of a static gray circle on a black background with no audio cues or visual indicators of sound."
+beeps,sound_on_still,swap_beeps.mp4,beeping,Is there the sound of beeping in this clip? Answer yes or no.,2,200,"No, there is no sound of beeping in this clip. The video consists entirely of a static gray circle on a black background with no audio cues or visual indicators of sound."
+mixed,muted_still,swap_silence.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,1,200,No.
+mixed,muted_still,swap_silence.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,2,200,No.
+mixed,muted_still,swap_silence.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,1,200,No.
+mixed,muted_still,swap_silence.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,2,200,No.
+mixed,sound_on_gray,series2_gray_mixed.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,1,200,Yes.
+mixed,sound_on_gray,series2_gray_mixed.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,2,200,Yes.
+mixed,sound_on_gray,series2_gray_mixed.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,1,200,No.
+mixed,sound_on_gray,series2_gray_mixed.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,2,200,No.
+mixed,sound_on_still,swap_mixed.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,1,200,Yes.
+mixed,sound_on_still,swap_mixed.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,2,200,Yes.
+mixed,sound_on_still,swap_mixed.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,1,200,"No, there is no sound of a vacuum cleaner in this clip. The only audio present is a speaker saying, ""The blue cattle boils at seven forty two,"" between 2.16 seconds and 4.64 seconds."
+mixed,sound_on_still,swap_mixed.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,2,200,"No, there is no sound of a vacuum cleaner in this clip. The only audio present is a speaker saying, ""The blue cattle boils at seven forty two,"" between 2.16 seconds and 4.64 seconds."
+silence,muted_still,swap_silence.mp4,silence,Is there the sound of silence in this clip? Answer yes or no.,1,200,"Yes. The video displays a static gray circle on a black background from 0.0s to 10.0s with no visible movement, mouth activity, or speaker presence, and the transcript is empty, indicating no audio content. Therefore, the clip contains the sound of silence."
+silence,muted_still,swap_silence.mp4,silence,Is there the sound of silence in this clip? Answer yes or no.,2,200,"Yes. The video displays a static gray circle on a black background from 0.0s to 10.0s with no visible movement, mouth activity, or speaker presence, and the transcript is empty, indicating no audio content. Therefore, the clip contains the sound of silence."
+silence,sound_on_gray,series2_gray_silence.mp4,silence,Is there the sound of silence in this clip? Answer yes or no.,1,200,Yes.
+silence,sound_on_gray,series2_gray_silence.mp4,silence,Is there the sound of silence in this clip? Answer yes or no.,2,200,Yes.
+silence,sound_on_still,swap_silence.mp4,silence,Is there the sound of silence in this clip? Answer yes or no.,1,200,"Yes. The video displays a static gray circle on a black background from 0.0s to 10.0s with no visible movement, mouth activity, or speaker presence, and the transcript is empty, indicating no audio content. Therefore, the clip contains the sound of silence."
+silence,sound_on_still,swap_silence.mp4,silence,Is there the sound of silence in this clip? Answer yes or no.,2,200,"Yes. The video displays a static gray circle on a black background from 0.0s to 10.0s with no visible movement, mouth activity, or speaker presence, and the transcript is empty, indicating no audio content. Therefore, the clip contains the sound of silence."
+sizzle,muted_still,swap_silence.mp4,sizzling,Is there the sound of sizzling in this clip? Answer yes or no.,1,200,"No, there is no sound of sizzling in this clip. The video displays a static gray circle on a black background from 0.0 to 10.0 seconds with no visual or audio cues indicating sizzling sounds."
+sizzle,muted_still,swap_silence.mp4,sizzling,Is there the sound of sizzling in this clip? Answer yes or no.,2,200,"No, there is no sound of sizzling in this clip. The video displays a static gray circle on a black background from 0.0 to 10.0 seconds with no visual or audio cues indicating sizzling sounds."
+sizzle,sound_on_gray,series2_gray_sizzle.mp4,sizzling,Is there the sound of sizzling in this clip? Answer yes or no.,1,200,No.
+sizzle,sound_on_gray,series2_gray_sizzle.mp4,sizzling,Is there the sound of sizzling in this clip? Answer yes or no.,2,200,No.
+sizzle,sound_on_still,swap_sizzle.mp4,sizzling,Is there the sound of sizzling in this clip? Answer yes or no.,1,200,"No, there is no sound of sizzling in this clip. The video displays a static gray circle on a black background from 0.0 to 10.0 seconds with no visual or audio cues indicating sizzling sounds."
+sizzle,sound_on_still,swap_sizzle.mp4,sizzling,Is there the sound of sizzling in this clip? Answer yes or no.,2,200,"No, there is no sound of sizzling in this clip. The video displays a static gray circle on a black background from 0.0 to 10.0 seconds with no visual or audio cues indicating sizzling sounds."
+speech,muted_still,swap_silence.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,1,200,No.
+speech,muted_still,swap_silence.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,2,200,No.
+speech,muted_still,swap_silence.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,1,200,No
+speech,muted_still,swap_silence.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,2,200,No
+speech,sound_on_gray,series2_gray_speech.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,1,200,Yes.
+speech,sound_on_gray,series2_gray_speech.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,2,200,Yes.
+speech,sound_on_gray,series2_gray_speech.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,1,200,No.
+speech,sound_on_gray,series2_gray_speech.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,2,200,No.
+speech,sound_on_still,swap_speech.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,1,200,Yes.
+speech,sound_on_still,swap_speech.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,2,200,Yes.
+speech,sound_on_still,swap_speech.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,1,200,No.
+speech,sound_on_still,swap_speech.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,2,200,No.
+vacuum,muted_still,swap_silence.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,1,200,No.
+vacuum,muted_still,swap_silence.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,2,200,No.
+vacuum,sound_on_gray,series2_gray_vacuum.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,1,200,No.
+vacuum,sound_on_gray,series2_gray_vacuum.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,2,200,No.
+vacuum,sound_on_still,swap_vacuum.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,1,200,No.
+vacuum,sound_on_still,swap_vacuum.mp4,a vacuum cleaner,Is there the sound of a vacuum cleaner in this clip? Answer yes or no.,2,200,No.
+water,muted_still,swap_silence.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,1,200,No.
+water,muted_still,swap_silence.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,2,200,No.
+water,muted_still,swap_silence.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,1,200,No
+water,muted_still,swap_silence.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,2,200,No
+water,sound_on_gray,series2_gray_water.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,1,200,No.
+water,sound_on_gray,series2_gray_water.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,2,200,No.
+water,sound_on_gray,series2_gray_water.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,1,200,No.
+water,sound_on_gray,series2_gray_water.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,2,200,No.
+water,sound_on_still,swap_water.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,1,200,No.
+water,sound_on_still,swap_water.mp4,a person speaking,Is there the sound of a person speaking in this clip? Answer yes or no.,2,200,No.
+water,sound_on_still,swap_water.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,1,200,No
+water,sound_on_still,swap_water.mp4,running water,Is there the sound of running water in this clip? Answer yes or no.,2,200,No

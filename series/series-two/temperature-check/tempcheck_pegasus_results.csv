@@ -1,0 +1,31 @@
+cell,file,prompt_id,temperature,draw,http_status,answer
+swap_silence,swap_silence.mp4,P3,0.7,1,200,The audio for this video clip is silent.
+swap_silence,swap_silence.mp4,P3,0.7,2,200,silent
+swap_silence,swap_silence.mp4,P3,0.7,3,200,The audio for this video clip is silent.
+swap_speech,swap_speech.mp4,P3,0.7,1,200,"Between 2.16 seconds and 4.64 seconds, a speaker says, ""The Blue Kettle boils at seven forty two."" Outside of this timeframe (0.0s–2.16s and 4.64s–10.0s), no speech or other sounds are indicated in the transcript, so those portions appear silent based on the provided information."
+swap_speech,swap_speech.mp4,P3,0.7,2,200,"Between 2.16 seconds and 4.64 seconds, a speaker says, ""The Blue Kettle boils at seven forty two."" No other sounds or speech are audible in the clip."
+swap_speech,swap_speech.mp4,P3,0.7,3,200,"Between 2.16s and 4.64s, a speaker says, ""The Blue Kettle boils at seven forty two."" No other sounds are audible in the clip."
+swap_beeps,swap_beeps.mp4,P3,0.7,1,200,silent
+swap_beeps,swap_beeps.mp4,P3,0.7,2,200,"The audio throughout the entire clip (0.0s–10.0s) is silent. No speech, background noise, or other sounds are audible."
+swap_beeps,swap_beeps.mp4,P3,0.7,3,200,silent
+swap_water,swap_water.mp4,P3,0.7,1,200,silent
+swap_water,swap_water.mp4,P3,0.7,2,200,"The audio throughout the entire clip (0.0s–10.0s) is silent. No speech, background noise, or other sounds are audible."
+swap_water,swap_water.mp4,P3,0.7,3,200,The clip is silent.
+swap_vacuum,swap_vacuum.mp4,P3,0.7,1,200,The audio track is silent.
+swap_vacuum,swap_vacuum.mp4,P3,0.7,2,200,"The audio track for this video clip is silent. No speech, background noise, or other sounds are audible throughout the duration."
+swap_vacuum,swap_vacuum.mp4,P3,0.7,3,200,The audio for this clip is silent.
+swap_sizzle,swap_sizzle.mp4,P3,0.7,1,200,silent
+swap_sizzle,swap_sizzle.mp4,P3,0.7,2,200,silent
+swap_sizzle,swap_sizzle.mp4,P3,0.7,3,200,The clip is silent.
+swap_mixed,swap_mixed.mp4,P3,0.7,1,200,"The video contains speech. Between 2.16s and 4.64s, a speaker says, ""The blue cattle boils at seven forty two."""
+swap_mixed,swap_mixed.mp4,P3,0.7,2,200,"The audio contains a single speaker saying, ""The blue cattle boils at seven forty two,"" between 2.16 and 4.64 seconds. No other sounds are audible in the clip."
+swap_mixed,swap_mixed.mp4,P3,0.7,3,200,"The audio contains a voice speaking from approximately 2.16 seconds to 4.64 seconds, stating, ""The blue cattle boils at seven forty two."" Outside of this segment, the audio appears silent."
+real_vacuum_P02_07_5,P02_07_5.mp4,P1,0.7,1,200,"{""seen"": ""A person opens a kitchen drawer, takes out tongs, opens an oven wearing an oven mitt, removes a baking tray containing onion rings and other fried food, and places it on the stovetop."", ""heard"": ""none"", ""sound_start_s"": null}"
+real_vacuum_P02_07_5,P02_07_5.mp4,P1,0.7,2,200,"{""seen"": ""A person opens a kitchen drawer, retrieves tongs, opens an oven, and removes a baking tray containing onion rings, cheese sticks, and a breaded item, placing it on the stovetop."", ""heard"": ""none"", ""sound_start_s"": null}"
+real_vacuum_P02_07_5,P02_07_5.mp4,P1,0.7,3,200,"{""seen"": ""A person opens a kitchen drawer to retrieve tongs, then opens an oven and removes a baking tray containing onion rings and other fried food items using an oven mitt. They place the tray on the stovetop and use the tongs to adjust the food."", ""heard"": ""none"", ""sound_start_s"": null}"
+real_jar_P32_01_54,P32_01_54.mp4,P1,0.7,1,200,"{""seen"": ""A person is washing a glass jar and its lid in a kitchen sink under running water. They rinse the jar, place it on a purple drying rack to the left, then pick up a sponge to wash the lid."", ""heard"": ""none"", ""sound_start_s"": null}"
+real_jar_P32_01_54,P32_01_54.mp4,P1,0.7,2,200,"{""seen"": ""A person is washing a glass jar and its lid under running water in a kitchen sink. They rinse the jar and lid thoroughly, then place the lid on a purple appliance next to the sink before continuing to rinse the jar with a sponge."", ""heard"": ""none"", ""sound_start_s"": null}"
+real_jar_P32_01_54,P32_01_54.mp4,P1,0.7,3,200,"{""seen"": ""A person is washing a glass jar and its lid in a kitchen sink under running water. They rinse the jar, place it on a purple drying rack to the left, then pick up a sponge to wash the lid."", ""heard"": ""none"", ""sound_start_s"": null}"
+real_eggs_own-01,own-01.mp4,P1,0.7,1,200,"{""seen"": ""A person is cooking eggs in a pot on a gas stove. They adjust the stove knob, then use a spatula to scramble and flip the eggs. Finally, they transfer the cooked eggs onto a plate of rice."", ""heard"": ""none"", ""sound_start_s"": null}"
+real_eggs_own-01,own-01.mp4,P1,0.7,2,200,"{""seen"": ""A person is cooking an omelet in a pot on a gas stove. They turn the stove knob to ignite the burner, then use a spatula to fold and press the eggs. Eventually, they scoop portions of the cooked omelet onto a plate already containing rice."", ""heard"": ""none"", ""sound_start_s"": null}"
+real_eggs_own-01,own-01.mp4,P1,0.7,3,200,"{""seen"": ""A person turns on a gas stove burner under a pot containing eggs. They then use a spatula to stir and fold the eggs as they cook in the pot. Finally, they use the spatula to transfer portions of the cooked eggs onto a plate next to the stove that already contains rice."", ""heard"": ""none"", ""sound_start_s"": null}"

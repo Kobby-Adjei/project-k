@@ -16,3 +16,14 @@ were never attempted.
 The run resumes when the allowance resets. No second
 account will be created to get around the limit; the run
 finishes on the account that started it, or it waits.
+
+Completion (Nov 5, 2026): that last rule was superseded by
+the account owner's own decision. The remaining 46 calls
+ran on his other, pre-existing Twelve Labs account (held
+under his personal Gmail; it was not created for this) and
+finished the battery: 60 of 60 answers in, all HTTP 200.
+Results: pegasus_yesno_results.csv in this folder; the
+read: pegasus-yesno-diagnostics-summary.md. In short: 40
+of 60 correct, and all 20 wrong answers are one kind — a
+non-speech sound present in the clip, answered No. Series
+Two is complete for all five models.

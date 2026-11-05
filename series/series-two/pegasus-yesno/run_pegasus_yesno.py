@@ -29,7 +29,7 @@ SWAP = os.path.join(HERE, "..", "..", "pilot2", "swap")
 RAW = os.path.join(HERE, "raw")
 os.makedirs(RAW, exist_ok=True)
 
-CONNECTOR_NAME = "custom.twelvelabs-run"
+CONNECTOR_NAME = os.environ.get("TL_CONNECTOR", "custom.twelvelabs-run")
 ALLOWED_HOSTS = ["api.twelvelabs.io"]
 API_URL = "https://api.twelvelabs.io/v1.3/analyze"
 MODEL = "pegasus1.6"
