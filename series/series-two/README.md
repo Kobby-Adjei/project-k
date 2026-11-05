@@ -22,6 +22,7 @@ timing ladder, one tone placed at 2, 6, and 10 seconds.
 - pegasus-yesno/: the Pegasus text version of the yes or no
   battery, and its current status.
 
-Status: complete for the four open models. Four models,
+Status: complete for all five models. Four open models,
 four different places where the sound is lost. The Pegasus
-version is partial; see pegasus-yesno/STATUS.md.
+text version of the yes or no battery finished Nov 5, 2026;
+see pegasus-yesno/STATUS.md.

@@ -23,7 +23,10 @@ wrong answers is the same kind of wrong:
   (4 of 4).
 - Everything else is right. Silence is affirmed as "the
   sound of silence" (6 of 6). Speech is affirmed wherever
-  it is present, still or gray (6 of 6). Every lure is
+  it is present, still or gray (8 of 8: four on the speech
+  clips, four on the mixed clips; corrected Nov 5, 2026
+  against the CSV, which holds 8 speech-present answers,
+  all Yes). Every lure is
   refused (speech asked as running water, water asked as
   a person speaking: all No, all correct). Every muted
   control is a correct No. Nothing is invented anywhere.
