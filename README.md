@@ -96,7 +96,11 @@ fourth (OLA-7B) is built and waiting to run. Series Two:
 complete for all five models; the Pegasus text version of
 the yes/no battery finished Nov 5, 2026 (60 of 60 answers),
 and a temperature addendum (the same asks re-run at
-temperature 0.7) sits beside it. Series Three: complete and frozen for
+temperature 0.7) sits beside it. On Nov 6, 2026 the three
+sounds the Twelve Labs models page names as examples
+(birds chirping, applause, fireworks) were run the same
+way and denied the same way; an independent rerun matched
+all 33 answers (series/series-one/docs-sounds-check). Series Three: complete and frozen for
 Qwen2.5-Omni-3B; the same inside tests on MiniCPM-o 2.6
 are the written leftover, to be run under the frozen
 protocol. Next new model in the queue: Baichuan-Omni 1.5.

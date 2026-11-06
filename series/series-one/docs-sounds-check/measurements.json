@@ -1,0 +1,122 @@
+{
+  "birds": {
+    "source": "birds_robin.mp3",
+    "window_start_s": 34.0,
+    "matched_wav_rms_db": -20.3,
+    "gain_applied_db": 12.54,
+    "versions": {
+      "still": {
+        "file": "docs_birds_still.mp4",
+        "duration_s": 10.0,
+        "streams": [
+          [
+            "video",
+            "h264"
+          ],
+          [
+            "audio",
+            "aac"
+          ]
+        ],
+        "audio_rms_db_decoded": -20.38,
+        "sha256": "6a2bce626f17591a20387c733b487b4dcdf0b6fe3dda58da8a62fc9690d60734"
+      },
+      "gray": {
+        "file": "docs_birds_gray.mp4",
+        "duration_s": 10.0,
+        "streams": [
+          [
+            "video",
+            "h264"
+          ],
+          [
+            "audio",
+            "aac"
+          ]
+        ],
+        "audio_rms_db_decoded": -20.38,
+        "sha256": "fc36124c4e1152fed2264d6f572523836b92793cbd99afbab821da6cb6564018"
+      }
+    }
+  },
+  "applause": {
+    "source": "applause.mp3",
+    "window_start_s": 1.0,
+    "matched_wav_rms_db": -20.25,
+    "gain_applied_db": 7.92,
+    "versions": {
+      "still": {
+        "file": "docs_applause_still.mp4",
+        "duration_s": 10.0,
+        "streams": [
+          [
+            "video",
+            "h264"
+          ],
+          [
+            "audio",
+            "aac"
+          ]
+        ],
+        "audio_rms_db_decoded": -20.39,
+        "sha256": "52364494c73435a803132d0f7ee2fdf2e28f58313c03fad2feb240efe5079a51"
+      },
+      "gray": {
+        "file": "docs_applause_gray.mp4",
+        "duration_s": 10.0,
+        "streams": [
+          [
+            "video",
+            "h264"
+          ],
+          [
+            "audio",
+            "aac"
+          ]
+        ],
+        "audio_rms_db_decoded": -20.39,
+        "sha256": "3d68be4a08ea2e632f89f0b242670245f0adef6d5a6d9b33122dc6fb6b378e64"
+      }
+    }
+  },
+  "fireworks": {
+    "source": "fireworks.mp3",
+    "window_start_s": 2.0,
+    "matched_wav_rms_db": -20.33,
+    "gain_applied_db": 25.19,
+    "versions": {
+      "still": {
+        "file": "docs_fireworks_still.mp4",
+        "duration_s": 10.0,
+        "streams": [
+          [
+            "video",
+            "h264"
+          ],
+          [
+            "audio",
+            "aac"
+          ]
+        ],
+        "audio_rms_db_decoded": -20.39,
+        "sha256": "5ba7b8acad07359f4ee8cc83724d97e83b9d4ab572950a8472b8d8d962356f21"
+      },
+      "gray": {
+        "file": "docs_fireworks_gray.mp4",
+        "duration_s": 10.0,
+        "streams": [
+          [
+            "video",
+            "h264"
+          ],
+          [
+            "audio",
+            "aac"
+          ]
+        ],
+        "audio_rms_db_decoded": -20.39,
+        "sha256": "c6eddd64d2445cce5883301a3a48808e01a843d3e7057b96fe06c11ccc6a55c3"
+      }
+    }
+  }
+}

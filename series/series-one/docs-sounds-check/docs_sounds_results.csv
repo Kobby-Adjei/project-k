@@ -1,0 +1,34 @@
+sound,version,target,prompt_id,prompt,repeat,file,http_status,answer
+applause,gray,applause,YN,Is there the sound of applause in this clip? Answer yes or no.,1,docs_applause_gray.mp4,200,No.
+applause,gray,applause,YN,Is there the sound of applause in this clip? Answer yes or no.,2,docs_applause_gray.mp4,200,No.
+applause,muted,applause,YN,Is there the sound of applause in this clip? Answer yes or no.,1,swap_silence.mp4,200,"No, there is no sound of applause in this clip. The video consists entirely of a static gray circle on a black background with no audio or visual cues indicating any sound, including applause."
+applause,muted,applause,YN,Is there the sound of applause in this clip? Answer yes or no.,2,swap_silence.mp4,200,"No, there is no sound of applause in this clip. The video consists entirely of a static gray circle on a black background with no audio or visual cues indicating any sound, including applause."
+applause,still,,P3,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",1,docs_applause_still.mp4,200,The audio track for this video clip is silent.
+applause,still,,P3,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",2,docs_applause_still.mp4,200,The audio track for this video clip is silent.
+applause,still,,P3,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",3,docs_applause_still.mp4,200,The audio track for this video clip is silent.
+applause,still,applause,YN,Is there the sound of applause in this clip? Answer yes or no.,1,docs_applause_still.mp4,200,"No, there is no sound of applause in this clip. The video consists entirely of a static gray circle on a black background with no audio or visual cues indicating any sound, including applause."
+applause,still,applause,YN,Is there the sound of applause in this clip? Answer yes or no.,2,docs_applause_still.mp4,200,"No, there is no sound of applause in this clip. The video consists entirely of a static gray circle on a black background with no audio or visual cues indicating any sound, including applause."
+applause,still,fireworks,YN,Is there the sound of fireworks in this clip? Answer yes or no.,1,docs_applause_still.mp4,200,No.
+applause,still,fireworks,YN,Is there the sound of fireworks in this clip? Answer yes or no.,2,docs_applause_still.mp4,200,No.
+birds,gray,birds chirping,YN,Is there the sound of birds chirping in this clip? Answer yes or no.,1,docs_birds_gray.mp4,200,No.
+birds,gray,birds chirping,YN,Is there the sound of birds chirping in this clip? Answer yes or no.,2,docs_birds_gray.mp4,200,No.
+birds,muted,birds chirping,YN,Is there the sound of birds chirping in this clip? Answer yes or no.,1,swap_silence.mp4,200,No.
+birds,muted,birds chirping,YN,Is there the sound of birds chirping in this clip? Answer yes or no.,2,swap_silence.mp4,200,No.
+birds,still,,P3,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",1,docs_birds_still.mp4,200,The audio track for this video clip is silent.
+birds,still,,P3,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",2,docs_birds_still.mp4,200,The audio track for this video clip is silent.
+birds,still,,P3,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",3,docs_birds_still.mp4,200,The audio track for this video clip is silent.
+birds,still,applause,YN,Is there the sound of applause in this clip? Answer yes or no.,1,docs_birds_still.mp4,200,"No, there is no sound of applause in this clip. The video consists entirely of a static gray circle on a black background with no audio or visual cues indicating any sound, including applause."
+birds,still,applause,YN,Is there the sound of applause in this clip? Answer yes or no.,2,docs_birds_still.mp4,200,"No, there is no sound of applause in this clip. The video consists entirely of a static gray circle on a black background with no audio or visual cues indicating any sound, including applause."
+birds,still,birds chirping,YN,Is there the sound of birds chirping in this clip? Answer yes or no.,1,docs_birds_still.mp4,200,No.
+birds,still,birds chirping,YN,Is there the sound of birds chirping in this clip? Answer yes or no.,2,docs_birds_still.mp4,200,No.
+fireworks,gray,fireworks,YN,Is there the sound of fireworks in this clip? Answer yes or no.,1,docs_fireworks_gray.mp4,200,No.
+fireworks,gray,fireworks,YN,Is there the sound of fireworks in this clip? Answer yes or no.,2,docs_fireworks_gray.mp4,200,No.
+fireworks,muted,fireworks,YN,Is there the sound of fireworks in this clip? Answer yes or no.,1,swap_silence.mp4,200,No.
+fireworks,muted,fireworks,YN,Is there the sound of fireworks in this clip? Answer yes or no.,2,swap_silence.mp4,200,No.
+fireworks,still,,P3,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",1,docs_fireworks_still.mp4,200,The audio track for this video clip is silent.
+fireworks,still,,P3,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",2,docs_fireworks_still.mp4,200,The audio track for this video clip is silent.
+fireworks,still,,P3,"What sounds can you hear in this clip? Describe only what is audible, without guessing from the pictures. If the audio is silent, say 'silent'.",3,docs_fireworks_still.mp4,200,The audio track for this video clip is silent.
+fireworks,still,birds chirping,YN,Is there the sound of birds chirping in this clip? Answer yes or no.,1,docs_fireworks_still.mp4,200,No.
+fireworks,still,birds chirping,YN,Is there the sound of birds chirping in this clip? Answer yes or no.,2,docs_fireworks_still.mp4,200,No.
+fireworks,still,fireworks,YN,Is there the sound of fireworks in this clip? Answer yes or no.,1,docs_fireworks_still.mp4,200,No.
+fireworks,still,fireworks,YN,Is there the sound of fireworks in this clip? Answer yes or no.,2,docs_fireworks_still.mp4,200,No.
