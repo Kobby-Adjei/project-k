@@ -1,0 +1,148 @@
+clip_id,condition,prompt_id,repeat,http_status,pred_start_s,gt_start_s,abs_error_s,answer,qa_ok,response_text,flag_sentence_marker,flag_kettle,flag_cattle
+EK01,speechbabble,P1,1,200,6.0,5.9,0.1,potatoes,True,"{""action_start_s"": 6.0, ""answer"": ""potatoes""}",,,
+EK01,speechbabble,P1,2,200,6.0,5.9,0.1,potatoes,True,"{""action_start_s"": 6.0, ""answer"": ""potatoes""}",,,
+EK01,speechbabble,P1,3,200,6.0,5.9,0.1,potatoes,True,"{""action_start_s"": 6.0, ""answer"": ""potatoes""}",,,
+EK02,speechbabble,P1,1,200,0.0,7.16,7.16,blue lid,True,"{""action_start_s"": 0.0, ""answer"": ""blue lid""}",,,
+EK02,speechbabble,P1,2,200,0.0,7.16,7.16,blue plastic lid,True,"{""action_start_s"": 0.0, ""answer"": ""blue plastic lid""}",,,
+EK02,speechbabble,P1,3,200,0.0,7.16,7.16,blue plastic lid,True,"{""action_start_s"": 0.0, ""answer"": ""blue plastic lid""}",,,
+EK03,speechbabble,P1,1,200,6.5,6.35,0.15,freezer door handle,True,"{""action_start_s"": 6.5, ""answer"": ""freezer door handle""}",,,
+EK03,speechbabble,P1,2,200,6.5,6.35,0.15,freezer door handle,True,"{""action_start_s"": 6.5, ""answer"": ""freezer door handle""}",,,
+EK03,speechbabble,P1,3,200,6.5,6.35,0.15,freezer door handle,True,"{""action_start_s"": 6.5, ""answer"": ""freezer door handle""}",,,
+EK04,speechbabble,P1,1,200,6.0,6.94,0.94,squash,False,"{""action_start_s"": 6.0, ""answer"": ""squash""}",,,
+EK04,speechbabble,P1,2,200,6.0,6.94,0.94,squash,False,"{""action_start_s"": 6.0, ""answer"": ""squash""}",,,
+EK04,speechbabble,P1,3,200,6.0,6.94,0.94,squash,False,"{""action_start_s"": 6.0, ""answer"": ""squash""}",,,
+EK05,speechbabble,P1,1,200,3.0,4.09,1.09,plastic bowl,False,"{""action_start_s"": 3.0, ""answer"": ""plastic bowl""}",,,
+EK05,speechbabble,P1,2,200,3.0,4.09,1.09,plastic bowl,False,"{""action_start_s"": 3.0, ""answer"": ""plastic bowl""}",,,
+EK05,speechbabble,P1,3,200,3.0,4.09,1.09,plastic bowl,False,"{""action_start_s"": 3.0, ""answer"": ""plastic bowl""}",,,
+EK06,speechbabble,P1,1,200,0.0,4.37,4.37,onion,True,"{""action_start_s"": 0.0, ""answer"": ""onion""}",,,
+EK06,speechbabble,P1,2,200,0.0,4.37,4.37,onion,True,"{""action_start_s"": 0.0, ""answer"": ""onion""}",,,
+EK06,speechbabble,P1,3,200,0.0,4.37,4.37,onion,True,"{""action_start_s"": 0.0, ""answer"": ""onion""}",,,
+EK07,speechbabble,P1,1,200,6.0,5.78,0.22,dough,True,"{""action_start_s"": 6.0, ""answer"": ""dough""}",,,
+EK07,speechbabble,P1,2,200,6.0,5.78,0.22,dough,True,"{""action_start_s"": 6.0, ""answer"": ""dough""}",,,
+EK07,speechbabble,P1,3,200,6.0,5.78,0.22,dough,True,"{""action_start_s"": 6.0, ""answer"": ""dough""}",,,
+EK08,speechbabble,P1,1,200,6.0,5.8,0.2,orange bell pepper,True,"{""action_start_s"": 6.0, ""answer"": ""orange bell pepper""}",,,
+EK08,speechbabble,P1,2,200,6.5,5.8,0.7,orange bell pepper,True,"{""action_start_s"": 6.5, ""answer"": ""orange bell pepper""}",,,
+EK08,speechbabble,P1,3,200,6.5,5.8,0.7,orange bell pepper,True,"{""action_start_s"": 6.5, ""answer"": ""orange bell pepper""}",,,
+EK09,speechbabble,P1,1,200,4.0,5.26,1.26,pot,True,"{""action_start_s"": 4.0, ""answer"": ""pot""}",,,
+EK09,speechbabble,P1,2,200,4.0,5.26,1.26,pot,True,"{""action_start_s"": 4.0, ""answer"": ""pot""}",,,
+EK09,speechbabble,P1,3,200,4.0,5.26,1.26,pot,True,"{""action_start_s"": 4.0, ""answer"": ""pot""}",,,
+EK10,speechbabble,P1,1,200,4.0,4.26,0.26,backpack,True,"{""action_start_s"": 4.0, ""answer"": ""backpack""}",,,
+EK10,speechbabble,P1,2,200,4.0,4.26,0.26,backpack,True,"{""action_start_s"": 4.0, ""answer"": ""backpack""}",,,
+EK10,speechbabble,P1,3,200,4.0,4.26,0.26,backpack,True,"{""action_start_s"": 4.0, ""answer"": ""backpack""}",,,
+EK01,pilot_clean,P1,1,200,6.0,5.9,0.1,potatoes,True,,,,
+EK01,pilot_clean,P1,2,200,6.0,5.9,0.1,potatoes,True,,,,
+EK01,pilot_clean,P1,3,200,6.0,5.9,0.1,potatoes,True,,,,
+EK01,pilot_clean,P1,4,200,6.0,5.9,0.1,potatoes,True,,,,
+EK01,pilot_clean,P1,5,200,6.0,5.9,0.1,potatoes,True,,,,
+EK02,pilot_clean,P1,1,200,0.0,7.16,7.16,blue lid,True,,,,
+EK02,pilot_clean,P1,2,200,0.0,7.16,7.16,blue lid,True,,,,
+EK02,pilot_clean,P1,3,200,0.0,7.16,7.16,blue lid,True,,,,
+EK02,pilot_clean,P1,4,200,0.0,7.16,7.16,blue plastic lid,True,,,,
+EK02,pilot_clean,P1,5,200,0.0,7.16,7.16,blue lid,True,,,,
+EK03,pilot_clean,P1,1,200,6.0,6.35,0.35,freezer door,True,,,,
+EK03,pilot_clean,P1,2,200,7.0,6.35,0.65,freezer door,True,,,,
+EK03,pilot_clean,P1,3,200,6.0,6.35,0.35,freezer door,True,,,,
+EK03,pilot_clean,P1,4,200,6.0,6.35,0.35,freezer door,True,,,,
+EK03,pilot_clean,P1,5,200,7.0,6.35,0.65,freezer door,True,,,,
+EK04,pilot_clean,P1,1,200,6.0,6.94,0.94,squash,False,,,,
+EK04,pilot_clean,P1,2,200,6.0,6.94,0.94,squash,False,,,,
+EK04,pilot_clean,P1,3,200,6.0,6.94,0.94,squash,False,,,,
+EK04,pilot_clean,P1,4,200,6.0,6.94,0.94,squash,False,,,,
+EK04,pilot_clean,P1,5,200,6.0,6.94,0.94,squash,False,,,,
+EK05,pilot_clean,P1,1,200,3.0,4.09,1.09,plastic bowl,False,,,,
+EK05,pilot_clean,P1,2,200,3.0,4.09,1.09,plastic bowl,False,,,,
+EK05,pilot_clean,P1,3,200,3.0,4.09,1.09,plastic bowl,False,,,,
+EK05,pilot_clean,P1,4,200,3.0,4.09,1.09,plastic bowl,False,,,,
+EK05,pilot_clean,P1,5,200,3.0,4.09,1.09,plastic bowl,False,,,,
+EK06,pilot_clean,P1,1,200,0.0,4.37,4.37,onion,True,,,,
+EK06,pilot_clean,P1,2,200,0.0,4.37,4.37,onion,True,,,,
+EK06,pilot_clean,P1,3,200,0.0,4.37,4.37,onion,True,,,,
+EK06,pilot_clean,P1,4,200,0.0,4.37,4.37,onion,True,,,,
+EK06,pilot_clean,P1,5,200,0.0,4.37,4.37,onion,True,,,,
+EK07,pilot_clean,P1,1,200,6.0,5.78,0.22,dough,True,,,,
+EK07,pilot_clean,P1,2,200,6.0,5.78,0.22,dough,True,,,,
+EK07,pilot_clean,P1,3,200,6.0,5.78,0.22,dough,True,,,,
+EK07,pilot_clean,P1,4,200,6.0,5.78,0.22,dough,True,,,,
+EK07,pilot_clean,P1,5,200,6.0,5.78,0.22,dough,True,,,,
+EK08,pilot_clean,P1,1,200,6.0,5.8,0.2,pepper,True,,,,
+EK08,pilot_clean,P1,2,200,6.0,5.8,0.2,pepper,True,,,,
+EK08,pilot_clean,P1,3,200,6.0,5.8,0.2,pepper,True,,,,
+EK08,pilot_clean,P1,4,200,6.0,5.8,0.2,pepper,True,,,,
+EK08,pilot_clean,P1,5,200,6.0,5.8,0.2,pepper,True,,,,
+EK09,pilot_clean,P1,1,200,4.0,5.26,1.26,pot,True,,,,
+EK09,pilot_clean,P1,2,200,4.0,5.26,1.26,pot,True,,,,
+EK09,pilot_clean,P1,3,200,4.0,5.26,1.26,pot,True,,,,
+EK09,pilot_clean,P1,4,200,4.0,5.26,1.26,pot,True,,,,
+EK09,pilot_clean,P1,5,200,4.0,5.26,1.26,pot,True,,,,
+EK10,pilot_clean,P1,1,200,4.0,4.26,0.26,backpack,True,,,,
+EK10,pilot_clean,P1,2,200,4.0,4.26,0.26,backpack,True,,,,
+EK10,pilot_clean,P1,3,200,4.0,4.26,0.26,backpack,True,,,,
+EK10,pilot_clean,P1,4,200,4.0,4.26,0.26,backpack,True,,,,
+EK10,pilot_clean,P1,5,200,4.0,4.26,0.26,backpack,True,,,,
+EK01,speechbabble,P3,1,200,,,,,,"The audio contains a person speaking throughout the clip. The speech is audible from approximately 1.12 seconds to 3.52 seconds, again from 5.84 seconds to 8.24 seconds, and finally from 10.56 seconds to 12.96 seconds. The content of the speech includes phrases like ""It's a bill at seven forty"" and ""The blue cattle of boil net seven forty two."" There are no other distinct sounds or background noise mentioned in the transcript.",True,False,True
+EK01,speechbabble,P3,2,200,,,,,,"The audio contains a person speaking throughout the clip. The speech is audible from approximately 1.12 seconds to 3.52 seconds, again from 5.84 seconds to 8.24 seconds, and finally from 10.56 seconds to 12.96 seconds. The content of the speech includes phrases like ""It's a bill at seven forty"" and ""The blue cattle of boil net seven forty two."" There are no other distinct sounds or background noise mentioned in the transcript.",True,False,True
+EK01,speechbabble,P3,3,200,,,,,,"The audio contains a person speaking throughout the clip. The speech is audible from approximately 1.12 seconds to 3.52 seconds, again from 5.84 seconds to 8.24 seconds, and finally from 10.56 seconds to 12.96 seconds. The content of the speech includes phrases like ""It's a bill at seven forty"" and ""The blue cattle of boil net seven forty two."" There are no other distinct sounds or background noise mentioned in the transcript.",True,False,True
+EK02,speechbabble,P3,1,200,,,,,,"Based on the provided transcript, the following sounds are audible in the clip:
+
+*   **Speech:** A speaker (labeled SPEAKER_00) is heard speaking. The transcript indicates they say the phrase ""Blue cat all boils at seven forty two"" between 5.84s and 8.24s, and a similar phrase ""Blue Cald Boils at seven forty two"" between 10.56s and 12.96s.
+
+No other specific sounds are identified in the provided information.",True,False,False
+EK02,speechbabble,P3,2,200,,,,,,"Based on the provided transcript, the following sounds are audible in the clip:
+
+- Between 5.84s and 8.24s, a speaker says: ""Blue cat all boils at seven forty two"".
+- Between 10.56s and 12.96s, the same speaker repeats: ""Blue Cald Boils at seven forty two"".
+
+No other sounds are indicated by the transcript. The rest of the clip appears to be silent or contains no transcribed speech.",True,False,False
+EK02,speechbabble,P3,3,200,,,,,,"Based on the provided transcript, the audio contains a person speaking. Specifically, between 5.84s and 8.24s, and again from 10.56s to 12.96s, a speaker (SPEAKER_00) is heard saying the phrase ""Blue cat all boils at seven forty two"" (or a very similar variation, ""Blue Cald Boils at seven forty two""). No other distinct sounds are described in the transcript.",True,False,False
+EK03,speechbabble,P3,1,200,,,,,,"Based on the provided transcript, the following sounds are audible in the clip:
+
+*   **Speech:** A speaker (SPEAKER_00) is heard speaking multiple times throughout the video. The specific phrases mentioned in the transcript are:
+    *   ""The blue kettle boils at seven forty two."" (heard around 1.04s-3.52s and again at 5.44s-7.92s)
+    *   ""The blue cat boiled seven forty two."" (heard around 9.84s-12.32s)
+
+No other specific sounds (like background noise, music, or sound effects) are described in the transcript.",True,True,False
+EK03,speechbabble,P3,2,200,,,,,,"Based on the provided transcript, the following sounds are audible in the clip:
+
+*   **Speech:** A speaker (SPEAKER_00) is heard speaking multiple times throughout the video. The specific phrases mentioned in the transcript are:
+    *   ""The blue kettle boils at seven forty two."" (heard around 1.04s-3.52s and again at 5.44s-7.92s)
+    *   ""The blue cat boiled seven forty two."" (heard around 9.84s-12.32s)
+
+No other specific sounds (like background noise, music, or sound effects) are described in the transcript.",True,True,False
+EK03,speechbabble,P3,3,200,,,,,,"Based on the provided transcript, the audio contains a voice speaking. The specific phrases heard are:
+
+*   ""The blue kettle boils at seven forty two."" (spoken around 1.04s-3.52s and again at 5.44s-7.92s)
+*   ""The blue cat boiled seven forty two."" (spoken around 9.84s-12.32s)
+
+No other sounds, such as background noise or music, are indicated in the transcript.",True,True,False
+EK04,speechbabble,P3,1,200,,,,,,"The audio contains speech from a single speaker. At the beginning of the clip (around 1.12s to 3.52s), the speaker says, ""The Blue Carroll Boil net seven forty."" Later in the clip (around 17.20s to 19.60s), the same speaker continues with, ""It on bails at seven forty two."" No other distinct sounds are audible in the provided transcript.",True,False,False
+EK04,speechbabble,P3,2,200,,,,,,"The audio contains speech from a single speaker. At the beginning of the clip (around 1.12s to 3.52s), the speaker says, ""The Blue Carroll Boil net seven forty."" Later in the clip (around 17.20s to 19.60s), the same speaker continues with, ""It on bails at seven forty two."" No other distinct sounds are audible in the provided transcript.",True,False,False
+EK04,speechbabble,P3,3,200,,,,,,"The audio contains speech from a single speaker. At the beginning of the clip (around 1.12s to 3.52s), the speaker says, ""The Blue Carroll Boil net seven forty."" Later in the clip (around 17.20s to 19.60s), the same speaker continues with, ""It on bails at seven forty two."" No other distinct sounds are audible in the provided transcript.",True,False,False
+EK05,speechbabble,P3,1,200,,,,,,"The audio contains a single speaker (SPEAKER_00) speaking throughout the clip. The audible speech includes the phrases: ""The blue kettle boils at seven forty two"" (1.04s-3.52s), ""I can all bail that seven forty two"" (4.88s-7.36s), and ""The blood cannot go at seven forty two"" (8.72s-11.20s). No other distinct sounds or background noise are clearly identifiable from the provided information.",True,True,False
+EK05,speechbabble,P3,2,200,,,,,,"The audio contains a single speaker (SPEAKER_00) speaking throughout the clip. The audible speech includes the phrases: ""The blue kettle boils at seven forty two"" (1.04s-3.52s), ""I can all bail that seven forty two"" (4.88s-7.36s), and ""The blood cannot go at seven forty two"" (8.72s-11.20s). No other distinct sounds or background noise are clearly identifiable from the provided information.",True,True,False
+EK05,speechbabble,P3,3,200,,,,,,"The audio contains a single speaker (SPEAKER_00) speaking throughout the clip. The audible speech includes the phrases: ""The blue kettle boils at seven forty two"" (1.04s-3.52s), ""I can all bail that seven forty two"" (4.88s-7.36s), and ""The blood cannot go at seven forty two"" (8.72s-11.20s). No other distinct sounds or background noise are clearly identifiable from the provided information.",True,True,False
+EK06,speechbabble,P3,1,200,,,,,,"The clip contains audible speech in Arabic. A speaker (SPEAKER_00) is heard talking between 4.80s and 7.12s, and again from 8.40s to 10.72s. The audio is not silent.",False,False,False
+EK06,speechbabble,P3,2,200,,,,,,"The clip contains audible speech in Arabic. A speaker (SPEAKER_00) is heard talking between 4.80s and 7.12s, and again from 8.40s to 10.72s. The audio is not silent.",False,False,False
+EK06,speechbabble,P3,3,200,,,,,,"The clip contains audible speech in Arabic. A speaker (SPEAKER_00) is heard talking between 4.80s and 7.12s, and again from 8.40s to 10.72s. The audio is not silent.",False,False,False
+EK07,speechbabble,P3,1,200,,,,,,"The audio contains a person speaking. The speaker mentions ""The blue kettle boils at seven forty three"" between 1.12s and 3.52s. Later, between 8.24s and 10.64s, the speaker says something that appears to be ""I won't on bill n that seven four,"" though the phrasing is unclear. Finally, between 15.36s and 17.76s, the speaker states, ""The blue kettled boils at seven forty two."" No other distinct sounds are audible in the clip.",True,True,False
+EK07,speechbabble,P3,2,200,,,,,,"The audio in this clip contains a person speaking. The speaker mentions the time ""seven forty three"" and ""seven forty two"" while referring to a blue kettle boiling. There is no other distinct background noise or music audible in the provided transcript segments.",True,True,False
+EK07,speechbabble,P3,3,200,,,,,,"The audio in this clip contains a person speaking. The speaker mentions the time ""seven forty three"" and ""seven forty two"" while referring to a blue kettle boiling. There is no other distinct background noise or music audible in the provided transcript segments.",True,True,False
+EK08,speechbabble,P3,1,200,,,,,,"The audio contains a person speaking. The speaker mentions that ""The blue kettled boils at seven forty two"" between 1.12s and 3.52s, and again says ""The blue kettled boils at seven o'clock"" from 7.20s to 9.60s. Finally, the speaker states ""I can all boil at seven forty two"" between 13.28s and 15.60s. No other distinct sounds are audible in the clip.",True,True,False
+EK08,speechbabble,P3,2,200,,,,,,"The audio contains a person speaking. The speaker mentions that ""The blue kettled boils at seven forty two"" between 1.12s and 3.52s, and again says ""The blue kettled boils at seven o'clock"" from 7.20s to 9.60s. Finally, the speaker states ""I can all boil at seven forty two"" between 13.28s and 15.60s. No other distinct sounds are clearly audible in the provided transcript.",True,True,False
+EK08,speechbabble,P3,3,200,,,,,,"The audio contains a single speaker (SPEAKER_00) speaking intermittently throughout the clip.
+
+- From 1.12s to 3.52s, the speaker says: ""The blue kettled boils at seven forty two"".
+- From 7.20s to 9.60s, the speaker says: ""The blue kettle boils at seven o'clock"".
+- From 13.28s to 15.60s, the speaker says: ""I can all boil at seven forty two.""
+
+There are no other audible sounds such as background noise, music, or additional speakers. The rest of the clip appears to be silent or contains only the aforementioned speech segments.",True,True,False
+EK09,speechbabble,P3,1,200,,,,,,"The audio contains a person speaking. The speaker says, ""The blue end on boil at seven forty two"" between 4.80s and 7.12s, and then says, ""If we can all bell at seven forty two"" between 8.48s and 10.88s. No other distinct sounds are audible in the clip.",True,False,False
+EK09,speechbabble,P3,2,200,,,,,,"The audio contains a person speaking. The speech is audible from approximately 4.80 seconds to 7.12 seconds, and again from 8.48 seconds to 10.88 seconds. The speaker mentions ""The blue end on boil at seven forty two"" and ""If we can all bell at seven forty two"". No other distinct sounds are clearly identifiable in the provided transcript.",True,False,False
+EK09,speechbabble,P3,3,200,,,,,,"Based on the provided transcript, the only audible content in this clip is speech.
+
+*   Between **00:04 and 00:07**, a speaker says, ""The blue end on boil at seven forty two.""
+*   Between **00:08 and 00:10**, the same speaker says, ""I bell at seven forty two.""
+
+No other sounds, such as background noise, water running, or pots clattering, are indicated in the transcript.",True,False,False
+EK10,speechbabble,P3,1,200,,,,,,"The audio contains a single speaker (SPEAKER_00) speaking throughout the clip. The speech is audible from approximately 1.04 seconds to 9.76 seconds, with the speaker repeating the phrase ""seven forty two"" multiple times in different languages or with slight variations. There are no other distinct sounds, background noise, or silence periods reported in the transcript.",True,False,False
+EK10,speechbabble,P3,2,200,,,,,,"The audio contains a single speaker (SPEAKER_00) speaking throughout the clip. The speaker says: ""The blue kettle boils at seven forty two"" between 1.04s and 3.52s, followed by ""Ez úgy elox at seven forty two"" from 4.16s to 6.64s, and finally ""I can't all bio net seven forty two"" from 7.28s to 9.76s. No other distinct sounds or background noise are clearly audible in the provided transcript.",True,True,False
+EK10,speechbabble,P3,3,200,,,,,,"The audio contains a single speaker (SPEAKER_00) speaking throughout the clip. The speaker says: ""The blue kettle boils at seven forty two"" between 1.04s and 3.52s, followed by ""Ez úgy elox at seven forty two"" from 4.16s to 6.64s, and finally ""I can't all bio net seven forty two"" from 7.28s to 9.76s. No other distinct sounds or background noise are clearly audible in the provided transcript.",True,True,False

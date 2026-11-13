@@ -1,0 +1,121 @@
+clip_id,condition,repeat,http_status,pred_start_s,answer
+EK01,blur1,1,200,6.0,potatoes
+EK01,blur1,2,200,6.0,potatoes
+EK01,blur1,3,200,6.0,potatoes
+EK01,blur2,1,200,6.0,bag
+EK01,blur2,2,200,6.0,bag
+EK01,blur2,3,200,6.0,bag
+EK01,blur3,1,200,0.0,potatoes
+EK01,blur3,2,200,0.0,potatoes
+EK01,blur3,3,200,0.0,potatoes
+EK01,babble,1,200,6.0,potatoes
+EK01,babble,2,200,6.0,potatoes
+EK01,babble,3,200,6.0,potatoes
+EK02,blur1,1,200,0.0,blue lid
+EK02,blur1,2,200,0.0,blue lid
+EK02,blur1,3,200,0.0,plastic container lid
+EK02,blur2,1,200,0.0,blue lid
+EK02,blur2,2,200,0.0,blue lid
+EK02,blur2,3,200,0.0,blue lid
+EK02,blur3,1,200,0.0,blue container lid
+EK02,blur3,2,200,10.0,blue container lid
+EK02,blur3,3,200,10.0,blue container lid
+EK02,babble,1,200,0.0,blue plastic lid
+EK02,babble,2,200,0.0,blue plastic lid
+EK02,babble,3,200,0.0,blue plastic lid
+EK03,blur1,1,200,6.0,freezer door
+EK03,blur1,2,200,6.0,freezer door
+EK03,blur1,3,200,6.0,freezer door
+EK03,blur2,1,200,6.0,freezer door
+EK03,blur2,2,200,6.0,freezer door
+EK03,blur2,3,200,6.0,freezer door
+EK03,blur3,1,200,6.0,freezer door
+EK03,blur3,2,200,6.0,freezer door
+EK03,blur3,3,200,6.0,freezer door
+EK03,babble,1,200,6.0,freezer door
+EK03,babble,2,200,6.0,freezer door
+EK03,babble,3,200,6.0,freezer door
+EK04,blur1,1,200,6.0,squash
+EK04,blur1,2,200,6.0,squash
+EK04,blur1,3,200,6.0,squash
+EK04,blur2,1,200,0.0,squash
+EK04,blur2,2,200,6.0,squash
+EK04,blur2,3,200,6.0,squash
+EK04,blur3,1,200,0.0,squash
+EK04,blur3,2,200,0.0,squash
+EK04,blur3,3,200,0.0,squash
+EK04,babble,1,200,6.0,squash
+EK04,babble,2,200,6.0,squash
+EK04,babble,3,200,6.0,squash
+EK05,blur1,1,200,3.0,plastic bowl
+EK05,blur1,2,200,3.0,plastic bowl
+EK05,blur1,3,200,3.0,plastic bowl
+EK05,blur2,1,200,3.0,plastic bowl
+EK05,blur2,2,200,3.0,plastic bowl
+EK05,blur2,3,200,3.0,plastic bowl
+EK05,blur3,1,200,3.0,plastic bowl
+EK05,blur3,2,200,3.0,plastic bowl
+EK05,blur3,3,200,3.0,plastic bowl
+EK05,babble,1,200,3.0,plastic bowl
+EK05,babble,2,200,3.5,plastic bowl
+EK05,babble,3,200,3.0,plastic bowl
+EK06,blur1,1,200,0.0,onion
+EK06,blur1,2,200,0.0,onion
+EK06,blur1,3,200,0.0,onion
+EK06,blur2,1,200,0.0,onion
+EK06,blur2,2,200,0.0,onion
+EK06,blur2,3,200,0.0,onion
+EK06,blur3,1,200,0.0,onion
+EK06,blur3,2,200,0.0,onion
+EK06,blur3,3,200,0.0,onion
+EK06,babble,1,200,0.0,onion
+EK06,babble,2,200,0.0,onion
+EK06,babble,3,200,0.0,onion
+EK07,blur1,1,200,6.0,dough
+EK07,blur1,2,200,6.0,dough
+EK07,blur1,3,200,6.0,dough
+EK07,blur2,1,200,5.0,dough
+EK07,blur2,2,200,5.0,dough
+EK07,blur2,3,200,5.0,dough
+EK07,blur3,1,200,2.0,dough
+EK07,blur3,2,200,2.0,dough
+EK07,blur3,3,200,2.0,dough
+EK07,babble,1,200,6.0,dough
+EK07,babble,2,200,6.0,dough
+EK07,babble,3,200,6.0,dough
+EK08,blur1,1,200,11.0,pepper
+EK08,blur1,2,200,11.0,pepper
+EK08,blur1,3,200,11.0,pepper
+EK08,blur2,1,200,11.0,pepper
+EK08,blur2,2,200,11.0,pepper
+EK08,blur2,3,200,11.0,pepper
+EK08,blur3,1,200,4.0,pepper
+EK08,blur3,2,200,4.0,pepper
+EK08,blur3,3,200,4.0,pepper
+EK08,babble,1,200,6.0,pepper
+EK08,babble,2,200,6.0,pepper
+EK08,babble,3,200,6.0,pepper
+EK09,blur1,1,200,4.0,pot
+EK09,blur1,2,200,4.0,pot
+EK09,blur1,3,200,4.0,pot
+EK09,blur2,1,200,6.0,pot
+EK09,blur2,2,200,6.0,pot
+EK09,blur2,3,200,6.0,pot
+EK09,blur3,1,200,4.0,pot
+EK09,blur3,2,200,4.0,pot
+EK09,blur3,3,200,4.0,pot
+EK09,babble,1,200,4.0,pot
+EK09,babble,2,200,4.0,pot
+EK09,babble,3,200,4.0,pot
+EK10,blur1,1,200,4.0,backpack
+EK10,blur1,2,200,4.0,backpack
+EK10,blur1,3,200,4.0,backpack
+EK10,blur2,1,200,4.0,backpack
+EK10,blur2,2,200,4.0,backpack
+EK10,blur2,3,200,4.0,backpack
+EK10,blur3,1,200,3.0,backpack
+EK10,blur3,2,200,3.0,backpack
+EK10,blur3,3,200,3.0,backpack
+EK10,babble,1,200,4.0,backpack
+EK10,babble,2,200,4.0,backpack
+EK10,babble,3,200,4.0,backpack

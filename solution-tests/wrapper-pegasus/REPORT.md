@@ -1,0 +1,14 @@
+# Kill test: wrapper fix (Path A) on Pegasus
+- Date: Nov 11, 2026 (design frozen before any call; Kobby's go in chat)
+- Model and settings: Pegasus 1.6, Twelve Labs Analyze, temperature 0, via custom.twelvelabs-temp4 (tests-only account). 28 of 28 calls HTTP 200.
+- Files used: pilot2/swap/swap_water.mp4, pilot2/swap/swap_vacuum.mp4, docs-sounds-check/docs_applause_still.mp4, pilot2/swap/swap_silence.mp4 (control). All still-picture clips; the picture carries no sound information.
+- Correction to the frozen design doc: its total line said 34 calls; the arms as listed and run make 28 (7 per sound clip + 3 for silence + 4 carry-forward finals). The design, prompts, and bar were unchanged; only the arithmetic in that one line was wrong.
+- Questions asked: standard P2 ("Describe what happens in this video, including any sounds that are audible."); budget-matched ordinary re-asks R1 to R3; wrapper W1 = P3 sound-only (verbatim battery prompt), W2 = yes/no own sound, W3 = carry-forward final quoting that clip's own W1 answer; wrong-sound lures (yes/no). Full prompts in kill-test-wrapper/DESIGN-FROZEN.md.
+- What came back (scored from the raw answer files by kill-test-wrapper/score_kill_test.py):
+  - Standard S: named the sound 0 of 3.
+  - Ordinary re-asks R (any of 3): 0 of 3.
+  - Wrapper final W3: 0 of 3.
+  - W1 sound-only said "The audio is silent." on water, vacuum, and applause, the identical answer it gave on the real silence clip. W2 said "No." on all three present sounds. Lures all "No." (correct, but the model said No to everything). Silence control: no sound named anywhere (clean).
+  - W3 carried the wrong first step forward word for word in effect: water W3 ends "The audio is silent, as confirmed by the sound-only check."
+- What it showed: on Pegasus, the wrapper is DEAD as a fix, under the bar frozen before the run (needed W3 hits in at least 2 of 3, beating S and R; got 0 of 3). It is also dead as a flag on this model: the sound-only step gives the same answer for a present sound as for real silence, so there is no disagreement signal to flag from. The failure is below the asking layer on Pegasus; no way of asking this closed model, at temperature 0, in these forms, gets the sound into the answer. Scope: one model, 3 sounds, 1 repeat per cell, the forms listed. It does not test the wrapper on open models, and it does not test Path B (inside cut).
+- Source files: ~/workspace/project-k-pilot/kill-test-wrapper/ (DESIGN-FROZEN.md, run_kill_test.py, raw/*.json, kill_test_results.csv, score_kill_test.py, run.log)

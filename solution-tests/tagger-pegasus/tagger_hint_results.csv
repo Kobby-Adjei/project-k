@@ -1,0 +1,25 @@
+sound,arm,hint,http,prompt,answer
+water,H,running water,200,"Sounds detected: running water.
+
+Describe what happens in this video, including any sounds that are audible.","The video features a static gray circle centered on a black background. There is no movement or change in the visual elements throughout the duration of the video. The only notable aspect is the sound of running water, which can be heard in the background."
+water,L,a vacuum cleaner,200,"Sounds detected: a vacuum cleaner.
+
+Describe what happens in this video, including any sounds that are audible.","The video shows a static scene with a single gray circle centered on a black background. There is no movement or change in the visual elements throughout the duration of the clip. The only notable aspect is the sound of a vacuum cleaner, which can be heard in the background."
+vacuum,H,a vacuum cleaner,200,"Sounds detected: a vacuum cleaner.
+
+Describe what happens in this video, including any sounds that are audible.","The video shows a static scene with a single gray circle centered on a black background. There is no movement or change in the visual elements throughout the duration of the clip. The only notable feature is the sound of a vacuum cleaner, which can be heard in the background."
+vacuum,L,applause and clapping,200,"Sounds detected: applause and clapping.
+
+Describe what happens in this video, including any sounds that are audible.","The video features a static shot of a gray circle centered on a black background. The circle remains unchanged throughout the duration of the clip, with no movement or variation in its appearance. Accompanying the visual is the sound of applause and clapping, suggesting an audience reaction, although no people or context for the applause are visible in the video. The audio and visual elements do not seem to be directly related, as the visual content is minimal and does not provide any cues for the source of the applause."
+applause,H,applause and clapping,200,"Sounds detected: applause and clapping.
+
+Describe what happens in this video, including any sounds that are audible.","The video features a static shot of a gray circle centered on a black background. The circle remains unchanged throughout the duration of the clip, with no movement or variation in its appearance. Accompanying the visual is the sound of applause and clapping, suggesting an audience reaction, although no people or context for the applause are visible in the video. The audio and visual elements do not seem to be directly related, as the visual content is minimal and does not provide any indication of what the applause might be for."
+applause,L,running water,200,"Sounds detected: running water.
+
+Describe what happens in this video, including any sounds that are audible.","The video features a static gray circle centered on a black background. There is no movement or change in the visual elements throughout the duration of the video. The only notable aspect is the sound of running water, which can be heard in the background."
+silence,H,no distinct sound,200,"Sounds detected: no distinct sound.
+
+Describe what happens in this video, including any sounds that are audible.","The video shows a static scene with no movement or changes. A single gray circle is centered on a black background, remaining in the same position throughout the entire 10-second duration. There are no other objects, characters, or actions present in the video. The scene is completely still, with no variations in lighting, color, or any other visual elements. Additionally, there are no sounds detected in the video, making it entirely silent."
+silence,L,running water,200,"Sounds detected: running water.
+
+Describe what happens in this video, including any sounds that are audible.","The video features a static gray circle centered on a black background. There is no movement or change in the visual elements throughout the duration of the video. The only notable aspect is the sound of running water, which can be heard in the background."

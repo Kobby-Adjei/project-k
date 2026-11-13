@@ -1,0 +1,46 @@
+{
+ "water": {
+  "file": "tagger-clips/water_full.wav",
+  "scores": {
+   "water": 0.9884,
+   "vacuum": 0.0087,
+   "applause": 0.0018,
+   "silence": 0.0011
+  },
+  "top_label": "water",
+  "top_phrase": "running water"
+ },
+ "vacuum": {
+  "file": "tagger-clips/vacuum_full.wav",
+  "scores": {
+   "vacuum": 0.9059,
+   "applause": 0.0747,
+   "water": 0.0172,
+   "silence": 0.0022
+  },
+  "top_label": "vacuum",
+  "top_phrase": "a vacuum cleaner"
+ },
+ "applause": {
+  "file": "tagger-clips/applause_full.wav",
+  "scores": {
+   "applause": 1.0,
+   "water": 0.0,
+   "silence": 0.0,
+   "vacuum": 0.0
+  },
+  "top_label": "applause",
+  "top_phrase": "applause and clapping"
+ },
+ "silence": {
+  "file": "tagger-clips/silence_full.wav",
+  "scores": {
+   "silence": 0.9615,
+   "vacuum": 0.0322,
+   "water": 0.0041,
+   "applause": 0.0022
+  },
+  "top_label": "silence",
+  "top_phrase": "silence"
+ }
+}

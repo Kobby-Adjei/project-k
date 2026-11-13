@@ -54,9 +54,12 @@ For one of the open models, the inside is now measured
 too. Series Three opens Qwen2.5-Omni-3B and traces the
 sound through its layers. The sound is present in the
 model's inner states at every layer; what fails is the
-reading of it. The spoken yes or no is a fixed cut on an
-inner lean that ranks the truth almost perfectly, and
-the cut is misplaced. Pasting one clip's inner states
+reading of it. On synthetic tones, the spoken yes or no
+is a fixed cut on an inner lean that ranks the truth
+almost perfectly, and the cut is misplaced. That tones
+result is scoped to synthetic tones under the tested
+scoring; on real sounds the ranking tangles and the tone
+cut does not transfer (measured in solution-tests/). Pasting one clip's inner states
 into another clip's run moves the answer in a window of
 layers, and in the deep end of that window the effect
 reaches the answer only through the words that follow
@@ -70,8 +73,11 @@ The method is permanent and lives in method/. Each round of
 testing is a series, and each series gets its own folder
 under series/, with its plan, its reads, and its result
 files. New series slot in beside the old ones without
-reorganizing anything. The notebooks that ran the open
-models are in notebooks/. Data provenance is in data/.
+reorganizing anything. Attempts to fix what the series
+found, each with its design and pass bar frozen before it
+ran, live in solution-tests/. The notebooks that ran the
+open models are in notebooks/. Data provenance is in
+data/.
 
 ## What is not in this repo
 
@@ -100,10 +106,24 @@ temperature 0.7) sits beside it. On Nov 6, 2026 the three
 sounds the Twelve Labs models page names as examples
 (birds chirping, applause, fireworks) were run the same
 way and denied the same way; an independent rerun matched
-all 33 answers (series/series-one/docs-sounds-check). Series Three: complete and frozen for
-Qwen2.5-Omni-3B; the same inside tests on MiniCPM-o 2.6
-are the written leftover, to be run under the frozen
-protocol. Next new model in the queue: Baichuan-Omni 1.5.
+all 33 answers (series/series-one/docs-sounds-check).
+Two follow-up check passes ran Nov 10, 2026: blurring the
+picture in stages moved the timing answers and left the
+naming flat, and a competing spoken sentence left the
+timing and naming untouched while taking over the hearing
+report completely, 30 of 30 (series/series-one/ross-checks).
+An audio-only check of the two OpenAI audio models on
+OpenRouter ran Nov 11, 2026; flat denial is not universal,
+and the failure kind differs by model family
+(series/series-two/openai-sounds-check). Series Three:
+complete and frozen for Qwen2.5-Omni-3B; the MiniCPM-o 2.6
+chapter ran under the frozen protocol Nov 7 to 10, 2026,
+all seven cells, and sits beside it as an addendum
+(series/series-three/minicpm-chapter). Solution tests:
+four no-retraining fixes were tested in November 2026
+under bars frozen before each run, and all four failed;
+no fix is claimed (solution-tests/). Next new model in
+the queue: Baichuan-Omni 1.5.
 
 Kwabena Adu Adjei. Computer Science, Eastern Michigan
 University. Thesis topic: Failure Attribution in
